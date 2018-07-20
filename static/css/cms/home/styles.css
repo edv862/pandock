@@ -1,0 +1,71 @@
+/* 
+    Verde #327365
+    Verde oscuro #125e4d
+
+    Anaranjado #f79147
+    Anaranjado oscuro #c86016
+    
+    Gris claro #f4f3f3
+*/
+#slider-block{
+    background: url('../../../img/slider-bg.png') repeat-x center bottom;
+    height: 480px;
+}
+
+#slider-holder{
+    background: transparent url('../../../img/slider-shadow.png') no-repeat center bottom;
+    height: 480px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.noticias{
+    background-color: #f4f3f3;
+
+    margin: 40px;
+    
+    padding: 15px 40px 15px 10px;
+    height: 285px;
+    border-left: #c86016 solid 20px;
+}
+
+.noticia-texto{
+    height: 255px;
+    
+    overflow: hidden;
+    text-align: justify;
+
+    font-size: 14px;
+    line-height: 1.5em;
+
+    padding-top: 5px;
+    padding-left: 15px;
+    color: #51565b;
+    border-top: 3px dashed #125e4d;
+}
+
+.video-promo{
+    margin: 40px;
+}
+
+.video-promo > iframe{
+    width: 100%;
+}
+
+.noticia-title {
+    margin-top: 5px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    display: block;
+    color: #f79147;
+    font-size: 15px;
+    line-height: 1em;
+}
+
+.noticia-img{
+    float: left;
+    margin: 5px 10px;
+    height: 115px;
+
+    border: 1px solid #ccc;
+}

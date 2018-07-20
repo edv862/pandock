@@ -1,0 +1,27 @@
+.nosotros-texto{
+    color: #51565C;
+    line-height: 2.5em;
+    text-align: justify;
+    font-size: 14px;
+}
+
+.nosotros-texto .col-6:nth-child(odd){
+    padding: 0 40px 0 95px;
+}
+
+.nosotros-texto .col-6:nth-child(even){
+    padding: 0 95px 0 40px;
+}
+
+.nosotros-texto .valores .valor{
+    margin: 10px 0;
+    padding: 0 0 0 20px;
+    text-align: left;
+    border-left: #ef7624 10px solid;
+    height: 3em;
+    line-height: 3em;
+}
+
+.nosotros-texto span{
+    color: #f79147;
+}

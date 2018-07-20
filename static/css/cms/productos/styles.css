@@ -1,0 +1,40 @@
+.productos{
+    margin: 0 auto;
+}
+
+#product-accordion{
+    margin: 0 auto;
+    width: 100%;
+}
+
+#product-accordion .title{
+    margin: 0;
+    width: auto;
+    border: solid 1px #fff;
+}
+
+#product-accordion .content{   
+    background: url('../../../img/src/productos/fondo-productos.png') no-repeat center center;
+    background-size: cover;
+    height: auto;
+}
+
+#product-accordion .product-content{
+    box-sizing: border-box;
+    width: 49%;
+    float: left;
+    padding: 20px 5px 20px 20px;
+
+    color: #51565b;
+    font-size: 12px;
+    line-height: 2.0em;
+
+    max-width: 49%;
+}
+
+#product-accordion .product-content span{
+    color: #f79147;
+    font-style: italic;
+    padding: 0;
+    font-size: 14px;
+}

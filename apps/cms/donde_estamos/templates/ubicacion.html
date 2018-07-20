@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra-css %}
+    <link rel="stylesheet" type="text/css" href="{% static "css/cms/donde_estamos/styles.css" %}" media="screen">
+{% endblock extra-css %}
+
+{% block content %}
+    <div class="header-divider"></div>
+
+    <div id="page-title">
+        <h1 class="title">
+            DÓNDE ESTAMOS
+        </h1>
+    </div>
+    
+    <section class="ubicacion">
+        <div class="row mapa-wrapper">
+            <div class="col-12 text-center">
+                <img class="img-fluid mapa" src="{% static 'img/src/donde_estamos/mapa.png' %}">
+            </div>
+            <div class="col-12">
+                
+            </div>
+        </div>
+
+        <div class="container-fluid direcciones-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 pl-5">
+                        <div class="row">
+                            <div class="col-6 text-center">
+                                <ul class="direcciones">
+                                    <li>
+                                        <a class="direccion" href="">Caracas</a>
+                                    </li>
+                                    <li>
+                                        <a class="direccion" href="">Caracas</a>
+                                    </li>
+                                    <li>
+                                        <a class="direccion" href="">Caracas</a>
+                                    </li>
+                                    <li>
+                                        <a class="direccion" href="">Caracas</a>
+                                    </li>
+                                    <li>
+                                        <a class="direccion" href="">Caracas</a>
+                                    </li>
+                                    <li>
+                                        <a class="direccion" href="">Caracas</a>
+                                    </li>
+                                    <li>
+                                        <a class="direccion" href="">Caracas</a>
+                                    </li>
+                                    <li>
+                                        <a class="direccion" href="">Caracas</a>
+                                    </li>
+                                    <li>
+                                </ul>
+                            </div>
+                            <div class="col-6 text-center">
+                                <ul class="direcciones">
+                                    <li>
+                                        <a class="direccion" href="">Caracas</a>
+                                    </li>
+                                    <li>
+                                        <a class="direccion" href="">Caracas</a>
+                                    </li>
+                                    <li>
+                                        <a class="direccion" href="">Caracas</a>
+                                    </li>
+                                    <li>
+                                        <a class="direccion" href="">Caracas</a>
+                                    </li>
+                                    <li>
+                                        <a class="direccion" href="">Caracas</a>
+                                    </li>
+                                    <li>
+                                        <a class="direccion" href="">Caracas</a>
+                                    </li>
+                                    <li>
+                                        <a class="direccion" href="">Caracas</a>
+                                    </li>
+                                    <li>
+                                        <a class="direccion" href="">Caracas</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 indicaciones">
+                        <span>Titulo</span><br>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius cum soluta veritatis quos, error excepturi, architecto, atque incidunt voluptas est dicta asperiores. Dolorum earum debitis, praesentium doloribus perspiciatis quo adipisci.
+                    </div>
+                    <div class="col-4 pt-5 text-center">
+                        <iframe id="google_map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=es&amp;geocode=&amp;q=10.229016666666666+,+-67.59781388888888&amp;aq=&amp;sll=10.950903,-63.868933&amp;sspn=0.007394,0.011297&amp;ie=UTF8&amp;t=m&amp;z=14&amp;ll=10.229017,-67.597814&amp;output=embed"></iframe>
+                        <a class="mapa-link float-left" href="">Ver mapa más grande</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}
+
+{% block extra-js %}
+        <script src='{% static "js/ubicacion.js" %}'></script>
+{% endblock extra-js %}
