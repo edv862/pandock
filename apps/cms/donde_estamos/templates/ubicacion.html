@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block extra-css %}
-    <link rel="stylesheet" type="text/css" href="{% static "css/cms/donde_estamos/styles.css" %}" media="screen">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/cms/donde-estamos/styles.css' %}" media="screen">
 {% endblock extra-css %}
 
 {% block content %}
@@ -17,7 +17,30 @@
     <section class="ubicacion">
         <div class="row mapa-wrapper">
             <div class="col-12 text-center">
-                <img class="img-fluid mapa" src="{% static 'img/src/donde_estamos/mapa.png' %}">
+                <div class="puntos-wrapper">
+                    {% for direccion in direcciones_mapa %}
+                        <div class="punto_gris" style="margin-top:{{ direccion.y_coord }}px; margin-left: {{ direccion.x_coord }}px;" onmouseover="show('direccion{{ direccion.id }}'), show('detalle{{ direccion.id }}')" onmouseout="hide('direccion{{ direccion.id }}'), hide('detalle{{ direccion.id }}')">
+                            <div id="direccion{{ direccion.id }}" class="punto_gris_detalle" style="visibility: hidden; display: none;">
+                                <span class="naranja">{{ direccion.estado }}</span><br>
+                                {% if direccion.rif %}
+                                    RIF.: {{ direccion.rif }}
+                                {% endif %}
+                                {% if direccion.nit %}
+                                    NIT: {{ direccion.nit }}
+                                {% endif %}
+                                <br>
+                                Dirección: {{ direccion.direccion }}<br>
+                                Telf: {{ direccion.telefono }}<br>
+                                {% if direccion.fac %}
+                                    Fax: {{ direccion.fax }}
+                                {% endif %}
+                                E-mail: {{ direccion.email }}<br>
+                            </div>
+                            <div id="detalle{{ direccion.id }}" class="box_punto_gris" style="visibility: hidden; display: none;"></div>
+                        </div>
+                    {% endfor %}
+                    <img class="img-fluid mapa" src="{% static 'img/src/donde_estamos/mapa.png' %}">
+                </div>
             </div>
             <div class="col-12">
                 
@@ -29,61 +52,23 @@
                 <div class="row">
                     <div class="col-4 pl-5">
                         <div class="row">
-                            <div class="col-6 text-center">
+                            <div class="col-6 text-left">
                                 <ul class="direcciones">
-                                    <li>
-                                        <a class="direccion" href="">Caracas</a>
-                                    </li>
-                                    <li>
-                                        <a class="direccion" href="">Caracas</a>
-                                    </li>
-                                    <li>
-                                        <a class="direccion" href="">Caracas</a>
-                                    </li>
-                                    <li>
-                                        <a class="direccion" href="">Caracas</a>
-                                    </li>
-                                    <li>
-                                        <a class="direccion" href="">Caracas</a>
-                                    </li>
-                                    <li>
-                                        <a class="direccion" href="">Caracas</a>
-                                    </li>
-                                    <li>
-                                        <a class="direccion" href="">Caracas</a>
-                                    </li>
-                                    <li>
-                                        <a class="direccion" href="">Caracas</a>
-                                    </li>
+                                    {% for direccion in direcciones1 %}
+                                        <li>
+                                            <a class="direccion" href="">{{ direccion.estado }}</a>
+                                        </li>
+                                    {% endfor %}
                                     <li>
                                 </ul>
                             </div>
-                            <div class="col-6 text-center">
+                            <div class="col-6 text-left">
                                 <ul class="direcciones">
-                                    <li>
-                                        <a class="direccion" href="">Caracas</a>
-                                    </li>
-                                    <li>
-                                        <a class="direccion" href="">Caracas</a>
-                                    </li>
-                                    <li>
-                                        <a class="direccion" href="">Caracas</a>
-                                    </li>
-                                    <li>
-                                        <a class="direccion" href="">Caracas</a>
-                                    </li>
-                                    <li>
-                                        <a class="direccion" href="">Caracas</a>
-                                    </li>
-                                    <li>
-                                        <a class="direccion" href="">Caracas</a>
-                                    </li>
-                                    <li>
-                                        <a class="direccion" href="">Caracas</a>
-                                    </li>
-                                    <li>
-                                        <a class="direccion" href="">Caracas</a>
-                                    </li>
+                                    {% for direccion in direcciones2 %}
+                                        <li>
+                                            <a class="direccion" href="">{{ direccion.estado }}</a>
+                                        </li>
+                                    {% endfor %}
                                 </ul>
                             </div>
                         </div>

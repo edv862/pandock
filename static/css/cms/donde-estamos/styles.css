@@ -16,8 +16,9 @@
 }
 
 .direcciones-wrapper{
-    height: 280px;
+    min-height: 280px;
     background: url('../../../img/src/donde_estamos/fondo_verde.png') repeat-x top center;
+    background-size: cover;
 }
 
 .direcciones-wrapper a:hover{
@@ -30,6 +31,7 @@
     display: inline-block;
     padding: 0;
     padding-top: 30px;
+    padding-left: 20px
 }
 
 .direccion{
@@ -37,6 +39,56 @@
     font-size: 14px;
     color: #c8c8c8;
     text-decoration: none;
+}
+
+.puntos-wrapper{
+    margin: 0 auto;
+    position: relative;
+    width: 1270px;
+}
+
+.punto_gris{
+    position: absolute;
+    background: url('../../../img/src/donde_estamos/punto_gris.png') no-repeat;
+    width: 21px;
+    height: 19px;
+}
+
+.punto_gris:hover{
+    background: url('../../../img/src/donde_estamos/punto_naranja.png') no-repeat;
+}
+
+.naranja{
+    color: #f79147;
+}
+
+.punto_gris_detalle{
+    text-align: left;
+    line-height: 1em;
+    color: #51565b;
+    position: absolute;
+    bottom: 49px;
+    margin: 0px 0px 0px -30px;
+    padding: 5px 5px 5px 5px;
+    font-size: 11px;
+    background-color: #FFF;
+    border-radius: 5px 5px 5px 5px;
+    min-width: 180px;
+    left: -2px;
+    box-shadow: -2px 2px 12px #999;
+    display: none;
+    z-index: 3;
+}
+
+.box_punto_gris{
+    position: absolute;
+    top: -30px;
+    margin: 0px 0px 0px -20px;
+    width: 33px;
+    height: 34px;
+    background: url('../../../img/src/donde_estamos/detalle_box.png') no-repeat bottom left;
+    display: none;
+    z-index: 4;
 }
 
 .indicaciones{

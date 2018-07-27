@@ -25,19 +25,21 @@
     <section class="container">
         <div class="row">
             <div class="text-center col-6">
-                <div class="noticias">
-                    <div class="noticia-texto">
-                        {% for noticia in noticias %}
+                <ul class="noticias">
+                    {% for noticia in noticias %}
+                        <li class="noticia-texto">
                             <h4 class="noticia-title">
                                 {{ noticia.titulo }}
                             </h4>
-                            {% if noticia.image %}
-                                <img class="img-fluid noticia-img" src="{{ noticia.image.url }}">
-                            {% endif %}
-                            {{ noticia.texto }}
-                        {% endfor %}
-                    </div>
-                </div>
+                            <p>
+                                {% if noticia.image %}
+                                    <img class="img-fluid noticia-img" src="{{ noticia.image.url }}">
+                                {% endif %}
+                                {{ noticia.texto }}
+                            </p>
+                        </li>
+                    {% endfor %}
+                </ul>
             </div>
             <div class="text-center col-6">
                 <div class="video-promo">

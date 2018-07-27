@@ -17,11 +17,38 @@
     margin: 10px 0;
     padding: 0 0 0 20px;
     text-align: left;
-    border-left: #ef7624 10px solid;
     height: 3em;
     line-height: 3em;
 }
 
 .nosotros-texto span{
     color: #f79147;
+}
+
+.color1{
+    border-left: #a5551c 10px solid;
+}
+
+.color2{
+    border-left: #d25f15 10px solid;
+}
+
+.color3{
+    border-left: #ef7624 10px solid;
+}
+
+.color4{
+    border-left: #f1a055 10px solid;
+}
+
+.color5{
+    border-left: #f2bd7d 10px solid;
+}
+
+.color6{
+    border-left: #f3d1a0 10px solid;
+}
+
+.color7{
+    border-left: #ef7624 10px solid;
 }

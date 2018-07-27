@@ -27,13 +27,15 @@
     padding: 15px 40px 15px 10px;
     height: 285px;
     border-left: #c86016 solid 20px;
+
+    overflow: hidden;
 }
 
 .noticia-texto{
-    height: 255px;
+    height: 275px;
     
     overflow: hidden;
-    text-align: justify;
+    text-align: left;
 
     font-size: 14px;
     line-height: 1.5em;
@@ -42,6 +44,11 @@
     padding-left: 15px;
     color: #51565b;
     border-top: 3px dashed #125e4d;
+}
+
+.noticia-texto p{
+    height: 230px;
+    overflow: hidden;
 }
 
 .video-promo{

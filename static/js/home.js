@@ -1,3 +1,18 @@
+$(function()
+{
+    var ticker = function()
+    {
+        setTimeout(function(){
+            $('.noticias li:first').animate( {marginTop: '-275px'}, 2000, function()
+            {
+                $(this).detach().appendTo('.noticias').removeAttr('style'); 
+            });
+            ticker();
+        }, 10000);
+    };
+    ticker();
+});
+
 $(document).ready(function() {
     // nivo slider ------------------------------------------------------ //
     $('#slider').nivoSlider({
@@ -22,6 +37,16 @@ $(document).ready(function() {
     $('.nivo-nextNav').css('display', 'none');
         
     $('.nivo-imageLink').hover(
+        function(){
+            $('.nivo-prevNav').css('display', 'block');
+            $('.nivo-nextNav').css('display', 'block');
+        },
+        function(){
+            $('.nivo-prevNav').css('display', 'none');
+            $('.nivo-nextNav').css('display', 'none');
+        }
+    );
+    $('.nivo-prevNav, .nivo-nextNav').hover(
         function(){
             $('.nivo-prevNav').css('display', 'block');
             $('.nivo-nextNav').css('display', 'block');
