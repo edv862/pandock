@@ -77,6 +77,18 @@ def get_extension(file):
     ext = os.path.splitext(file)[-1].lower()
     return ext
 
+# Create the pdf from the excel received
+def create_pdf(filename,title):
+    # Get file extension
+    ext = get_extension(filename)
+
+    if (ext == ".xls" or ext == ".xlsx"):
+        excel_to_pdf(filename, title)
+    else:
+        # Invalid extension.
+        pass
+
+
 # to test in python
 if __name__ == '__main__':
     # Take arguments
