@@ -3,34 +3,42 @@ import os
 from openpyxl import load_workbook
 from fpdf import FPDF
 
-
-def excel_to_pdf(filename):
+def excel_to_pdf(filename, title):
     data = read_excel(filename)
-    print(data)
-    """
 
-    #creating a pdf in called test.pdf in the current directory
+    # Creating the pdf instance and seting init values
     pdf = FPDF()
     pdf.add_page()
     pdf.set_xy(0, 0)
-    pdf.set_font('arial', 'B', 14)
+
+    # Generating The header of the file
+    pdf.set_font('arial', 'BU', 16)
+    pdf.set_text_color(236,126,30)
     pdf.cell(60)
-    pdf.cell(70, 10, 'Writing a PDF from python', 0, 2, 'C')
+    pdf.cell(0, 50, title, 0, 2, 'R')
     pdf.cell(-40)
-    pdf.cell(50, 10, 'Index Column', 1, 0, 'C')
-    pdf.cell(40, 10, 'Col A', 1, 0, 'C')
-    pdf.cell(40, 10, 'Col B', 1, 2, 'C')
-    pdf.cell(-90)
+
+    # Generating the table header
+    pdf.set_font('arial', 'B', 14)
+    pdf.set_text_color(255)
+    pdf.cell(150, 10, 'Productos', 1, 0, 'C', True)
+    pdf.cell(20, 10, 'Unid', 1, 2, 'C', True)
+    pdf.cell(-150)
+
+    # Seting values of font for the table's values
     pdf.set_font('arial', '', 12)
-    for i in range(0, len(df_2)-1):
-        col_ind = str(i)
-        col_a = str(df_2.A.ix[i])
-        col_b = str(df_2.B.ix[i])
-        pdf.cell(50, 10, '%s' % (col_ind), 1, 0, 'C')
-        pdf.cell(40, 10, '%s' % (col_a), 0, 0, 'C')
-        pdf.cell(40, 10, '%s' % (col_b), 0, 2, 'C')
-        pdf.cell(-90)
-    pdf.output('test.pdf', 'F')"""
+    pdf.set_text_color(0)
+
+    for row in data:
+        col_a = str(row[0])
+        col_b = str(row[1])
+        pdf.cell(150, 10, '%s' % (col_a), 1, 0, 'L')
+        pdf.cell(20, 10, '%s' % (col_b), 1, 2, 'L')
+        pdf.cell(-150)
+    
+    pdf_title = title.replace(" ","_").lower() + '.pdf'
+
+    pdf.output(pdf_title, 'F')
 
 # If verifies the availability of
 def valid(value):
@@ -85,7 +93,7 @@ if __name__ == '__main__':
     text = ""
 
     if (ext == ".xls" or ext == ".xlsx"):
-        excel_to_pdf(filename)
+        excel_to_pdf(filename, 'Los Pescaditos')
     else:
         # Invalid extension.
         pass
