@@ -16,15 +16,25 @@
 </head>
 <body class="container-fluid">
     <header class="container">
-        <nav class="navbar">
-            <img class="img-fluid" src="{% static 'img/logo.png' %}" alt="Pandock">
-            <a href="{% url 'home:view' %}">INICIO</a>
-            <a href="{% url 'nosotros:view' %}">NOSOTROS</a>
-            <a href="{% url 'productos:view' %}">PRODUCTOS</a>
-            <a href="#">RECETAS</a>
-            <a href="{% url 'donde_estamos:view' %}">DÓNDE ESTAMOS</a>
-            <a href="#">CONTÁCTANOS</a>
-        </nav>
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-3 col-sm-12 text-center px-0">
+                <img class="img-fluid mx-auto" src="{% static 'img/logo.png' %}" alt="Pandock">
+            </div>
+            <div class="col-lg-9 col-sm-12 px-0">
+                <button class="navbar-toggler d-lg-none d-sm-block collapsed" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div id="menu" class="collapse">
+                    <a href="{% url 'home:view' %}">INICIO</a>
+                    <a href="{% url 'nosotros:view' %}">NOSOTROS</a>
+                    <a href="{% url 'productos:view' %}">PRODUCTOS</a>
+                    <a href="#">RECETAS</a>
+                    <a href="{% url 'donde_estamos:view' %}">DÓNDE ESTAMOS</a>
+                    <a href="#">CONTÁCTANOS</a>
+                </div>
+            </div>
+        </div>
     </header>
 
     <section>
