@@ -39,6 +39,10 @@ DJANGO_APPS = [
     'django.contrib.staticfiles',
 ]
 
+THIRD_PARTY_APPS = [
+    'django_extensions',
+]
+
 APPS = [
     'apps.cms.home.apps.HomeConfig',
     'apps.cms.nosotros.apps.NosotrosConfig',
@@ -46,7 +50,7 @@ APPS = [
     'apps.cms.donde_estamos.apps.DondeEstamosConfig',
 ]
 
-INSTALLED_APPS = DJANGO_APPS + APPS
+INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

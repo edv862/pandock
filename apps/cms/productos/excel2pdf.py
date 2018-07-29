@@ -35,10 +35,8 @@ def excel_to_pdf(filename, title):
         pdf.cell(150, 10, '%s' % (col_a), 1, 0, 'L')
         pdf.cell(20, 10, '%s' % (col_b), 1, 2, 'L')
         pdf.cell(-150)
-    
-    pdf_title = title.replace(" ","_").lower() + '.pdf'
 
-    pdf.output(pdf_title, 'F')
+    return pdf
 
 # If verifies the availability of
 def valid(value):
@@ -74,19 +72,18 @@ def read_excel(filename):
 
 # Get file's extension
 def get_extension(file):
-    ext = os.path.splitext(file)[-1].lower()
+    ext = os.path.splitext(str(file))[-1].lower()
     return ext
 
 # Create the pdf from the excel received
 def create_pdf(filename,title):
+    
     # Get file extension
     ext = get_extension(filename)
 
     if (ext == ".xls" or ext == ".xlsx"):
-        excel_to_pdf(filename, title)
-    else:
-        # Invalid extension.
-        pass
+        return excel_to_pdf(filename, title)
+    return None
 
 
 # to test in python
