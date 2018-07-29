@@ -34,26 +34,32 @@ body{
     font-family: 'futura_hv_btheavy' !important
 }
 
-header > .navbar{
+header{
     padding: 5px 15px;
     background-color: #fff;
 }
 
-header > .navbar > img {
-    height: 97px;
-}
-
-header > .navbar > a{
+header a{
     color: #327365;
     font-size: 16px;
     font-weight: bold;
+    margin-right: 2%;
 }
 
-header > .navbar > a:hover{
+header a:hover{
     color: #51565b;
     text-decoration: none;
 }
 
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#327365' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler{
+  border-color: #327365;
+  width: 40%;
+  margin: 10px auto;
+}
 
 footer{
     border-top: 10px solid #144035;
@@ -147,5 +153,19 @@ footer .bottom{
     font-style: italic;
 }
 
+@media(max-width:991px){
+    header {
+        text-align: center;
+    }
+    header a{
+        display: block;
+    }
+}
+
+@media(min-width:992px){
+    #menu{
+        display: block;
+    }
+}
 
 

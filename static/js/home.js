@@ -32,28 +32,15 @@ $(document).ready(function() {
         manualAdvance: false, //Force manual transitions
         captionOpacity:0.7 //Universal caption opacity
     });
-
-    $('.nivo-prevNav').css('display', 'none');
-    $('.nivo-nextNav').css('display', 'none');
         
-    $('.nivo-imageLink').hover(
+    $('.carousel-item, .carousel-control-prev, .carousel-control-next, .carousel-control-prev-icon, .carousel-control-next-icon').hover(
         function(){
-            $('.nivo-prevNav').css('display', 'block');
-            $('.nivo-nextNav').css('display', 'block');
+            $('.carousel-control-prev-icon').css('display', 'block');
+            $('.carousel-control-next-icon').css('display', 'block');
         },
         function(){
-            $('.nivo-prevNav').css('display', 'none');
-            $('.nivo-nextNav').css('display', 'none');
-        }
-    );
-    $('.nivo-prevNav, .nivo-nextNav').hover(
-        function(){
-            $('.nivo-prevNav').css('display', 'block');
-            $('.nivo-nextNav').css('display', 'block');
-        },
-        function(){
-            $('.nivo-prevNav').css('display', 'none');
-            $('.nivo-nextNav').css('display', 'none');
+            $('.carousel-control-prev-icon').css('display', 'none');
+            $('.carousel-control-next-icon').css('display', 'none');
         }
     );
 });
