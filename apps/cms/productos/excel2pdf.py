@@ -13,10 +13,12 @@ def excel_to_pdf(filename, title):
     pdf.set_xy(0, 0)
 
     # Generating The header of the file
+    image_path = 'static/img/logo.png'
+    pdf.image(image_path, x=10, y=8, w=75, h=27)
     pdf.set_font('arial', 'BU', 16)
     pdf.set_text_color(236, 126, 30)
     pdf.cell(60)
-    pdf.cell(0, 50, title, 0, 2, 'R')
+    pdf.cell(130, 50, title, 0, 2, 'R')
     pdf.cell(-40)
 
     # Generating the table header
@@ -42,7 +44,8 @@ def excel_to_pdf(filename, title):
 
 # If verifies the availability of
 def valid(value):
-    if (value is None or value.lower() == "no"):
+    # if (value is None or value.lower() == "no"):
+    if (value is None):        
         return False
     return True
 
