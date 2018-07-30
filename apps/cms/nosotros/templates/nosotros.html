@@ -15,23 +15,27 @@
     </div>
     
     <section class="container">
-        <div class="nosotros-img">
-            <img src="{% static 'img/src/nosotros/nosotros.png' %}" class="mx-auto d-block">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="nosotros-img">
+                    <img src="{% static 'img/src/nosotros/nosotros.png' %}" class="img-fluid mx-auto d-block">
+                </div>
+            </div>
         </div>
         
         <div class="row nosotros-texto mt-3 mb-5">
-            <div class="col-6 left">
+            <div class="col-lg-6 col-md-12 col-sm-12 left">
                 <p>
                     {{ nosotros.columna_uno|safe }}
                 </p>
             </div>
-            <div class="col-6 right">
+            <div class="col-lg-6 col-md-12 col-sm-12 right">
                 <p>
                     {{ nosotros.columna_dos|safe }}
                 </p>
             </div>
 
-            <div class="col-6 mt-4 mb-5 left">
+            <div class="col-lg-6 col-md-12 col-sm-12 mt-4 mb-5 left">
                 <div class="valores row">
                     <div class="valor col-6 color1">
                         ÉTICA
@@ -55,7 +59,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 mt-4 mb-5 right">
+            <div class="col-lg-6 col-md-12 col-sm-12 mt-4 mb-5 right nosotros-imagen">
                 <img src="{% static 'img/src/nosotros/nosotros_right.png' %}">
             </div>
         </div>

@@ -25,7 +25,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 
-                <div id="menu" class="collapse">
+                <div id="menu" class="collapse text-center">
                     <a href="{% url 'home:view' %}">INICIO</a>
                     <a href="{% url 'nosotros:view' %}">NOSOTROS</a>
                     <a href="{% url 'productos:view' %}">PRODUCTOS</a>
@@ -44,23 +44,23 @@
 
     <footer class="container-fluid">
         <div class="row h-100 align-items-center">
-            <div class="col-4 text-center">
+            <div class="col-lg-4 col-md-12 col-sm-12 text-center">
                 <img class="img-fluid" src="{% static 'img/logo.png' %}" alt="Pandock">
             </div>
-            <div class="col-4 footer-menu">
+            <div class="col-lg-4 col-md-12 col-sm-12 footer-menu">
                 <h6>Menú</h6>
-                <ul class="float-left mr-5">
+                <ul class="d-inline-block">
                     <li class="page_item"><a href="">Inicio</a></li>
                     <li class="page_item"><a href="">Nosotros</a></li>
                     <li class="page_item"><a href="">Productos</a></li>
                 </ul>
-                <ul class="float-left">
+                <ul class="d-inline-block">
                     <li class="page_item"><a href="">Recetas</a></li>
                     <li class="page_item"><a href="">Donde Estamos</a></li>
                     <li class="page_item"><a href="">Contáctanos</a></li>
                 </ul>
             </div>
-            <div class="col-4 footer-menu mb-3">
+            <div class="col-lg-4 col-md-12 col-sm-12 footer-menu mb-3">
                 <h6>Recetas: GUARÁLES</h6>
                 <a href="">
                     <img class="receta-img" src="{% static 'img/recetas_guarales.png' %}" align="top"/>

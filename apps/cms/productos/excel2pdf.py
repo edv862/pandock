@@ -3,6 +3,7 @@ import os
 from openpyxl import load_workbook
 from fpdf import FPDF
 
+
 def excel_to_pdf(filename, title):
     data = read_excel(filename)
 
@@ -13,7 +14,7 @@ def excel_to_pdf(filename, title):
 
     # Generating The header of the file
     pdf.set_font('arial', 'BU', 16)
-    pdf.set_text_color(236,126,30)
+    pdf.set_text_color(236, 126, 30)
     pdf.cell(60)
     pdf.cell(0, 50, title, 0, 2, 'R')
     pdf.cell(-40)
@@ -38,11 +39,13 @@ def excel_to_pdf(filename, title):
 
     return pdf
 
+
 # If verifies the availability of
 def valid(value):
-    if (value == None or value == 0 or value == False):
+    if (value is None or value.lower() == "no"):
         return False
     return True
+
 
 # Extracting data from the xls file
 def read_excel(filename):
@@ -56,8 +59,10 @@ def read_excel(filename):
         line = []
 
         # iterate over rows
-        for row in work_sheet['A{}:C{}'.format(work_sheet.min_row,work_sheet.max_row)]:
-            # obtain lines 
+        for row in work_sheet['A{}:C{}'.format(
+            work_sheet.min_row, work_sheet.max_row
+        )]:
+            # obtain lines
             for cell in row:
                 line.append(cell.value)
 
@@ -70,14 +75,15 @@ def read_excel(filename):
             line = []
     return ret
 
+
 # Get file's extension
 def get_extension(file):
     ext = os.path.splitext(str(file))[-1].lower()
     return ext
 
+
 # Create the pdf from the excel received
-def create_pdf(filename,title):
-    
+def create_pdf(filename, title):
     # Get file extension
     ext = get_extension(filename)
 

@@ -5,11 +5,11 @@
     font-size: 14px;
 }
 
-.nosotros-texto .col-6:nth-child(odd){
+.nosotros-texto .left{
     padding: 0 40px 0 95px;
 }
 
-.nosotros-texto .col-6:nth-child(even){
+.nosotros-texto .right{
     padding: 0 95px 0 40px;
 }
 
@@ -51,4 +51,21 @@
 
 .color7{
     border-left: #ef7624 10px solid;
+}
+
+@media(max-width:991px){
+    .nosotros-texto .left{
+        padding: 0;
+    }
+
+    .nosotros-texto .right{
+        padding: 0;
+    }
+
+    .nosotros-texto .nosotros-imagen{
+        text-align: center;
+    }
+    .nosotros-texto .nosotros-imagen img{
+        width: 100%;
+    }
 }

@@ -22,14 +22,22 @@
                     <div class="title">
                         {{ producto.titulo }}
                     </div>
-                    <div class="content clearfix">
-                        <div class="product-content">
-                            <span>{{ producto.titulo }}</span><br>
-                            {{ producto.contenido }}
+                    <div class="content">
+                        <div class="clearfix">
+                            <div class="product-content">
+                                <span>{{ producto.titulo }}</span><br>
+                                {{ producto.contenido }}
+                            </div>
+                            <div class="product-content">
+                                <img class="img-fluid" src="{{ producto.imagen.url }}">
+                            </div>
                         </div>
-                        <div class="product-content">
-                            <img class="img-fluid" src="{{ producto.imagen.url }}">
-                        </div>
+                        {% if producto.archivo %}
+                            <span class="ver-mas">
+                                <img src="{% static 'img/vermas.png' %}">
+                                <a href="{{ producto.archivo.url }}" target="_new">Ver m&aacute;s...</a>
+                            </span>
+                        {% endif %}
                     </div>
                 </div>
             {% endfor %}

@@ -80,8 +80,15 @@ footer .footer-menu{
     height: 192px;
 }
 
+footer .footer-menu ul{
+    margin-right: 2%
+}
+
+footer .footer-menu ul{
+    width: 45%
+}
+
 footer ul li.page_item{
-    width: 170px;
     display: block;
     line-height: 2.5em;
     padding-left: 17px;
@@ -167,5 +174,3 @@ footer .bottom{
         display: block;
     }
 }
-
-
