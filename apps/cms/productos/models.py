@@ -28,20 +28,20 @@ class Producto(TimeStampedModel):
         try:
             excel = self.archivo.file
             new_pdf = create_pdf(excel, self.titulo)
-            path = self.set_pathfile(self.titulo)
 
-            # new_pdf_io = io.BytesIO(str.encode(new_pdf.output('S')))x
-            new_pdf_io = io.BytesIO(new_pdf.output(dest='S').encode('latin-1'))
+            if new_pdf:
+                path = self.set_pathfile(self.titulo)
+                new_pdf_io = io.BytesIO(new_pdf.output(dest='S').encode('latin-1'))
 
-            tmp_file = InMemoryUploadedFile(
-                new_pdf_io,
-                path,
-                path,
-                'application/pdf',
-                sys.getsizeof(new_pdf_io),
-                None
-            )
-            self.archivo = tmp_file
+                tmp_file = InMemoryUploadedFile(
+                    new_pdf_io,
+                    path,
+                    path,
+                    'application/pdf',
+                    sys.getsizeof(new_pdf_io),
+                    None
+                )
+                self.archivo = tmp_file
         except ValueError:
             pass
 
