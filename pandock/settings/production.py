@@ -15,7 +15,7 @@ from .settings import *
 
 DEBUG = False
 
-ALLOWED_HOSTS = [	
+ALLOWED_HOSTS = [
     'http://jhonns862.pythonanywhere.com/',
     'jhonns862.pythonanywhere.com/',
     'jhonns862.pythonanywhere.com',

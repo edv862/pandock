@@ -2,6 +2,8 @@ import sys
 import os
 from openpyxl import load_workbook
 from fpdf import FPDF
+from django.conf import settings
+from django.contrib.staticfiles.templatetags.staticfiles import static
 
 
 def excel_to_pdf(filename, title):
@@ -11,6 +13,7 @@ def excel_to_pdf(filename, title):
     pdf = FPDF()
     pdf.add_page()
     pdf.set_xy(0, 0)
+    pdf.image('http://127.0.0.1:8000/static/img/pdf-lineas.png', 0, 0, pdf.w, pdf.h+20)
 
     # Generating The header of the file
     pdf.set_font('arial', 'BU', 16)
@@ -29,12 +32,13 @@ def excel_to_pdf(filename, title):
     # Seting values of font for the table's values
     pdf.set_font('arial', '', 12)
     pdf.set_text_color(0)
+    pdf.set_fill_color(255, 255, 255)
 
     for row in data:
         col_a = str(row[0])
         col_b = str(row[1])
-        pdf.cell(150, 10, '%s' % (col_a), 1, 0, 'L')
-        pdf.cell(20, 10, '%s' % (col_b), 1, 2, 'L')
+        pdf.cell(150, 10, '%s' % (col_a), 1, 0, 'L', True)
+        pdf.cell(20, 10, '%s' % (col_b), 1, 2, 'L', True)
         pdf.cell(-150)
 
     return pdf
