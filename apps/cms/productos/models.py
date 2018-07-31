@@ -1,5 +1,6 @@
 import io
 import sys
+import datetime
 from django.db import models
 from model_utils.models import TimeStampedModel
 from django.core.files.uploadedfile import InMemoryUploadedFile
@@ -47,5 +48,7 @@ class Producto(TimeStampedModel):
 
     def set_pathfile(self, titulo):
         path = 'media/productos/pdf/'
-        pdf_title = titulo.replace(" ", "_").lower() + '.pdf'
+        now = datetime.datetime.now()
+        date = '_' + str(now.day) + '_' + str(now.month) + '_' + str(now.year)
+        pdf_title = titulo.replace(" ", "_").lower() + date + '.pdf'
         return path + pdf_title
