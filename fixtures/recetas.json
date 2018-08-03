@@ -1,0 +1,149 @@
+[
+{
+    "model": "recetas.categoria",
+    "pk": 1,
+    "fields": {
+        "created": "2018-07-31T21:59:10.938Z",
+        "modified": "2018-07-31T21:59:10.938Z",
+        "nombre": "B\u00e1sicas"
+    }
+},
+{
+    "model": "recetas.categoria",
+    "pk": 2,
+    "fields": {
+        "created": "2018-07-31T23:39:49.422Z",
+        "modified": "2018-07-31T23:39:49.426Z",
+        "nombre": "Panader\u00eda"
+    }
+},
+{
+    "model": "recetas.categoria",
+    "pk": 3,
+    "fields": {
+        "created": "2018-07-31T23:39:55.874Z",
+        "modified": "2018-07-31T23:39:55.876Z",
+        "nombre": "Pasteler\u00eda"
+    }
+},
+{
+    "model": "recetas.categoria",
+    "pk": 4,
+    "fields": {
+        "created": "2018-07-31T23:40:06.168Z",
+        "modified": "2018-07-31T23:40:06.170Z",
+        "nombre": "Platos"
+    }
+},
+{
+    "model": "recetas.categoria",
+    "pk": 5,
+    "fields": {
+        "created": "2018-07-31T23:40:14.942Z",
+        "modified": "2018-07-31T23:40:14.944Z",
+        "nombre": "Postres"
+    }
+},
+{
+    "model": "recetas.receta",
+    "pk": 2,
+    "fields": {
+        "created": "2018-08-02T23:32:42.379Z",
+        "modified": "2018-08-03T11:13:05.383Z",
+        "categoria": 1,
+        "imagen": "",
+        "titulo": "Crema Chantilly",
+        "complejidad": 2,
+        "informacion_tecnica": "Acondicionamiento: 10 min.\r\nProducto: 400 ml de crema.",
+        "descripcion": "Crema de pasteler\u00eda elaborada a base de crema gruesa batida con az\u00facar pulverizado y alguna esencia, licor, chocolate, caf\u00e9 u otros. Se emplea como relleno de algunos pastelitos y adem\u00e1s tiene otros usos, como acompa\u00f1ante de frutas para algunos postres y de tartas y pasteles. La gelatina se aplica para dar consistencia a la crema; para una crema m\u00e1s firme, aumentar la cantidad de gelatina.",
+        "slug": "crema_chantilly",
+        "ingredientes": "3 cdas (45 ml) de agua.\r\n\u00bd cda (3,5 g) de gelatina sin sabor, en polvo.\r\n1 pote (200 ml) de crema gruesa para batir, fr\u00eda.\r\n2 cdas (12 g) de az\u00facar pulverizado, cernido.\r\n\u00bc dcdta (1,2 g) de vainilla en polvo o 1 cdta (5 ml) de esencia de vainilla clara o esencia con sabor al gusto o 1 cda de caf\u00e9 tinto.",
+        "preparacion": "1. Enfriar en un bol, preferiblemente de acero inoxidable, con capacidad de unos 750 ml y las varillas de la batidora el\u00e9ctrica en el congelador.\r\n2. Aparte, verter el agua en un bol, espolvorear encima la gelatina en polvo y remojar durante 10 minutos, para su hidrataci\u00f3n.\r\n3. Cocinar la gelatina a fuego bajo, sin dejar hervir, hasta que quede una mezcla transparente. Retirar del fuego y dejar refrescar a temperatura ambiente.\r\n4. Sumergir el bol bien seco en un envase m\u00e1s grande, con hielo y agua (ba\u00f1o de Mar\u00eda inverso). Verter la crema gruesa en el bol.\r\n5. Trabajar la crema con batidora el\u00e9ctrica a velocidad m\u00ednima durante 1 minuto para homogeneizar. Subir a velocidad media, incorporar el az\u00facar pulverizado poco a poco y continuar batiendo hasta formar copos. Agregar la vainilla y la gelatina disuelta y mezclar suavemente con una paleta.\r\n6. Tapar la crema con pl\u00e1stico de envolver y conservar en la nevera, hasta su uso.\r\n\r\n<i>VARIACIONES</i>\r\nCrema chantilly de chocolate\r\nUtilizar la receta de crema chantilly y cernir el az\u00facar pulverizado con 1 cda de cacao o chocolate en polvo y \u00bc de cdta de caf\u00e9 instant\u00e1neo en polvo. Para una crema m\u00e1s oscura, agregar m\u00e1s cacao o chocolate."
+    }
+},
+{
+    "model": "recetas.receta",
+    "pk": 3,
+    "fields": {
+        "created": "2018-08-02T23:33:02.583Z",
+        "modified": "2018-08-03T11:01:10.696Z",
+        "categoria": 2,
+        "imagen": "receta/guarales.png",
+        "titulo": "Guaral\u00e9s",
+        "complejidad": 1,
+        "informacion_tecnica": "Acondicionamiento: 10 min.\r\nHorneado: 10 min.\r\nProducto: 20 barritas.",
+        "descripcion": "Palitos salados tradicionales en la isla de Margarita, elaborados con una masa salada de pan canilla, pan campesino, pan integral, u otros y se consumen en el desayuno, merienda o antes de ir a dormir, remojados en una taza de caf\u00e9 con leche o chocolate caliente. En otras regiones del pa\u00eds se conocen como \u201cse\u00f1oritas\u201d.",
+        "slug": "guarales",
+        "ingredientes": "<i>Masa</i>\r\n1 receta de masa para pan canilla, elaborada con 500 g de harina (ver receta b\u00e1sica)\r\nc/n harina de trigo panadera para espolvorear.\r\nc/n aceite de ma\u00edz para el plat\u00f3n de hornear.\r\n<i>Acabado</i>\r\n2 cdas (30 g) de sal gruesa.",
+        "preparacion": "Para la masa\r\n1. Hacer la masa para pan canilla de acuerdo a la receta.\r\nPara armar panes\r\n2. Aceitar un plat\u00f3n de hornear de unos 46 x 35 cm.\r\n3. Enharinar la mesa de trabajo. Armar 20 bolas de masa y sobar cada bola, sobre la mesa enharinada, dando forma de tubo, hasta alcanzar unos 18 cm cada uno.\r\n4. Verter la sal gruesa sobre la mesa. Repasar cada tubo de masa, sobre la sal gruesa y colocarlos sobre el plat\u00f3n de hornear, dejando unos 2 cm entre cada uno. Dejar reposar unos 5 minutos.\r\nPara hornear\r\n5. Precalentar el horno a 180 \u00baC (350 \u00baF).\r\n6. Colocar el plat\u00f3n en la parrilla del medio, y hornear durante unos 10 minutos o hasta dorar.\r\n7. Refrescar los guaral\u00e9s sobre una rejilla.\r\n\r\n<i>VARIACIONES</i>\r\nSe\u00f1oritas con queso o hierbas\r\nUtilizar la receta guaral\u00e9s y sustituir la sal gruesa por queso parmesano o pecorino, rallado grueso o hierbas como romero, or\u00e9gano, comino u otras, picadas gruesas."
+    }
+},
+{
+    "model": "recetas.receta",
+    "pk": 4,
+    "fields": {
+        "created": "2018-08-02T23:33:19.258Z",
+        "modified": "2018-08-03T12:27:24.238Z",
+        "categoria": 3,
+        "imagen": "receta/bomba_frita.png",
+        "titulo": "Bombas Fritas",
+        "complejidad": 2,
+        "informacion_tecnica": "Acondicionamiento: 30 min\r\nLeudado: 1 hora\r\nFritura: 15 min\r\nProducto: 30 bombas",
+        "descripcion": "Pastelitos de trigo en forma de bola, elaborados con masa bomba, fritos en aceite caliente, rellenos con crema pastelera y cubiertos con az\u00facar. Para producto m\u00e1s fino, rellenarlas con crema chiboust.",
+        "slug": "bombas-fritas",
+        "ingredientes": "<i>Masa</i>\r\n1 receta de masa bomba para fre\u00edr <a href=\"http://127.0.0.1:8000/recetas/masa-bomba-para-freir/\" target=\"_blank\">(ver recetas b\u00e1sicas)</a>\r\nc/n  harina de trigo todo uso, para espolvorear\r\n<i>Relleno</i>\r\n4 tazas (1 litro) de crema pastelera de vainilla <a href=\"http://127.0.0.1:8000/recetas/crema-pastelera-de-vainilla/\" target=\"_blank\">(ver recetas b\u00e1sicas)</a>\r\n<i>Para fre\u00edr</i>\r\n2 tazas (500 ml) de aceite de ma\u00edz\r\n<i>Acabado</i>\r\n1 taza (200 g) de az\u00facar refinado",
+        "preparacion": "1.    Preparar la crema pastelera, seg\u00fan la receta.\r\n<i>Para la masa</i>\r\n2.    Elaborar la masa bomba para fre\u00edr, seg\u00fan la receta.\r\n<i>Para el primer leudado</i>\r\n3.    Hacer una bola con la masa, colocarla en un bol, tapar con pl\u00e1stico de envolver y un pa\u00f1o seco. Dejar reposar en un sitio seco, durante 30 minutos o hasta duplicar su volumen.\r\n<i>Para armar las bombas</i>\r\n4.    Volcar la masa sobre una mesa enharinada. Golpear la masa con los nudillos (pu\u00f1os), para eliminar las burbujas de aire. Espolvorear la masa con la c\u00e1scara de lim\u00f3n rallada y la nuez moscada y volver a amasar durante 5 minutos o hasta que la masa vuelva a lucir homog\u00e9nea.\r\n5.    Extender la masa con un rodillo hasta llegar a un grosor de 1 cm. Enharinar el corta pastas antes de cortar cada pieza y cortar  c\u00edrculos de masa de unos 6 cm de di\u00e1metro.\r\n<i>Para el segundo leudado</i>\r\n6.    Colocar las bombas sobre un plat\u00f3n enharinado, dejando 3 cm entra cada uno y dejar leudar en un lugar seco y sin corrientes de aire durante 30 minutos.\r\n<i>Para fre\u00edr</i>\r\n7.    Calentar el aceite en un caldero o freidora, a \u00be de fuego, hasta hervir. Fre\u00edr las bombas durante 1 minuto por cada lado o hasta dorar al gusto.\r\n<i>Acabado</i>\r\n9.    Esparcir el az\u00facar sobre la mesa de trabajo.\r\n10.  Rodar las bombas sobre el az\u00facar hasta que queden bien impregnadas.\r\n<i>Para rellenar</i>\r\n11.  Hacer un corte transversal hasta tres cuartos de cada bomba y rellenar con la crema utilizando una manga con boquilla ancha o una cuchara.\r\n12.  Servir a temperatura ambiente."
+    }
+},
+{
+    "model": "recetas.receta",
+    "pk": 6,
+    "fields": {
+        "created": "2018-08-03T11:28:40.169Z",
+        "modified": "2018-08-03T12:21:45.534Z",
+        "categoria": 1,
+        "imagen": "",
+        "titulo": "Crema Pastelera de vainilla",
+        "complejidad": 2,
+        "informacion_tecnica": "Acondicionamiento: 10 min\r\nCocci\u00f3n: 15 min\r\nProducto: 1 litro de crema",
+        "descripcion": "Variedad de crema de pasteler\u00eda elaborada a base de leche, huevos, az\u00facar, f\u00e9cula de ma\u00edz (maicena) y vainilla. Esta crema es la m\u00e1s utilizada en la pasteler\u00eda tradicional venezolana. Se emplea sola, como acompa\u00f1ante de algunos postres y sobre todo como relleno de tartas y pasteles. Originalmente se elabora con harina de trigo, pero con f\u00e9cula de ma\u00edz (maicena), la crema adquiere una textura m\u00e1s delicada.",
+        "slug": "crema-pastelera-de-vainilla",
+        "ingredientes": "2    tazas (500 ml) de leche pasteurizada\r\n5    yemas de huevo\r\n1\u00bc  tazas (250 g) de az\u00facar refinado\r\n7     cdas (54 g) de f\u00e9cula de ma\u00edz (maicena), cernida\r\n2     cdas (24 g) de mantequilla sin sal\r\n2     cdtas (10 ml) de esencia de vainilla\r\n1     cdta (2 g) de c\u00e1scara de lim\u00f3n rallado (opcional)",
+        "preparacion": "1.   Calentar la leche a fuego bajo o en ba\u00f1o de mar\u00eda, hasta hervir.\r\n2.   Mientras tanto, batir en un bol las yemas de huevo con el az\u00facar hasta formar una crema espesa y blanquecina, utilizando una batidora el\u00e9ctrica a velocidad alta. Al final, integrarla f\u00e9cula de ma\u00edz mezclando suavemente con batidora de mano.\r\n3.   A\u00f1adir la leche hirviendo a la mezcla de yemas, colar y verter la mezcla en una olla. Llevar al fuego en ba\u00f1o de mar\u00eda moviendo desde el fondo de la olla con paleta de cocina. Cocinar sin dejar hervir, hasta que al levantar la paleta, la crema cubra la paleta sin deslizarse.\r\n4.   Retirar del fuego, agregar la mantequilla, la esencia de vainilla y la cascara de lim\u00f3n rallado, mezclando.\r\n5.   Enseguida, colocar la crema pastelera en otro envase, tapar con pl\u00e1stico de envolver de manera que el pl\u00e1stico quede en contacto con la crema y colocarlo en un ba\u00f1o de hielo y agua (ba\u00f1o de mar\u00eda inverso) hasta uso, para evitar que se forme nata.\r\n\r\n<i>Nota:</i> la leche tambi\u00e9n se puede calentar en el horno de microondas. S\u00ed se calienta a fuego directo, debe ser muy bajo, para evitar que se pegue al envase.\r\n\r\n<i>Variaciones</i>\r\n<i>Crema pastelera de almendras</i>\r\nUtilizar la receta de crema pastelera, sustituyendo la esencia de vainilla por esencia de almendras.\r\n<i>Crema pastelera de arequipe</i>\r\nUtilizar la mitad (500 ml) de la receta de crema pastelera y mezclarla caliente con 400 ml de arequipe o 1 lata (400 ml) de leche condensada, previamente cocida durante 45 minutos en olla de presi\u00f3n.\r\n<i>Crema pastelera de caf\u00e9</i>\r\nUtilizar la receta de crema pastelera y cernir la f\u00e9cula de ma\u00edz con una cdta de caf\u00e9 instant\u00e1neo; para un sabor m\u00e1s fuerte, agregar m\u00e1s caf\u00e9.\r\n<i>Crema pastelera de chocolate</i>\r\nUtilizar la receta de crema pastelera y cernir la f\u00e9cula de ma\u00edz, con 3 cdtas de cacao en polvo y \u00bc de cdta de caf\u00e9 instant\u00e1neo.\r\n<i>Crema pastelera de mandarina</i>\r\nUtilizar la receta de crema pastelera, sustituyendo la esencia de vainilla por esencia de mandarina y la c\u00e1scara de lim\u00f3n por 2 cdtas de cascara de mandarina rallada."
+    }
+},
+{
+    "model": "recetas.receta",
+    "pk": 7,
+    "fields": {
+        "created": "2018-08-03T11:33:33.954Z",
+        "modified": "2018-08-03T12:22:32.306Z",
+        "categoria": 1,
+        "imagen": "",
+        "titulo": "Masa Bomba para fre\u00edr",
+        "complejidad": 1,
+        "informacion_tecnica": "Acondicionamiento: 30 min\r\nLeudado: 30 min\r\nProducto: 900 g de masa",
+        "descripcion": "Masa de harina de trigo, suave, semi dulce y de mediana fermentaci\u00f3n, que se abomba al fre\u00edrla. Se usa para elaborar pastelitos como bombas fritas, donas y otros.",
+        "slug": "masa-bomba-para-freir",
+        "ingredientes": "4     tazas (500 g) de harina de trigo todo uso (000)\r\n3     cdas (36 g) de levadura instant\u00e1nea\r\n\u00bc     taza (50 g) de az\u00facar refinado\r\n\u00bd     cdta (2,5 g) de sal\r\n\u00be     taza (180 ml) de leche tibia, previamente hervida\r\n2      huevos\r\n4      cdas (50 g) de mantequilla sin sal, blanda\r\n\u00bd     cda (3 g) de c\u00e1scara de lim\u00f3n rallada\r\n\u00bd     cdta (2,5 g) de nuez moscada en polvo\r\nc/n  harina de trigo todo uso para espolvorear",
+        "preparacion": "1.   Cernir la harina de trigo con la levadura instant\u00e1nea, el az\u00facar y la sal.\r\n2.   Aparte, mezclar la leche con los huevos en un bol. Incorporar 2 tazas de la mezcla de harina, poco a poco, revolviendo con batidora de mano, hasta obtener una mezcla homog\u00e9nea.\r\n3.   Colocar el resto de la harina en forma de volc\u00e1n, sobre la mesa de trabajo. Verter en el centro la mezcla h\u00fameda y unir con una esp\u00e1tula. Amasar durante 10 minutos o hasta obtener una masa lisa y suave que no se pegue de las manos, sobarla, extendi\u00e9ndola con el rodillo y doblando, unas seis veces. Durante el amasado, incorporar la mantequilla poco a poco y espolvorear harina sobre la mesa de trabajo.\r\n<i>Para el primer leudado</i>\r\n4.   Hacer una bola con la masa, colocarla en un bol, tapar con pl\u00e1stico de envolver y un pa\u00f1o seco. Dejar reposar en un sitio seco, durante 30 min o hasta duplicar su volumen.\r\nPara conservar la masa\r\n5.   Colocar la masa en una bolsa pl\u00e1stica y llevarla a un envase de pl\u00e1stico con tapa. Tapar el envase y llevarlo a la nevera o congelador. Se puede refrigerar hasta por 48 horas siguientes a su elaboraci\u00f3n o congelar hasta por 30 d\u00edas."
+    }
+},
+{
+    "model": "recetas.receta",
+    "pk": 8,
+    "fields": {
+        "created": "2018-08-03T11:34:23.071Z",
+        "modified": "2018-08-03T11:34:23.080Z",
+        "categoria": 1,
+        "imagen": "",
+        "titulo": "Crema para lionesas",
+        "complejidad": 1,
+        "informacion_tecnica": "Acondicionamiento: 30 min\r\nCocci\u00f3n: 15 min\r\nProducto: 800 ml de crema",
+        "descripcion": "Crema de pasteler\u00eda compuesta por una mezcla de crema pastelera, crema de leche gruesa, batida a medio punto  y gelatina. Seg\u00fan el sabor de la crema pastelera, se obtendr\u00e1 crema lionesa de vainilla, chocolate, caf\u00e9, almendras, u otros. Para un sabor m\u00e1s intenso, agregar una cantidad adicional de esencia.",
+        "slug": "crema-para-lionesas",
+        "ingredientes": "2   tazas (500 ml) de crema pastelera con sabor al gusto, bien fr\u00eda (ver receta).\r\n\u00bc  taza (62 ml) de agua \r\n1   cda (7 g) de gelatina sin sabor, en polvo.\r\n1   pote (200 ml) de crema gruesa para batir, muy fr\u00eda\r\n3   cdas (18 g) de az\u00facar pulverizado",
+        "preparacion": "1.  Enfriar  un bol de acero inoxidable, con capacidad de 750 ml y las varillas de la batidora el\u00e9ctrica en el congelador.\r\n2.  Elaborar la crema pastelera seg\u00fan la receta.\r\n3.  Aparte, verter \u00bc de taza de agua en un bol, espolvorear encima la gelatina en polvo y remojar durante 10 minutos, para su hidrataci\u00f3n.\r\n4.  Cocinar la gelatina a fuego bajo, sin dejar hervir, hasta disolver. Retirar del fuego y dejar refrescar a temperatura ambiente.\r\n5.  Trabajar la crema con batidora el\u00e9ctrica a velocidad m\u00ednima, durante 1 minuto para homogeneizar. Subir a velocidad media, incorporar el az\u00facar poco a poco y continuar batiendo durante 1 minuto o hasta comenzar a espesar. La crema debe quedar semi batida. Agregar la gelatina fr\u00eda  y mezclar con batidora manual.\r\n6.  Incorporar la crema semi batida a la crema pastelera, suavemente, mezclando con batidor manual, hasta lograr una mezcla homog\u00e9nea.\r\n7.  Tapar con pl\u00e1stico de envolver y conservar en la nevera, hasta su uso."
+    }
+}
+]
