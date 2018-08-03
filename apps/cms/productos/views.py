@@ -11,5 +11,5 @@ class ProductosView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
 
-        context['productos'] = Producto.objects.all().order_by('id')
+        context['productos'] = Producto.objects.all().order_by('titulo')
         return context

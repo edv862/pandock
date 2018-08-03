@@ -47,6 +47,7 @@ APPS = [
     'apps.cms.home.apps.HomeConfig',
     'apps.cms.nosotros.apps.NosotrosConfig',
     'apps.cms.productos.apps.ProductosConfig',
+    'apps.cms.recetas.apps.RecetasConfig',
     'apps.cms.donde_estamos.apps.DondeEstamosConfig',
 ]
 

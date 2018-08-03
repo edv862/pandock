@@ -1,0 +1,122 @@
+/*
+    Acordion arrows
+*/
+.angle-close{
+    display: none;
+}
+
+[aria-expanded="false"] .angle-open {
+    display: block;
+}
+
+[aria-expanded="false"] .angle-close {
+    display: none;
+}
+
+[aria-expanded="true"] .angle-open {
+    display: none;
+}
+
+[aria-expanded="true"] .angle-close {
+    display: block;
+}
+
+/* 
+    Verde #327365
+    Verde oscuro #125e4d
+
+    Anaranjado #f79147
+    Anaranjado oscuro #c86016
+    
+    Gris claro #f4f3f3
+*/
+#page-title{
+    margin-bottom: 0 !important;
+}
+
+.title{
+    margin-bottom: 0 !important;
+}
+
+.container{
+    padding: 0;
+}
+
+#recetas-accordion{
+    padding-left: 0;
+    min-height: 60vh;
+    background: #f79147;
+}
+
+.card{
+    border: none;
+}
+
+.card-header{
+    background: #f79147;
+    border-bottom: 1px solid #125e4d;
+    padding: 10px 30px 10px 30px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.card-header h5{
+    font-size: 16px;
+}
+
+.card-body{
+    padding: 10px 10px 10px 30px;
+}
+
+.card-body a, .card-body a:hover{
+    color: #125e4d;
+}
+
+.descripcion-receta{
+    padding: 20px 20px 20px 30px;
+    min-height: 80vh;
+    background: url('../../../img/bg_recetas.png');
+    background-repeat: repeat;
+}
+
+.descripcion-receta a{
+    color: #327365;
+}
+
+.descripcion-receta .imagen-receta{
+    width: 420px;
+    border-bottom: solid 3px #8a7145;
+    border-top: solid 3px #f1d8b4;
+    border-left: solid 3px #c2a06b;
+    border-right: solid 3px #dfb770;
+    float: right;
+    margin: 20px 20px 20px 60px;
+}
+
+.descripcion-receta pre{
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+.descripcion-receta .naranja, .descripcion-receta i{
+    color: #f79147;
+}
+
+.descripcion-receta i{
+    font-style: normal;
+}
+
+.descripcion-receta h3{
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.descripcion-receta h4{
+    font-size: 14px;
+}
+.descripcion-receta pre{
+    line-height: 20px;
+    font-family: 'futura_hv_btheavy' !important;
+    padding-left: 10px;
+}

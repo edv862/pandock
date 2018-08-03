@@ -11,7 +11,9 @@ class Producto(TimeStampedModel):
     titulo = models.CharField(max_length=100)
     contenido = models.TextField()
     imagen = models.ImageField(
+        "Imagen (logo por default)",
         upload_to='productos/producto',
+        default='../static/img/logo.png',
         blank=True,
         null=True,
     )
@@ -21,8 +23,11 @@ class Producto(TimeStampedModel):
         null=True,
     )
 
+    class Meta:
+        ordering = ['pk', ]
+
     def __str__(self):
-        return str(self.pk) + " - " + self.titulo
+        return self.titulo
 
     def clean(self):
         try:

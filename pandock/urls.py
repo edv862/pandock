@@ -23,6 +23,7 @@ urlpatterns = [
     url(r'^', include('apps.cms.home.urls', namespace='home')),
     url(r'^nosotros/', include('apps.cms.nosotros.urls', namespace='nosotros')),
     url(r'^productos/', include('apps.cms.productos.urls', namespace='productos')),
+    url(r'^recetas/', include('apps.cms.recetas.urls', namespace='recetas')),
     url(r'^sedes/', include('apps.cms.donde_estamos.urls', namespace='donde_estamos')),
     url(r'^admin/', admin.site.urls),
 ]
