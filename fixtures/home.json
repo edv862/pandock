@@ -1,0 +1,56 @@
+[
+{
+    "model": "home.slider",
+    "pk": 1,
+    "fields": {
+        "created": "2018-08-03T13:59:46.281Z",
+        "modified": "2018-08-03T13:59:46.283Z",
+        "image": "home/slider/slider0.png",
+        "posicion": 1
+    }
+},
+{
+    "model": "home.slider",
+    "pk": 2,
+    "fields": {
+        "created": "2018-08-03T13:59:58.227Z",
+        "modified": "2018-08-03T13:59:58.229Z",
+        "image": "home/slider/slider_rLuSolq.png",
+        "posicion": 2
+    }
+},
+{
+    "model": "home.slider",
+    "pk": 3,
+    "fields": {
+        "created": "2018-08-03T14:00:05.944Z",
+        "modified": "2018-08-03T14:00:05.946Z",
+        "image": "home/slider/slider2_mImZH57.png",
+        "posicion": 3
+    }
+},
+{
+    "model": "home.noticia",
+    "pk": 1,
+    "fields": {
+        "created": "2018-08-03T14:01:18.362Z",
+        "modified": "2018-08-03T14:01:18.363Z",
+        "titulo": "Noticia 1",
+        "image": "home/noticias/noticias3_n7Mj0le.png",
+        "texto": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "posicion": 1
+    }
+},
+{
+    "model": "home.noticia",
+    "pk": 2,
+    "fields": {
+        "created": "2018-08-03T14:01:26.039Z",
+        "modified": "2018-08-03T14:01:26.040Z",
+        "titulo": "Noticia 2",
+        "image": "",
+        "texto": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "posicion": 2
+    }
+}
+]
