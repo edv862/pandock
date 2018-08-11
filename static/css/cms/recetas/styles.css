@@ -38,10 +38,6 @@
     margin-bottom: 0 !important;
 }
 
-.container{
-    padding: 0;
-}
-
 #recetas-accordion{
     padding-left: 0;
     min-height: 60vh;

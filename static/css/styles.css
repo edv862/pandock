@@ -115,7 +115,7 @@ footer ul li a:hover{
 
 footer .receta-img{
     height: 150px;
-    width: 150px;
+    width: 210px;
     border: solid 5px;
     border-top-color: #b0b0b0;
     border-left-color: #bbbbbb;
@@ -145,7 +145,7 @@ footer .bottom{
 
 #page-title{
     overflow: hidden;
-    height: 103px;
+    height: 62px;
     margin-bottom: 30px;
     background: url('../img/tabs-divider.png') no-repeat bottom center;
     text-shadow: 1px 1px rgba(255, 255, 255, 1);
@@ -154,8 +154,8 @@ footer .bottom{
 #page-title .title{
     display: block;
     text-align: center;
-    font-size: 40px;
-    line-height: 103px;
+    font-size: 32px;
+    line-height: 62px;
     color: #005544;
     font-style: italic;
 }
