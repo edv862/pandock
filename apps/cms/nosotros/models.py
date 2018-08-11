@@ -4,8 +4,7 @@ from model_utils.models import TimeStampedModel
 
 
 class Nosotros(TimeStampedModel):
-    columna_uno = models.TextField()
-    columna_dos = models.TextField()
+    descripcion = models.TextField()
 
     class Meta:
         verbose_name = 'Nosotros'

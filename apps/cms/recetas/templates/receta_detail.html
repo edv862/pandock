@@ -4,9 +4,11 @@
 <div class="descripcion-receta">
     {% with receta_detail as receta %}        
         <h3 class="naranja">{{ receta.titulo|upper }}</h3>
-        {% if receta.imagen %}
-            <img class="imagen-receta" src="{{ receta.imagen.url }}" alt="">
-        {% endif %}
+        <div class="col-md-12 col-sm-12">
+            {% if receta.imagen %}
+                <img class="imagen-receta" src="{{ receta.imagen.url }}" alt="">
+            {% endif %}
+        </div>
 
         {% autoescape off %}
         <pre>{{ receta.descripcion|default_if_none:"" }}</pre>

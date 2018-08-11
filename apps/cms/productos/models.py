@@ -24,7 +24,7 @@ class Producto(TimeStampedModel):
     )
 
     class Meta:
-        ordering = ['pk', ]
+        ordering = ['titulo', ]
 
     def __str__(self):
         return self.titulo

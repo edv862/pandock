@@ -7,12 +7,8 @@
 }
 
 .mapa-wrapper{
-    height: 914px;
-    background: url('../../../img/src/donde_estamos/mapa_bg.png') repeat-x top center;
-}
-
-.mapa{
-    height: 900px;
+    background: url('../../../img/src/donde_estamos/mapa_bg.png') repeat-x center center;
+    background-size: contain;
 }
 
 .direcciones-wrapper{

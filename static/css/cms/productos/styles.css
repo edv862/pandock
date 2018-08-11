@@ -7,6 +7,10 @@
     width: 100%;
 }
 
+#product-accordion .set{
+    width: 70%;
+}
+
 #product-accordion .title{
     margin: 0;
     width: auto;
@@ -17,6 +21,17 @@
     background: url('../../../img/src/productos/fondo-productos.png') no-repeat center center;
     background-size: cover;
     height: auto;
+    width: 95%
+}
+
+#product-accordion .product-text{
+    width: 64% !important;
+    max-width: 64% !important;
+}   
+
+#product-accordion .product-image{
+    width: 34% !important;
+    max-width: 34% !important;
 }
 
 #product-accordion .product-content{

@@ -1,10 +1,19 @@
 from django.db import models
 from django.utils.text import slugify
+from django.core.validators import MinValueValidator
 from model_utils.models import TimeStampedModel
 
 
 class Categoria(TimeStampedModel):
     nombre = models.CharField(max_length=200)
+    orden = models.PositiveIntegerField(
+        validators=[MinValueValidator(1)],
+        null=False,
+        blank=False
+    )
+
+    class Meta:
+        ordering = ['orden', ]
 
     def __str__(self):
         return self.nombre
@@ -16,7 +25,6 @@ class Receta(TimeStampedModel):
         related_name='receta',
         on_delete=models.CASCADE
     )
-
     imagen = models.ImageField(
         upload_to='receta',
         blank=True,

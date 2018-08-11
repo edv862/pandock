@@ -2,8 +2,6 @@
 {% load static %}
 
 {% block extra-css %}
-    <link rel="stylesheet" type="text/css" href="{% static "css/nivo-slider/nivo-slider.css" %}" media="screen">
-    <link rel="stylesheet" type="text/css" href="{% static "css/nivo-slider/themes/default/default.css" %}" media="screen">
     <link rel="stylesheet" type="text/css" href="{% static "css/cms/home/styles.css" %}" media="screen">
 {% endblock extra-css %}
 
@@ -11,7 +9,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 px-0 slider-background">
-                <div id="slider-carousel" class="carousel slide" data-ride="carousel" data-interval="999999">
+                <div id="slider-carousel" class="carousel slide" data-ride="carousel" data-interval="2500">
                         <ol class="carousel-indicators">
                             {% for s in slider %}
                                 {% if forloop.first %}
@@ -76,6 +74,5 @@
 {% endblock content %}
 
 {% block extra-js %}
-    <script src='{% static "js/nivo-slider/jquery.nivo.slider.js" %}'></script>
     <script src='{% static "js/home.js" %}'></script>
 {% endblock extra-js %}

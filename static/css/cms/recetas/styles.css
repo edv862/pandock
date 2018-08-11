@@ -40,8 +40,6 @@
 
 #recetas-accordion{
     padding-left: 0;
-    min-height: 60vh;
-    background: #f79147;
 }
 
 .card{
@@ -49,8 +47,8 @@
 }
 
 .card-header{
-    background: #f79147;
-    border-bottom: 1px solid #125e4d;
+    background: #125e4d;
+    border-bottom: 1px solid #fff;
     padding: 10px 30px 10px 30px;
     cursor: pointer;
     color: #fff;
@@ -65,7 +63,7 @@
 }
 
 .card-body a, .card-body a:hover{
-    color: #125e4d;
+    color: #f79147;
 }
 
 .descripcion-receta{
@@ -77,6 +75,13 @@
 
 .descripcion-receta a{
     color: #327365;
+    font-weight: 300;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.descripcion-receta a:hover{
+    font-weight: 900;
 }
 
 .descripcion-receta .imagen-receta{
