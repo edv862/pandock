@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra-css %}
+    <link rel="stylesheet" type="text/css" href="{% static "css/common-accordion/accordion.css" %}" media="screen">
+    <link rel="stylesheet" type="text/css" href="{% static "css/cms/productos/styles.css" %}" media="screen">
+{% endblock extra-css %}
+
+{% block content %}
+    <div class="header-divider"></div>
+
+    <div id="page-title">
+        <h1 class="title">
+            PRODUCTOS
+        </h1>
+    </div>
+    
+    <section class="container productos mb-5">
+        <div id="product-accordion">
+            {% for producto in productos %}
+                <div class="set">
+                    <div class="title">
+                        {{ producto.titulo }}
+                    </div>
+                    <div class="content">
+                        <div class="clearfix">
+                            <div class="product-content">
+                                <span>{{ producto.titulo }}</span><br>
+                                {{ producto.contenido }}
+                            </div>
+                            <div class="product-content">
+                                <img class="img-fluid" src="{{ producto.imagen.url }}">
+                            </div>
+                        </div>
+                        {% if producto.archivo %}
+                            <span class="ver-mas">
+                                <img src="{% static 'img/vermas.png' %}">
+                                <a href="{{ producto.archivo.url }}" target="_new">Ver m&aacute;s...</a>
+                            </span>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+{% endblock content %}
+
+{% block extra-js %}
+        <script src='{% static "js/accordion-common/jquery.msAccordion.js" %}'></script>
+        <script src='{% static "js/productos.js" %}'></script>
+{% endblock extra-js %}

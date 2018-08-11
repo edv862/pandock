@@ -1,0 +1,34 @@
+{% load static %}
+
+{% if receta_detail %}
+<div class="descripcion-receta">
+    {% with receta_detail as receta %}        
+        <h3 class="naranja">{{ receta.titulo|upper }}</h3>
+        {% if receta.imagen %}
+            <img class="imagen-receta" src="{{ receta.imagen.url }}" alt="">
+        {% endif %}
+
+        {% autoescape off %}
+        <pre>{{ receta.descripcion|default_if_none:"" }}</pre>
+        {% endautoescape %}
+        
+        <h4 class="naranja">INFORMACIÓN TÉCNICA</h4>
+        {% autoescape off %}
+        <pre>{{ receta.informacion_tecnica }}</pre>
+        {% endautoescape %}
+
+        <h4 class="naranja">INGREDIENTES</h4>
+        {% autoescape off %}
+        <pre>{{ receta.ingredientes }}</pre>
+        {% endautoescape %}
+        
+        <h4 class="naranja">PREPARACIÓN</h4>
+        {% autoescape off %}
+        <pre>{{ receta.preparacion }}</pre>
+        {% endautoescape %}
+        <br>
+    {% endwith %}
+</div>
+{% else %}
+    <img class="mx-auto d-block" src="{% static 'img/logo.png' %}" width="80%">
+{% endif %}

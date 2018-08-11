@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra-css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/cms/donde-estamos/styles.css' %}" media="screen">
+{% endblock extra-css %}
+
+{% block content %}
+    <div class="header-divider"></div>
+
+    <div id="page-title">
+        <h1 class="title">
+            DÓNDE ESTAMOS
+        </h1>
+    </div>
+    
+    <section class="ubicacion">
+        <div class="row mapa-wrapper">
+            <div class="col-12 text-center">
+                <div class="puntos-wrapper">
+                    {% for direccion in direcciones_mapa %}
+                        <div class="punto_gris" style="margin-top:{{ direccion.y_coord }}px; margin-left: {{ direccion.x_coord }}px;" onmouseover="show('direccion{{ direccion.id }}'), show('detalle{{ direccion.id }}')" onmouseout="hide('direccion{{ direccion.id }}'), hide('detalle{{ direccion.id }}')">
+                            <div id="direccion{{ direccion.id }}" class="punto_gris_detalle" style="visibility: hidden; display: none;">
+                                <span class="naranja">{{ direccion.estado }}</span><br>
+                                {% if direccion.rif %}
+                                    RIF.: {{ direccion.rif }}
+                                {% endif %}
+                                {% if direccion.nit %}
+                                    NIT: {{ direccion.nit }}
+                                {% endif %}
+                                <br>
+                                Dirección: {{ direccion.direccion }}<br>
+                                Telf: {{ direccion.telefono }}<br>
+                                {% if direccion.fac %}
+                                    Fax: {{ direccion.fax }}
+                                {% endif %}
+                                E-mail: {{ direccion.email }}<br>
+                            </div>
+                            <div id="detalle{{ direccion.id }}" class="box_punto_gris" style="visibility: hidden; display: none;"></div>
+                        </div>
+            
+
+                    {% endfor %}
+                    <img class="img-fluid mapa" src="{% static 'img/src/donde_estamos/mapa.png' %}">
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid direcciones-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 pl-5">
+                        <div class="row">
+                            <div class="col-6 text-left">
+                                <ul class="direcciones">
+                                    {% for direccion in direcciones1 %}
+                                        <li>
+                                            <a class="direccion" href="">{{ direccion.estado }}</a>
+                                        </li>
+                                    {% endfor %}
+                                    <li>
+                                </ul>
+                            </div>
+                            <div class="col-6 text-left">
+                                <ul class="direcciones">
+                                    {% for direccion in direcciones2 %}
+                                        <li>
+                                            <a class="direccion" href="">{{ direccion.estado }}</a>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 indicaciones">
+                        <span>Titulo</span><br>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius cum soluta veritatis quos, error excepturi, architecto, atque incidunt voluptas est dicta asperiores. Dolorum earum debitis, praesentium doloribus perspiciatis quo adipisci.
+                    </div>
+                    <div class="col-4 pt-5 text-center">
+                        <iframe id="google_map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=es&amp;geocode=&amp;q=10.229016666666666+,+-67.59781388888888&amp;aq=&amp;sll=10.950903,-63.868933&amp;sspn=0.007394,0.011297&amp;ie=UTF8&amp;t=m&amp;z=14&amp;ll=10.229017,-67.597814&amp;output=embed"></iframe>
+                        <a class="mapa-link float-left" href="">Ver mapa más grande</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}
+
+{% block extra-js %}
+        <script src='{% static "js/ubicacion.js" %}'></script>
+{% endblock extra-js %}
