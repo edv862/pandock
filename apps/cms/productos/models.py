@@ -13,7 +13,7 @@ class Producto(TimeStampedModel):
     imagen = models.ImageField(
         "Imagen (logo por default)",
         upload_to='productos/producto',
-        default='../static/img/logo.png',
+        default='../assets/img/logo.png',
         blank=True,
         null=True,
     )
