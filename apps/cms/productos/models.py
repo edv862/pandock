@@ -1,5 +1,6 @@
 import io
 import sys
+import datetime
 from django.db import models
 from model_utils.models import TimeStampedModel
 from django.core.files.uploadedfile import InMemoryUploadedFile
@@ -33,24 +34,26 @@ class Producto(TimeStampedModel):
         try:
             excel = self.archivo.file
             new_pdf = create_pdf(excel, self.titulo)
-            path = self.set_pathfile(self.titulo)
 
-            # new_pdf_io = io.BytesIO(str.encode(new_pdf.output('S')))x
-            new_pdf_io = io.BytesIO(new_pdf.output(dest='S').encode('latin-1'))
+            if new_pdf:
+                path = self.set_pathfile(self.titulo)
+                new_pdf_io = io.BytesIO(new_pdf.output(dest='S').encode('latin-1'))
 
-            tmp_file = InMemoryUploadedFile(
-                new_pdf_io,
-                path,
-                path,
-                'application/pdf',
-                sys.getsizeof(new_pdf_io),
-                None
-            )
-            self.archivo = tmp_file
+                tmp_file = InMemoryUploadedFile(
+                    new_pdf_io,
+                    path,
+                    path,
+                    'application/pdf',
+                    sys.getsizeof(new_pdf_io),
+                    None
+                )
+                self.archivo = tmp_file
         except ValueError:
             pass
 
     def set_pathfile(self, titulo):
         path = 'media/productos/pdf/'
-        pdf_title = titulo.replace(" ", "_").lower() + '.pdf'
+        now = datetime.datetime.now()
+        date = '_' + str(now.day) + '_' + str(now.month) + '_' + str(now.year)
+        pdf_title = titulo.replace(" ", "_").lower() + date + '.pdf'
         return path + pdf_title
