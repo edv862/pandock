@@ -1,0 +1,290 @@
+[
+{
+    "model": "productos.producto",
+    "pk": 1,
+    "fields": {
+        "created": "2018-08-02T12:07:02.670Z",
+        "modified": "2018-08-02T12:07:02.678Z",
+        "titulo": "Aceites & Grasas",
+        "contenido": "Aceite de oliva, de soya, vegetal. Manteca vegetal, manteca heladera, manteca galletera, manteca de cochino. Margarina con sal y sin sal. Mantequilla.",
+        "imagen": "productos/producto/set1_1SjyViV.png",
+        "archivo": ""
+    }
+},
+{
+    "model": "productos.producto",
+    "pk": 2,
+    "fields": {
+        "created": "2018-08-02T12:07:30.030Z",
+        "modified": "2018-08-02T12:07:30.037Z",
+        "titulo": "Condimentos, especias, salsas, cremas, caldos y sazonadores.",
+        "contenido": "Salsas (mayonesa, tomate, mostaza, soya, picante, inglesa, ajo). Pasta de tomate, pur\u00e9 de tomate. Sal comestible, glutamato mono s\u00f3dico, sabroseador, vinagre, adobo Ali. Caldo de pollo, carne, gallina, pescado. Vinagre. Cremas. Especias (comino, romero, laurel, clavo, cilantro, mostaza, nuez moscada, an\u00eds).",
+        "imagen": "productos/producto/set2_2hdsjJM.png",
+        "archivo": ""
+    }
+},
+{
+    "model": "productos.producto",
+    "pk": 3,
+    "fields": {
+        "created": "2018-08-02T12:07:50.527Z",
+        "modified": "2018-08-02T12:07:50.534Z",
+        "titulo": "Toppings & Rellenos",
+        "contenido": "Brillos Harmony. Relleno Fruitfil, Cremrey de cacao y avellana, Nutcao, Chamin crema de man\u00ed, Fondant, ganache de chocolate. Topping:  c\u00e1pita m\u00e1gica, heladina, Cocosette troceado, Susy troceada, galleta dulce en trozo de canela, vainilla, Oreo, chocolate.",
+        "imagen": "productos/producto/set3_T8AD3Hu.png",
+        "archivo": ""
+    }
+},
+{
+    "model": "productos.producto",
+    "pk": 4,
+    "fields": {
+        "created": "2018-08-02T12:08:04.694Z",
+        "modified": "2018-08-02T12:08:04.698Z",
+        "titulo": "Bebidas & Refrescos",
+        "contenido": "T\u00e9 instant\u00e1neo Instan-Te, Nestea, t\u00e9 de lim\u00f3n y durazno. Bebida achocolatada Foscao, mezcla achocolatada TACO. Agua mineral. Refresco en polvo Lavital sabor a uva, pi\u00f1a, parchita, naranja, manzana, mandarina, lim\u00f3n, cola, durazno. Mezcla para preparar Chicha y Cocada Lavital. Jugo de tomate. N\u00e9ctar de manzana, durazno, pera, manzana, mango, tamarindo. Bebida Papel\u00f3n con lim\u00f3n.",
+        "imagen": "productos/producto/set4_BH39Zjn.png",
+        "archivo": ""
+    }
+},
+{
+    "model": "productos.producto",
+    "pk": 5,
+    "fields": {
+        "created": "2018-08-02T12:08:20.529Z",
+        "modified": "2018-08-02T12:08:20.536Z",
+        "titulo": "Chocolates & An\u00e1logos",
+        "contenido": "Puratos: Carat de cor cream blanca. Chocolates el Rey: cobertura pastelera especial oscuro y  leche, en gotas, en disco, granulado, sin az\u00facar, l\u00ednea Criollo Natural, l\u00ednea Carenero Superior, cobertura an\u00e1loga blanca y oscura . Chocolate en polvo Lavital. Chocolate blanco Theobroma.",
+        "imagen": "productos/producto/set5.png",
+        "archivo": ""
+    }
+},
+{
+    "model": "productos.producto",
+    "pk": 6,
+    "fields": {
+        "created": "2018-08-02T12:08:37.415Z",
+        "modified": "2018-08-02T12:08:37.422Z",
+        "titulo": "Colorantes & Esencias",
+        "contenido": "Colorantes en polvo y Vainillin  Panam.  Esencias l\u00edquidas Panam.",
+        "imagen": "productos/producto/set6.png",
+        "archivo": ""
+    }
+},
+{
+    "model": "productos.producto",
+    "pk": 7,
+    "fields": {
+        "created": "2018-08-02T12:08:55.258Z",
+        "modified": "2018-08-02T12:08:55.262Z",
+        "titulo": "Confites & Velas",
+        "contenido": "Carnaval de colores surtidos. Velas de cumplea\u00f1os BIPA.",
+        "imagen": "productos/producto/set7.png",
+        "archivo": ""
+    }
+},
+{
+    "model": "productos.producto",
+    "pk": 8,
+    "fields": {
+        "created": "2018-08-02T12:09:58.227Z",
+        "modified": "2018-08-02T12:09:58.233Z",
+        "titulo": "Endulzantes & Sirope & Glicerina",
+        "contenido": "Finazucar, dextrosa, glucosa, sirope, glicerina.",
+        "imagen": "productos/producto/set8.png",
+        "archivo": ""
+    }
+},
+{
+    "model": "productos.producto",
+    "pk": 9,
+    "fields": {
+        "created": "2018-08-02T12:10:13.820Z",
+        "modified": "2018-08-02T12:10:13.826Z",
+        "titulo": "Fruta en alm\u00edbar & Fruto seco & Fruta confitada & Pulpa de fruta & Mermelada",
+        "contenido": "Frutas confitadas. Mermeladas. Frutos en alm\u00edbar. Almendras peladas, repeladas, fileteadas. Man\u00ed, higos secos, uvas pasas. Concentrado de frutas. Pulpa de frutas.",
+        "imagen": "productos/producto/set9.png",
+        "archivo": ""
+    }
+},
+{
+    "model": "productos.producto",
+    "pk": 10,
+    "fields": {
+        "created": "2018-08-02T12:10:36.302Z",
+        "modified": "2018-08-02T12:10:36.306Z",
+        "titulo": "L\u00e1cteos",
+        "contenido": "Arequipe para reposter\u00eda y relleno. Arequipe de chocolate. Leche condensada.",
+        "imagen": "productos/producto/set10.png",
+        "archivo": ""
+    }
+},
+{
+    "model": "productos.producto",
+    "pk": 11,
+    "fields": {
+        "created": "2018-08-02T12:10:55.727Z",
+        "modified": "2018-08-02T12:10:55.732Z",
+        "titulo": "Levadura LEVAPAN",
+        "contenido": "Levadura fresca y seca Levapan.",
+        "imagen": "productos/producto/set11.png",
+        "archivo": ""
+    }
+},
+{
+    "model": "productos.producto",
+    "pk": 12,
+    "fields": {
+        "created": "2018-08-02T12:11:07.890Z",
+        "modified": "2018-08-02T12:11:07.895Z",
+        "titulo": "Mejoradores de masa & Emulsificantes",
+        "contenido": "Mejoradores PURATOS: S-500, Relax, Soft\u00b4r. Polvo para hornear Bakerman",
+        "imagen": "productos/producto/set12.png",
+        "archivo": ""
+    }
+},
+{
+    "model": "productos.producto",
+    "pk": 13,
+    "fields": {
+        "created": "2018-08-02T12:11:20.914Z",
+        "modified": "2018-08-02T12:11:20.918Z",
+        "titulo": "Postres LAVITAL",
+        "contenido": "Flan, Pudin (vainilla, fresa, chocolate), Gelatina GELOSAN (fresa, cereza, frambuesa, naranja, lim\u00f3n, pi\u00f1a, uva). Gelatina neutra.",
+        "imagen": "productos/producto/set13.png",
+        "archivo": ""
+    }
+},
+{
+    "model": "productos.producto",
+    "pk": 14,
+    "fields": {
+        "created": "2018-08-02T12:11:38.002Z",
+        "modified": "2018-08-02T12:11:38.008Z",
+        "titulo": "Producto de papel",
+        "contenido": "Blondas, capacillos, papel antigrasa, papel para envolver.",
+        "imagen": "productos/producto/set14.png",
+        "archivo": ""
+    }
+},
+{
+    "model": "productos.producto",
+    "pk": 15,
+    "fields": {
+        "created": "2018-08-02T12:11:50.556Z",
+        "modified": "2018-08-02T12:11:50.561Z",
+        "titulo": "Utensilios & Accesorios (metal y vidrio)",
+        "contenido": "Alumware: moldes, aros, bandejas, torteras, ollas, sartenes, cacerolas para hornear y cocinar. Vasos y copas de vidrio.",
+        "imagen": "productos/producto/set15.png",
+        "archivo": ""
+    }
+},
+{
+    "model": "productos.producto",
+    "pk": 16,
+    "fields": {
+        "created": "2018-08-02T12:12:02.296Z",
+        "modified": "2018-08-02T12:12:02.297Z",
+        "titulo": "Productos qu\u00edmicos & Derivados",
+        "contenido": "Carboximetilcelulosa (CMC), pectina, cr\u00e9mor t\u00e1rtaro, benzoato de sodio, \u00e1cido sorbico, \u00e1cido c\u00edtrico, propionato de calcio (Micoban y Micofast). Conserpan. Sorbato de potasio.",
+        "imagen": "productos/producto/set16.png",
+        "archivo": ""
+    }
+},
+{
+    "model": "productos.producto",
+    "pk": 17,
+    "fields": {
+        "created": "2018-08-02T12:12:16.121Z",
+        "modified": "2018-08-02T12:12:16.122Z",
+        "titulo": "Cremas PURATOS",
+        "contenido": "Crema pastelera en polvo: Cremy 4x4, Cremivit  Finesse, Cremfill Silk vainilla y guan\u00e1bana, merengue, Paloma Chantypak saco, Chanty Fast. Crema de leche UHT Parisienne.",
+        "imagen": "productos/producto/set17.png",
+        "archivo": ""
+    }
+},
+{
+    "model": "productos.producto",
+    "pk": 18,
+    "fields": {
+        "created": "2018-08-02T12:12:27.029Z",
+        "modified": "2018-08-02T12:12:27.033Z",
+        "titulo": "Premezclas PURATOS",
+        "contenido": "Premezclas EASY (panificaci\u00f3n y pizzer\u00eda), premezclas TEGRAL (pasteler\u00eda, boller\u00eda) y premezclas ESKIMO (helader\u00eda).",
+        "imagen": "productos/producto/set18.png",
+        "archivo": ""
+    }
+},
+{
+    "model": "productos.producto",
+    "pk": 19,
+    "fields": {
+        "created": "2018-08-02T12:13:05.880Z",
+        "modified": "2018-08-02T12:13:05.885Z",
+        "titulo": "Empaque & Desechables & Bolsas (cart\u00f3n, pl\u00e1stico, anime, aluminio)",
+        "contenido": "Pl\u00e1stico: cubiertos para picnic, juegos de cubierto de 3 y 4 piezas, vasos y tapas para vasos, platos, contenedores Oyster pack, guantes para manipular alimentos, tinas pl\u00e1sticas. Pitillos y removedores.  Aluminio: Envases de aluminio, papel de aluminio extra fuerte y multiuso. Otros: mangas para decoraci\u00f3n y relleno. Anime: bandeja china, bandeja picnic, bandeja plana, estuche para hamburguesa, bandeja T/A-B-C-D-G-H, platos, bandeja tipo FT. Cartonaje: discos de cart\u00f3n, caja para pizza, separador universal para huevos, bandeja de cart\u00f3n, disco dorado, base dorada, caja para torta, caja para pasteles, plato de cart\u00f3n, tapa de cart\u00f3n/foil aluminio. Bolsas: tipo fuelle, camiseta, bolsa transparente, bolsa tipo tobita, bolsa para basura.",
+        "imagen": "productos/producto/set19.png",
+        "archivo": ""
+    }
+},
+{
+    "model": "productos.producto",
+    "pk": 20,
+    "fields": {
+        "created": "2018-08-02T12:13:26.599Z",
+        "modified": "2018-08-02T12:16:34.522Z",
+        "titulo": "Granos & Semillas",
+        "contenido": "Ajonjol\u00ed descortezado",
+        "imagen": "../assets/img/logo.png",
+        "archivo": ""
+    }
+},
+{
+    "model": "productos.producto",
+    "pk": 21,
+    "fields": {
+        "created": "2018-08-02T12:13:36.785Z",
+        "modified": "2018-08-02T12:16:40.826Z",
+        "titulo": "Harinas & F\u00e9culas",
+        "contenido": "Almid\u00f3n de ma\u00edz. Pasta para pasticho, canel\u00f3n, fideos, pasta cinta industrial, pasta linguine industrial, pasta tornillo industrial, pasta pluma industrial. Semolina Parmigiana. Cazabe Real natural.",
+        "imagen": "../assets/img/logo.png",
+        "archivo": ""
+    }
+},
+{
+    "model": "productos.producto",
+    "pk": 22,
+    "fields": {
+        "created": "2018-08-02T12:13:45.151Z",
+        "modified": "2018-08-02T12:16:45.901Z",
+        "titulo": "Productos del mar",
+        "contenido": "Anchoa en aceite.",
+        "imagen": "../assets/img/logo.png",
+        "archivo": ""
+    }
+},
+{
+    "model": "productos.producto",
+    "pk": 23,
+    "fields": {
+        "created": "2018-08-02T12:13:52.282Z",
+        "modified": "2018-08-02T12:16:50.903Z",
+        "titulo": "Vegetales",
+        "contenido": "Aceitunas con hueso y rellenas, alcaparras, encurtidos, champi\u00f1ones, ma\u00edz entero y en crema, palmito, tomate pelado.",
+        "imagen": "../assets/img/logo.png",
+        "archivo": ""
+    }
+},
+{
+    "model": "productos.producto",
+    "pk": 24,
+    "fields": {
+        "created": "2018-08-02T12:14:00.008Z",
+        "modified": "2018-08-02T12:16:55.871Z",
+        "titulo": "C\u00e1rnicos",
+        "contenido": "Diablitos Underwood. Mortadela de pollo. Salchicha de pollo. Tocineta ahumada",
+        "imagen": "../assets/img/logo.png",
+        "archivo": ""
+    }
+}
+]

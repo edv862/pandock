@@ -1,9 +1,10 @@
 import sys
 import os
+from pandock.settings.production import STATIC_ROOT
 from openpyxl import load_workbook
 from fpdf import FPDF
 from django.conf import settings
-from django.contrib.staticfiles.templatetags.staticfiles import static
+from django.contrib.staticfiles.storage import staticfiles_storage
 
 
 def excel_to_pdf(filename, title):
@@ -13,11 +14,12 @@ def excel_to_pdf(filename, title):
     pdf = FPDF()
     pdf.add_page()
     pdf.set_xy(0, 0)
-    pdf.image('http://127.0.0.1:8000/static/img/pdf-lineas.png', 0, 0, pdf.w, pdf.h+20)
+    background_url = os.path.join(STATIC_ROOT, 'img/pdf-lineas.png')
+    pdf.image(background_url, 0, 0, pdf.w, pdf.h + 20, type='png')
 
     # Generating The header of the file
     image_path = 'static/img/logo.png'
-    pdf.image(image_path, x=10, y=8, w=75, h=27)
+    pdf.image(image_path, x=10, y=8, w=75, h=27, type='png')
     pdf.set_font('arial', 'BU', 16)
     pdf.set_text_color(236, 126, 30)
     pdf.cell(60)
