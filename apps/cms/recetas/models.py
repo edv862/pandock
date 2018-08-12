@@ -38,6 +38,10 @@ class Receta(TimeStampedModel):
     ingredientes = models.TextField(blank=True, null=True)
     preparacion = models.TextField(blank=True, null=True)
 
+    publicado = models.BooleanField(
+        default=True,
+    )
+
     class Meta:
         ordering = ['titulo']
 

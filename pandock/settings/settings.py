@@ -26,6 +26,7 @@ SECRET_KEY = 'f)l2!&*e6xeduolst)c+g=4g!h$n^ih*9140%!1cbvl95zy8pc'
 DEBUG = True
 
 ALLOWED_HOSTS = []
+HOST = '127.0.0.0:8000/'
 
 
 # Application definition

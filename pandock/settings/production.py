@@ -21,6 +21,8 @@ ALLOWED_HOSTS = [
     'jhonns862.pythonanywhere.com',
 ]
 
+HOST = 'jhonns862.pythonanywhere.com/'
+
 LANGUAGE_CODE = 'es-ve'
 
 # Static files (CSS, JavaScript, Images)

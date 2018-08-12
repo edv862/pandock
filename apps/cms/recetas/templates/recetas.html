@@ -33,7 +33,13 @@
                             <div class="card-body">
                                 {% receta_by_category categoria as recetas %}
                                 {% for receta in recetas %}
-                                    <a href="{% url 'recetas:detail' receta.slug %}">- {{ receta.titulo }}</a><br>
+                                    {% if user.is_superuser %}
+                                        <a href="{% url 'recetas:detail' receta.slug %}">- {{ receta.titulo }}</a><br>
+                                    {% else %}
+                                        {% if receta.publicado %}
+                                            <a href="{% url 'recetas:detail' receta.slug %}">- {{   receta.titulo }}</a><br>
+                                        {% endif %}
+                                    {% endif %}
                                 {% endfor %}
                             </div>
                         </div>

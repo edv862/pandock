@@ -1,5 +1,5 @@
 from django.shortcuts import get_object_or_404
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponse
 from django.views.generic import ListView, DetailView
 from .models import Receta, Categoria
 
@@ -20,6 +20,15 @@ class RecetasView(ListView):
 class RecetaDetailView(DetailView):
     template_name = 'recetas.html'
     model = Receta
+
+    def get(self, request, *args, **kwargs):
+        receta = get_object_or_404(Receta, slug=self.kwargs['slug'])
+        print(self.request.user.is_superuser)
+
+        if not(self.request.user.is_superuser or receta.publicado):
+            return HttpResponse('Unauthorized', status=401)
+        else:
+            return super().get(request, *args, **kwargs)
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
