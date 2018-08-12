@@ -235,7 +235,7 @@
         "modified": "2018-08-02T12:16:34.522Z",
         "titulo": "Granos & Semillas",
         "contenido": "Ajonjol\u00ed descortezado",
-        "imagen": "../static/img/logo.png",
+        "imagen": "../assets/img/logo.png",
         "archivo": ""
     }
 },
@@ -247,7 +247,7 @@
         "modified": "2018-08-02T12:16:40.826Z",
         "titulo": "Harinas & F\u00e9culas",
         "contenido": "Almid\u00f3n de ma\u00edz. Pasta para pasticho, canel\u00f3n, fideos, pasta cinta industrial, pasta linguine industrial, pasta tornillo industrial, pasta pluma industrial. Semolina Parmigiana. Cazabe Real natural.",
-        "imagen": "../static/img/logo.png",
+        "imagen": "../assets/img/logo.png",
         "archivo": ""
     }
 },
@@ -259,7 +259,7 @@
         "modified": "2018-08-02T12:16:45.901Z",
         "titulo": "Productos del mar",
         "contenido": "Anchoa en aceite.",
-        "imagen": "../static/img/logo.png",
+        "imagen": "../assets/img/logo.png",
         "archivo": ""
     }
 },
@@ -271,7 +271,7 @@
         "modified": "2018-08-02T12:16:50.903Z",
         "titulo": "Vegetales",
         "contenido": "Aceitunas con hueso y rellenas, alcaparras, encurtidos, champi\u00f1ones, ma\u00edz entero y en crema, palmito, tomate pelado.",
-        "imagen": "../static/img/logo.png",
+        "imagen": "../assets/img/logo.png",
         "archivo": ""
     }
 },
@@ -283,7 +283,7 @@
         "modified": "2018-08-02T12:16:55.871Z",
         "titulo": "C\u00e1rnicos",
         "contenido": "Diablitos Underwood. Mortadela de pollo. Salchicha de pollo. Tocineta ahumada",
-        "imagen": "../static/img/logo.png",
+        "imagen": "../assets/img/logo.png",
         "archivo": ""
     }
 },

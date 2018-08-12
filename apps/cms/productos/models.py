@@ -33,6 +33,8 @@ class Producto(TimeStampedModel):
         try:
             excel = self.archivo.file
             new_pdf = create_pdf(excel, self.titulo)
+
+            print(new_pdf)
             path = self.set_pathfile(self.titulo)
 
             # new_pdf_io = io.BytesIO(str.encode(new_pdf.output('S')))x
