@@ -47,7 +47,7 @@
             <div class="col-lg-4 col-md-12 col-sm-12 text-center">
                 <img class="img-fluid" src="{% static 'img/logo.png' %}" alt="Pandock">
             </div>
-            <div class="col-lg-4 col-md-12 col-sm-12 footer-menu">
+            <div class="col-lg-4 col-md-12 col-sm-12 footer-menu" style='margin-top:-14px'>
                 <h6>Menú</h6>
                 <ul class="d-inline-block">
                     <li class="page_item"><a href="">Inicio</a></li>
@@ -61,7 +61,7 @@
                 </ul>
             </div>
             <div class="col-lg-4 col-md-12 col-sm-12 footer-menu mb-3">
-                <h6>Recetas: GUARÁLES</h6>
+                <h6>Recetas:</h6>
                 <div class="text-center">
                     <div id="recetas-carousel" class="carousel slide" data-ride="carousel" data-interval="3000">
                         <div class="carousel-inner">
@@ -71,12 +71,16 @@
                                         <a class="center" href="{% url 'recetas:detail' receta.slug %}">
                                             <img class="receta-img" src="{{ receta.imagen.url }}" align="top"/>
                                         </a>
+                                        <br>
+                                        <b class="titulo-receta">{{ receta.titulo }}</b>
                                     </div>
                                 {% else %}
                                     <div class="carousel-item">
                                         <a class="center" href="{% url 'recetas:detail' receta.slug %}">
                                             <img class="receta-img" src="{{ receta.imagen.url }}" align="top"/>
                                         </a>
+                                        <br>
+                                        <b class="titulo-receta">{{ receta.titulo }}</b>
                                     </div>
                                 {% endif %}
                             {% endfor %}
