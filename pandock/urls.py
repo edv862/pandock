@@ -25,6 +25,7 @@ urlpatterns = [
     url(r'^productos/', include('apps.cms.productos.urls', namespace='productos')),
     url(r'^recetas/', include('apps.cms.recetas.urls', namespace='recetas')),
     url(r'^sedes/', include('apps.cms.donde_estamos.urls', namespace='donde_estamos')),
+    url(r'^contacto/', include('apps.cms.contacto.urls', namespace='contacto')),
     url(r'^admin/', admin.site.urls),
 ]
 

@@ -25,37 +25,37 @@
     background-color: #327365;
 }
 
-.carousel-control-prev, .carousel-control-prev:hover{
+.home-slider-control-prev, .home-slider-control-prev:hover{
     opacity: 1;
     width: 38px;
     margin-left: -20px;
 }
 
-.carousel-control-next, .carousel-control-next:hover{
+.home-slider-control-next, .home-slider-control-next:hover{
     opacity: 1;
     width: 38px;
     margin-right: -20px;
 }
 
-.carousel-control-prev-icon{
+.carousel-custom-prev-icon{
     height: 36px;
     width: 36px;
     background: url('../../../img/slider-arrows.png') 36px 0;
     display: none;
 }
 
-.carousel-control-next-icon{
+.carousel-custom-next-icon{
     height: 36px;
     width: 36px;
     background: url('../../../img/slider-arrows.png') 0 0;
     display: none;
 }
 
-.carousel-control-prev-icon:hover{
+.carousel-custom-prev-icon:hover{
     background: url('../../../img/slider-arrows.png') 36px 38px;
 }
 
-.carousel-control-next-icon:hover{
+.carousel-custom-next-icon:hover{
     background: url('../../../img/slider-arrows.png') 0 38px;
 }
 

@@ -41,6 +41,10 @@ class Receta(TimeStampedModel):
     publicado = models.BooleanField(
         default=True,
     )
+    slider_display = models.BooleanField(
+        'Mostrar en slider home',
+        default=False,
+    )
 
     class Meta:
         ordering = ['titulo']

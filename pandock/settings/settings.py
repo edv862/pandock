@@ -51,6 +51,7 @@ APPS = [
     'apps.cms.productos.apps.ProductosConfig',
     'apps.cms.recetas.apps.RecetasConfig',
     'apps.cms.donde_estamos.apps.DondeEstamosConfig',
+    'apps.cms.contacto.apps.ContactoConfig',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + APPS
@@ -78,6 +79,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'apps.cms.home.context_processors.recetas_slider_home',
             ],
         },
     },

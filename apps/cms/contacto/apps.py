@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class ContactoConfig(AppConfig):
-    name = 'contacto'
+    name = 'apps.cms.contacto'

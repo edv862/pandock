@@ -14,14 +14,14 @@ $(function()
 });
 
 $(document).ready(function() {
-    $('.carousel-item, .carousel-control-prev, .carousel-control-next, .carousel-control-prev-icon, .carousel-control-next-icon').hover(
+    $('.carousel-item, .home-slider-control-next, .home-slider-control-prev, .carousel-custom-prev-icon, .carousel-custom-next-icon').hover(
         function(){
-            $('.carousel-control-prev-icon').css('display', 'block');
-            $('.carousel-control-next-icon').css('display', 'block');
+            $('.carousel-custom-prev-icon').css('display', 'block');
+            $('.carousel-custom-next-icon').css('display', 'block');
         },
         function(){
-            $('.carousel-control-prev-icon').css('display', 'none');
-            $('.carousel-control-next-icon').css('display', 'none');
+            $('.carousel-custom-prev-icon').css('display', 'none');
+            $('.carousel-custom-next-icon').css('display', 'none');
         }
     );
 });
