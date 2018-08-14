@@ -33,8 +33,14 @@
 .direccion{
     line-height: 2em;
     font-size: 14px;
-    color: #c8c8c8;
+    color: #c8c8c8 !important;
     text-decoration: none;
+    cursor: pointer;
+}
+
+.direccion:hover{
+    color: #f79147 !important;
+    cursor: pointer;
 }
 
 .puntos-wrapper{

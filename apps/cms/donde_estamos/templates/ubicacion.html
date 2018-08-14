@@ -21,14 +21,7 @@
                     {% for direccion in direcciones_mapa %}
                         <div class="punto_gris" style="margin-top:{{ direccion.y_coord }}px; margin-left: {{ direccion.x_coord }}px;" onmouseover="show('direccion{{ direccion.id }}'), show('detalle{{ direccion.id }}')" onmouseout="hide('direccion{{ direccion.id }}'), hide('detalle{{ direccion.id }}')">
                             <div id="direccion{{ direccion.id }}" class="punto_gris_detalle" style="visibility: hidden; display: none;">
-                                <span class="naranja">{{ direccion.estado }}</span><br>
-                                {% if direccion.rif %}
-                                    RIF.: {{ direccion.rif }}
-                                {% endif %}
-                                {% if direccion.nit %}
-                                    NIT: {{ direccion.nit }}
-                                {% endif %}
-                                <br>
+                                <span class="naranja">{{ direccion.razon_social }}</span><br>
                                 Dirección: {{ direccion.direccion }}<br>
                                 Telf: {{ direccion.telefono }}<br>
                                 {% if direccion.fac %}
@@ -55,7 +48,7 @@
                                 <ul class="direcciones">
                                     {% for direccion in direcciones1 %}
                                         <li>
-                                            <a class="direccion" href="">{{ direccion.estado }}</a>
+                                            <a id="dir{{ direccion.id }}" class="direccion" data-id="{{ direccion.id }}" data-link="{{ direccion.mapa_url }}">{{ direccion.estado }}</a>
                                         </li>
                                     {% endfor %}
                                     <li>
@@ -65,7 +58,7 @@
                                 <ul class="direcciones">
                                     {% for direccion in direcciones2 %}
                                         <li>
-                                            <a class="direccion" href="">{{ direccion.estado }}</a>
+                                            <a id="dir{{ direccion.id }}" class="direccion" data-id="{{ direccion.id }}" data-link="{{ direccion.mapa_url }}">{{ direccion.estado }}</a>
                                         </li>
                                     {% endfor %}
                                 </ul>
@@ -73,12 +66,44 @@
                         </div>
                     </div>
                     <div class="col-4 indicaciones">
-                        <span>Titulo</span><br>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius cum soluta veritatis quos, error excepturi, architecto, atque incidunt voluptas est dicta asperiores. Dolorum earum debitis, praesentium doloribus perspiciatis quo adipisci.
+                        {% for direccion in direcciones1 %}
+                            {% if forloop.first %}
+                                <div id="direccion{{direccion.id}}" class="d-block">
+                                    <span>{{ direccion.razon_social }}</span><br>
+                                    {{ direccion.direccion }}<br>
+                                    Telef: {{ direccion.telefono }} <br>
+                                    {% if direccion.fac %}
+                                        Fax: {{ direccion.fax }} <br>
+                                    {% endif %}
+                                    Email: {{ direccion.email }} <br>
+                                </div>
+                            {% else %}
+                                <div id="direccion{{direccion.id}}" class="d-none">
+                                    <span>{{ direccion.razon_social }}</span><br>
+                                    {{ direccion.direccion }}<br>
+                                    Telef: {{ direccion.telefono }} <br>
+                                    {% if direccion.fac %}
+                                        Fax: {{ direccion.fax }} <br>
+                                    {% endif %}
+                                    Email: {{ direccion.email }} <br>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                        {% for direccion in direcciones2 %}
+                            <div id="direccion{{direccion.id}}" class="d-none">
+                                <span>{{ direccion.razon_social }}</span><br>
+                                {{ direccion.direccion }}<br>
+                                Telef: {{ direccion.telefono }} <br>
+                                {% if direccion.fac %}
+                                    Fax: {{ direccion.fax }} <br>
+                                {% endif %}
+                                Email: {{ direccion.email }} <br>
+                            </div>
+                        {% endfor %}
                     </div>
                     <div class="col-4 pt-5 text-center">
-                        <iframe id="google_map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=es&amp;geocode=&amp;q=10.229016666666666+,+-67.59781388888888&amp;aq=&amp;sll=10.950903,-63.868933&amp;sspn=0.007394,0.011297&amp;ie=UTF8&amp;t=m&amp;z=14&amp;ll=10.229017,-67.597814&amp;output=embed"></iframe>
-                        <a class="mapa-link float-left" href="">Ver mapa más grande</a>
+                        <iframe id="google_map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src=""></iframe>
+                        <a id="google_link" class="mapa-link float-left" href="" target="_blank">Ver mapa más grande</a>
                     </div>
                 </div>
             </div>
@@ -87,5 +112,5 @@
 {% endblock content %}
 
 {% block extra-js %}
-        <script src='{% static "js/ubicacion.js" %}'></script>
+        <script src='{% static "js/donde_estamos.js" %}'></script>
 {% endblock extra-js %}
