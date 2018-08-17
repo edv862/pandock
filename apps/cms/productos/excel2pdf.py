@@ -13,7 +13,7 @@ def excel_to_pdf(filename, title):
     pdf.add_page()
     pdf.set_xy(0, 0)
     background_url = os.path.join(STATIC_ROOT, 'img/pdf-lineas.png')
-    pdf.image(background_url, 0, 0, pdf.w, pdf.h + 20, type='png')
+    #pdf.image(background_url, 0, 0, pdf.w, pdf.h + 20, type='png')
 
     # Generating The header of the file
     image_url = os.path.join(STATIC_ROOT, 'img/logo.png')
