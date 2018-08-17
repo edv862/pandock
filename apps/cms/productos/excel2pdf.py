@@ -37,12 +37,32 @@ def excel_to_pdf(filename, title):
     pdf.set_fill_color(255, 255, 255)
 
     for row in data:
+        # Getting row's data
+        height = 10
         col_a = str(row[0])
         col_b = str(row[1])
-        pdf.cell(150, 10, '%s' % (col_a), 1, 0, 'L', True)
-        pdf.cell(20, 10, '%s' % (col_b), 1, 2, 'L', True)
-        pdf.cell(-150)
+        # Save top coordinate
+        top = pdf.y
+        # Calculate x position of next cell
+        offset = pdf.x + 150
 
+        pdf.multi_cell(150, height, '%s' % (col_a), 1, 'J', True)
+
+        # Reset y coordinate
+        pdf.y = top
+        # Move to computed offset
+        pdf.x = offset
+
+        if (len(col_a) > 73):
+            height += height
+
+        pdf.multi_cell(20, height, '%s' % (col_b), 1, 'J', True)
+        pdf.cell(10)
+
+        if pdf.y == 270:
+            pdf.add_page()
+            pdf.y = 20
+            pdf.cell(10)
     return pdf
 
 
