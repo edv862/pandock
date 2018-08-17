@@ -37,6 +37,7 @@ def excel_to_pdf(filename, title):
     pdf.set_fill_color(255, 255, 255)
 
     for row in data:
+        pdf.image(image_url, x=10, y=8, w=75, h=27, type='png')
         # Getting row's data
         height = 10
         col_a = str(row[0])
@@ -61,7 +62,7 @@ def excel_to_pdf(filename, title):
 
         if pdf.y == 270:
             pdf.add_page()
-            pdf.y = 20
+            pdf.y = 40
             pdf.cell(10)
     return pdf
 
