@@ -20,9 +20,9 @@ def excel_to_pdf(filename, title):
     pdf.image(image_url, x=10, y=8, w=75, h=27, type='png')
     pdf.set_font('arial', 'BU', 16)
     pdf.set_text_color(236, 126, 30)
-    pdf.cell(60)
-    pdf.cell(130, 50, title, 0, 2, 'R')
-    pdf.cell(-40)
+    pdf.y = 40
+    pdf.cell(20)
+    pdf.cell(0, 10, title, 0, 2, 'C')
 
     # Generating the table header
     pdf.set_font('arial', 'B', 14)
@@ -37,7 +37,6 @@ def excel_to_pdf(filename, title):
     pdf.set_fill_color(255, 255, 255)
 
     for row in data:
-        pdf.image(image_url, x=10, y=8, w=75, h=27, type='png')
         # Getting row's data
         height = 10
         col_a = str(row[0])
@@ -64,6 +63,15 @@ def excel_to_pdf(filename, title):
             pdf.add_page()
             pdf.y = 40
             pdf.cell(10)
+            pdf.image(image_url, x=10, y=8, w=75, h=27, type='png')
+            pdf.set_font('arial', 'BU', 16)
+            pdf.set_text_color(236, 126, 30)
+            pdf.y = 40
+            pdf.cell(0, 10, title, 0, 2, 'C')
+            # Seting values of font for the table's values
+            pdf.set_font('arial', '', 12)
+            pdf.set_text_color(0)
+            pdf.set_fill_color(255, 255, 255)
     return pdf
 
 
