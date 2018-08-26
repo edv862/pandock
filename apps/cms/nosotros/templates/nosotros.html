@@ -24,9 +24,14 @@
         </div>
         
         <div class="row nosotros-texto mt-3 mb-5">
-            <div class="col-lg-12 col-md-12 col-sm-12 descripcion">
+            <div class="col-lg-6 col-md-12 col-sm-12 left">
                 <p>
-                    {{ nosotros.descripcion|safe }}
+                    {{ nosotros.descripcion_columna1|safe }}
+                </p>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 right">
+                <p>
+                    {{ nosotros.descripcion_columna2|safe }}
                 </p>
             </div>
 
@@ -35,13 +40,13 @@
                     <div class="valor col-6 color1">
                         ÉTICA
                     </div>
-                    <div class="valor col-6 color4">
+                    <div class="valor col-6 color5">
                         PASIÓN
                     </div>
                     <div class="valor col-6 color2">
                         RESPETO HUMANO
                     </div>
-                    <div class="valor col-6 color5">
+                    <div class="valor col-6 color6">
                         PROSPERIDAD
                     </div>
                     <div class="valor col-6 color3">
@@ -49,8 +54,11 @@
                             SATISFACCIÓN <br> EN EL TRABAJO
                         </p>
                     </div>
-                    <div class="valor col-6 color6">
+                    <div class="valor col-6 color7">
                         CREATIVIDAD
+                    </div>
+                    <div class="valor col-6 color4">
+                        SOLIDARIDAD
                     </div>
                 </div>
             </div>

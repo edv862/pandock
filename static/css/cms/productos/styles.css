@@ -8,7 +8,7 @@
 }
 
 #product-accordion .set{
-    width: 70%;
+    width: 85%;
 }
 
 #product-accordion .title{
@@ -41,7 +41,7 @@
     padding: 20px 5px 20px 20px;
 
     color: #51565b;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 2.0em;
 
     max-width: 49%;

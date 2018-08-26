@@ -9,14 +9,15 @@ from .excel2pdf import create_pdf
 
 
 class Producto(TimeStampedModel):
+    DEFAULT_IMG = '../assets/img/logo.png'
+
     titulo = models.CharField(max_length=100)
     contenido = models.TextField()
     imagen = models.ImageField(
         "Imagen (logo por default)",
         upload_to='productos/producto',
-        default='../assets/img/logo.png',
-        blank=True,
-        null=True,
+        default=DEFAULT_IMG,
+        blank=True
     )
     archivo = models.FileField(
         upload_to='productos/pdf',
@@ -29,6 +30,11 @@ class Producto(TimeStampedModel):
 
     def __str__(self):
         return self.titulo
+
+    def save(self, *args, **kwargs):
+        if self.id:
+            self.imagen = self.DEFAULT_IMG
+        super().save(*args, **kwargs)
 
     def clean(self):
         try:

@@ -17,11 +17,12 @@
     <section class="ubicacion">
         <div class="row mapa-wrapper">
             <div class="col-12 text-center">
-                <div class="puntos-wrapper">
+                <div class="puntos-wrapper d-none d-lg-block">
                     {% for direccion in direcciones_mapa %}
                         <div class="punto_gris" style="margin-top:{{ direccion.y_coord }}px; margin-left: {{ direccion.x_coord }}px;" onmouseover="show('direccion{{ direccion.id }}'), show('detalle{{ direccion.id }}')" onmouseout="hide('direccion{{ direccion.id }}'), hide('detalle{{ direccion.id }}')">
                             <div id="direccion{{ direccion.id }}" class="punto_gris_detalle" style="visibility: hidden; display: none;">
                                 <span class="naranja">{{ direccion.razon_social }}</span><br>
+                                RIF: {{ direccion.rif }} <br>
                                 Dirección: {{ direccion.direccion }}<br>
                                 Telf: {{ direccion.telefono }}<br>
                                 {% if direccion.fac %}
@@ -42,7 +43,11 @@
         <div class="container-fluid direcciones-wrapper">
             <div class="container">
                 <div class="row">
-                    <div class="col-4 pl-5">
+                    <div class="col-12 ubicacion-title">
+                        <h4>Estamos ubicados en</h4>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="row">
                             <div class="col-6 text-left">
                                 <ul class="direcciones">
@@ -65,11 +70,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 indicaciones">
+                    <div class="col-lg-4 col-md-6 col-sm-12 indicaciones">
                         {% for direccion in direcciones1 %}
                             {% if forloop.first %}
-                                <div id="direccion{{direccion.id}}" class="d-block">
+                                <div id="text-direccion{{direccion.id}}" class="d-block">
                                     <span>{{ direccion.razon_social }}</span><br>
+                                    RIF: {{ direccion.rif }} <br>
                                     {{ direccion.direccion }}<br>
                                     Telef: {{ direccion.telefono }} <br>
                                     {% if direccion.fac %}
@@ -78,8 +84,9 @@
                                     Email: {{ direccion.email }} <br>
                                 </div>
                             {% else %}
-                                <div id="direccion{{direccion.id}}" class="d-none">
+                                <div id="text-direccion{{direccion.id}}" class="d-none">
                                     <span>{{ direccion.razon_social }}</span><br>
+                                    RIF: {{ direccion.rif }} <br>
                                     {{ direccion.direccion }}<br>
                                     Telef: {{ direccion.telefono }} <br>
                                     {% if direccion.fac %}
@@ -90,8 +97,9 @@
                             {% endif %}
                         {% endfor %}
                         {% for direccion in direcciones2 %}
-                            <div id="direccion{{direccion.id}}" class="d-none">
+                            <div id="text-direccion{{direccion.id}}" class="d-none">
                                 <span>{{ direccion.razon_social }}</span><br>
+                                RIF: {{ direccion.rif }} <br>
                                 {{ direccion.direccion }}<br>
                                 Telef: {{ direccion.telefono }} <br>
                                 {% if direccion.fac %}
@@ -101,7 +109,7 @@
                             </div>
                         {% endfor %}
                     </div>
-                    <div class="col-4 pt-5 text-center">
+                    <div class="col-lg-4 col-md-12 col-sm-12 pt-5 text-center">
                         <iframe id="google_map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src=""></iframe>
                         <a id="google_link" class="mapa-link float-left" href="" target="_blank">Ver mapa más grande</a>
                     </div>

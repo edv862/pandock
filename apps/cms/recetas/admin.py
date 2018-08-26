@@ -5,9 +5,13 @@ from django.utils.safestring import mark_safe
 from .models import Receta, Categoria
 
 
+class CategoriaAdmin(admin.ModelAdmin):
+    list_display = ('nombre', 'orden', )
+
+
 class RecetaAdmin(admin.ModelAdmin):
     empty_value_display = '-Seleccione-'
-    list_display = ('titulo', 'categoria', 'complejidad', 'publicado', 'slider_display', )
+    list_display = ('titulo', 'titulo_resumido', 'categoria', 'complejidad', 'publicado', 'slider_display', )
     list_editable = ('publicado', 'slider_display', )
     exclude = ('slug', )
 
@@ -21,5 +25,5 @@ class RecetaAdmin(admin.ModelAdmin):
     slider_display.short_description = 'Mostrar en slider home'
 
 
-admin.site.register(Categoria)
+admin.site.register(Categoria, CategoriaAdmin)
 admin.site.register(Receta, RecetaAdmin)

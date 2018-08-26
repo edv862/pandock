@@ -31,6 +31,10 @@ class Receta(TimeStampedModel):
         null=True
     )
     titulo = models.CharField(max_length=200)
+    titulo_resumido = models.CharField(
+        "Titulo para el tab de receta",
+        max_length=18
+    )
     complejidad = models.IntegerField(default=1, blank=True, null=True)
     informacion_tecnica = models.TextField(blank=True, null=True)
     descripcion = models.TextField(blank=True, null=True)

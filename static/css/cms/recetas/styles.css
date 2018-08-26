@@ -121,3 +121,15 @@
     font-family: 'futura_hv_btheavy' !important;
     padding-left: 10px;
 }
+
+.carousel-item{
+    transition: transform 2s ease, opacity .5s ease-out;
+}
+
+@media (max-width: 767px){
+    .descripcion-receta .imagen-receta{
+        float: none;
+        width: 100%;
+        margin: 10px auto;
+    }
+}

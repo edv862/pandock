@@ -6,7 +6,7 @@ class ProductoAdmin(admin.ModelAdmin):
     list_display = ('titulo', 'tiene_archivo')
 
     def tiene_archivo(self, obj):
-        if obj.archivo is not None:
+        if obj.archivo:
             return True
         return False
     tiene_archivo.boolean = True

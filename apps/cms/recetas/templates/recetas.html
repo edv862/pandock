@@ -7,6 +7,14 @@
     <link rel="stylesheet" type="text/css" href="{% static "css/cms/recetas/styles.css" %}" media="screen">
 {% endblock extra-css %}
 
+{% block windows_title %}
+    {% if receta_detail %}
+        <title>
+            {{ receta_detail.titulo_resumido }} - Pandock
+        </title>
+    {% endif %}
+{% endblock windows_title %}
+
 {% block content %}
     <div class="header-divider"></div>
 

@@ -1,3 +1,12 @@
+function show(theid) {
+    document.getElementById(theid).style.visibility='visible';
+    document.getElementById(theid).style.display='block';       
+};
+function hide(theid) {
+    document.getElementById(theid).style.visibility='hidden';
+    document.getElementById(theid).style.display='none';    
+};
+
 $(document).ready(function(){
     last_dir = $('.direccion:first').data('id');
     first_link = $('.direccion:first').data('link');
@@ -6,11 +15,11 @@ $(document).ready(function(){
 
     $('.direccion').on('mouseover', function(){
         id = $(this).data('id');
-        $('.indicaciones #direccion'+last_dir).removeClass('d-block');
-        $('.indicaciones #direccion'+last_dir).addClass('d-none');
+        $('.indicaciones #text-direccion'+last_dir).removeClass('d-block');
+        $('.indicaciones #text-direccion'+last_dir).addClass('d-none');
 
         url = $(this).data('link');
-        $('.indicaciones #direccion'+id).addClass('d-block');
+        $('.indicaciones #text-direccion'+id).addClass('d-block');
         $('#google_map').attr('src', url);
         $('#google_link').attr('href', url);
 

@@ -13,7 +13,7 @@ def excel_to_pdf(filename, title):
     pdf.add_page()
     pdf.set_xy(0, 0)
     background_url = os.path.join(STATIC_ROOT, 'img/pdf-lineas.png')
-    pdf.image(background_url, 0, 0, pdf.w, pdf.h + 20, type='png')
+    pdf.image(background_url, 0, 0, pdf.w, pdf.h + 35, type='png')
 
     # Generating The header of the file
     image_url = os.path.join(STATIC_ROOT, 'img/logo.png')
@@ -32,11 +32,28 @@ def excel_to_pdf(filename, title):
     pdf.cell(-150)
 
     # Seting values of font for the table's values
-    pdf.set_font('arial', '', 12)
+    pdf.set_font('arial', '', 10)
     pdf.set_text_color(0)
     pdf.set_fill_color(255, 255, 255)
 
-    for row in data:
+    for i, row in enumerate(data):
+        if i == 21:
+            pdf.add_page()
+            pdf.image(background_url, 0, 0, pdf.w, pdf.h + 35, type='png')
+
+            # Generating The header of the file
+            pdf.image(image_url, x=10, y=8, w=75, h=27, type='png')
+            pdf.set_font('arial', 'BU', 16)
+            pdf.set_text_color(236, 126, 30)
+            pdf.cell(60)
+            pdf.cell(130, 50, title, 0, 2, 'R')
+            pdf.cell(-40)
+
+            # Seting values of font for the table's values
+            pdf.set_font('arial', '', 10)
+            pdf.set_text_color(0)
+            pdf.set_fill_color(255, 255, 255)
+
         col_a = str(row[0])
         col_b = str(row[1])
         pdf.cell(150, 10, '%s' % (col_a), 1, 0, 'L', True)
