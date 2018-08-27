@@ -30,6 +30,17 @@
     
     Gris claro #f4f3f3
 */
+.recetas-list{
+    height: 110px;
+    overflow-y: hidden;
+}
+
+.mas-recetas{
+    margin-left: 14px;
+    color: #125e4d;
+    font-size: 14px;
+}
+
 #page-title{
     margin-bottom: 0 !important;
 }
@@ -120,10 +131,6 @@
     line-height: 20px;
     font-family: 'futura_hv_btheavy' !important;
     padding-left: 10px;
-}
-
-.carousel-item{
-    transition: transform 2s ease, opacity .5s ease-out;
 }
 
 @media (max-width: 767px){

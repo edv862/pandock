@@ -1,0 +1,31 @@
+/*    Anaranjado #f79147    */
+.naranja{
+    color: #f79147;
+}
+
+.contact-text{
+    color: #51565b !important;
+    font-size: 14px;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #ffffff;
+    background-color: #f67a29;
+    border: none !important;
+    border-radius: 0;
+}
+
+.nav-tabs .nav-link{
+    color: #125e4d;
+}
+
+select{
+    color: #495057;
+}
+
+input[type=submit]{
+    padding: 10px 15px;
+    background-color: #f67a29;
+    border: none;
+    color: #fff;
+}

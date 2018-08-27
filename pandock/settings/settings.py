@@ -43,6 +43,7 @@ DJANGO_APPS = [
 THIRD_PARTY_APPS = [
     'django_extensions',
     'django_cleanup',
+    'bootstrap3',
 ]
 
 APPS = [

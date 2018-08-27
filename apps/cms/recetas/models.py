@@ -4,6 +4,17 @@ from django.core.validators import MinValueValidator
 from model_utils.models import TimeStampedModel
 
 
+class RecetasSlider(models.Model):
+    imagen = models.ImageField(
+        upload_to='receta_slider',
+        blank=True,
+        null=True
+    )
+
+    def __str__(self):
+        return "Imagen recetas slider " + str(self.id)
+
+
 class Categoria(TimeStampedModel):
     nombre = models.CharField(max_length=200)
     orden = models.PositiveIntegerField(

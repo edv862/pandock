@@ -13,16 +13,16 @@ def excel_to_pdf(filename, title):
     pdf.add_page()
     pdf.set_xy(0, 0)
     background_url = os.path.join(STATIC_ROOT, 'img/pdf-lineas.png')
-    pdf.image(background_url, 0, 0, pdf.w, pdf.h + 35, type='png')
+    #pdf.image(background_url, 0, 0, pdf.w, pdf.h + 20, type='png')
 
     # Generating The header of the file
     image_url = os.path.join(STATIC_ROOT, 'img/logo.png')
     pdf.image(image_url, x=10, y=8, w=75, h=27, type='png')
     pdf.set_font('arial', 'BU', 16)
     pdf.set_text_color(236, 126, 30)
-    pdf.cell(60)
-    pdf.cell(130, 50, title, 0, 2, 'R')
-    pdf.cell(-40)
+    pdf.y = 40
+    pdf.cell(20)
+    pdf.cell(0, 10, title, 0, 2, 'C')
 
     # Generating the table header
     pdf.set_font('arial', 'B', 14)
@@ -36,30 +36,42 @@ def excel_to_pdf(filename, title):
     pdf.set_text_color(0)
     pdf.set_fill_color(255, 255, 255)
 
-    for i, row in enumerate(data):
-        if i == 21:
-            pdf.add_page()
-            pdf.image(background_url, 0, 0, pdf.w, pdf.h + 35, type='png')
+    for row in data:
+        # Getting row's data
+        height = 10
+        col_a = str(row[0])
+        col_b = str(row[1])
+        # Save top coordinate
+        top = pdf.y
+        # Calculate x position of next cell
+        offset = pdf.x + 150
 
-            # Generating The header of the file
+        pdf.multi_cell(150, height, '%s' % (col_a), 1, 'J', True)
+
+        # Reset y coordinate
+        pdf.y = top
+        # Move to computed offset
+        pdf.x = offset
+
+        if (len(col_a) > 73):
+            height += height
+
+        pdf.multi_cell(20, height, '%s' % (col_b), 1, 'J', True)
+        pdf.cell(10)
+
+        if pdf.y == 270:
+            pdf.add_page()
+            pdf.y = 40
+            pdf.cell(10)
             pdf.image(image_url, x=10, y=8, w=75, h=27, type='png')
             pdf.set_font('arial', 'BU', 16)
             pdf.set_text_color(236, 126, 30)
-            pdf.cell(60)
-            pdf.cell(130, 50, title, 0, 2, 'R')
-            pdf.cell(-40)
-
+            pdf.y = 40
+            pdf.cell(0, 10, title, 0, 2, 'C')
             # Seting values of font for the table's values
-            pdf.set_font('arial', '', 10)
+            pdf.set_font('arial', '', 12)
             pdf.set_text_color(0)
             pdf.set_fill_color(255, 255, 255)
-
-        col_a = str(row[0])
-        col_b = str(row[1])
-        pdf.cell(150, 10, '%s' % (col_a), 1, 0, 'L', True)
-        pdf.cell(20, 10, '%s' % (col_b), 1, 2, 'L', True)
-        pdf.cell(-150)
-
     return pdf
 
 

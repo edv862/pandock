@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.utils.html import format_html
 from django.utils.safestring import mark_safe
 
-from .models import Receta, Categoria
+from .models import Receta, Categoria, RecetasSlider
 
 
 class CategoriaAdmin(admin.ModelAdmin):
@@ -27,3 +27,4 @@ class RecetaAdmin(admin.ModelAdmin):
 
 admin.site.register(Categoria, CategoriaAdmin)
 admin.site.register(Receta, RecetaAdmin)
+admin.site.register(RecetasSlider)

@@ -4,6 +4,7 @@
 
 {% block extra-css %}
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static "css/slider/responsive-slider.css" %}" media="screen">
     <link rel="stylesheet" type="text/css" href="{% static "css/cms/recetas/styles.css" %}" media="screen">
 {% endblock extra-css %}
 
@@ -11,6 +12,10 @@
     {% if receta_detail %}
         <title>
             {{ receta_detail.titulo_resumido }} - Pandock
+        </title>
+    {% else %}
+        <title>
+            Recetas - Pandock
         </title>
     {% endif %}
 {% endblock windows_title %}
@@ -26,7 +31,7 @@
     
     <section class="container-fluid">
         <div class="row recetario">
-            <div id="recetas-accordion" class="col-lg-3 col-md-4 col-sm-12 px-0">
+            <div id="recetas-accordion" class="col-lg-3 col-md-4 col-sm-12 px-0 carousel slide carousel-fade">
                 <div class="card">
                     {% for categoria in categorias %}
                         <div class="card-header" id="tag{{ categoria.id }}" data-toggle="collapse" data-target="#texto{{ categoria.id }}" aria-expanded="false" aria-controls="texto{{ categoria.id }}">
@@ -38,7 +43,7 @@
                         </div>
 
                         <div id="texto{{ categoria.id }}" class="collapse" aria-labelledby="tag{{ categoria.id }}" data-parent="#recetas-accordion">
-                            <div class="card-body">
+                            <div class="card-body recetas-list" id="{{ categoria.id }}">
                                 {% receta_by_category categoria as recetas %}
                                 {% for receta in recetas %}
                                     {% if user.is_superuser %}
@@ -50,8 +55,14 @@
                                     {% endif %}
                                 {% endfor %}
                             </div>
+                            {% if recetas.count > 4 %}
+                                <span class="mas-recetas" data-lista="{{categoria.id}}" data-status='0' data-recetas="{{ recetas.count }}">+ Recetas</span>
+                            {% endif %}
                         </div>
                     {% endfor %}
+                </div>
+                <div class="d-hide d-lg-show" style="height: 350px">
+                    &nbsp;
                 </div>
             </div>
 
@@ -63,5 +74,6 @@
 {% endblock content %}
 
 {% block extra-js %}
+    <script src='{% static "js/slider/responsive-slider.min.js" %}'></script>
     <script src='{% static "js/recetas.js" %}'></script>
 {% endblock extra-js %}

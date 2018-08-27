@@ -1,7 +1,7 @@
 from django.shortcuts import get_object_or_404
 from django.http import JsonResponse, HttpResponse
 from django.views.generic import ListView, DetailView
-from .models import Receta, Categoria
+from .models import Receta, Categoria, RecetasSlider
 
 
 class RecetasView(ListView):
@@ -13,6 +13,7 @@ class RecetasView(ListView):
 
         context['recetas'] = Receta.objects.all()
         context['categorias'] = Categoria.objects.all()
+        context['recetas_sliders'] = RecetasSlider.objects.all()
 
         return context
 
