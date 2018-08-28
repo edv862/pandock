@@ -31,7 +31,7 @@ $(document).ready(function(){
       }, animation_time);
       $(this).data('status', 0);
     } else {
-      height = $(this).data('recetas') * 25;
+      height = $(this).data('recetas') * 25 + 30;
       $("#"+lista).animate({
         height: height+"px",
       }, animation_time);
