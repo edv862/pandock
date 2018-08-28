@@ -9,14 +9,31 @@
 }
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-    color: #ffffff;
+    color: #000;
     background-color: #f67a29;
-    border: none !important;
+    border: 1px solid #125e4d;
     border-radius: 0;
+    height: 42px;
 }
 
 .nav-tabs .nav-link{
-    color: #125e4d;
+    color: #fff;
+    text-align: center;
+}
+
+.nav-tabs .nav-link:hover{
+    border-radius: 0;
+    border: 1px solid #125e4d;
+}
+
+.tab-pane{
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav{
+    box-shadow: 5px 5px 3px #ececec;
+    border: none;
 }
 
 select{
@@ -24,8 +41,16 @@ select{
 }
 
 input[type=submit]{
-    padding: 10px 15px;
+    padding: 5px 10px;
     background-color: #f67a29;
-    border: none;
+    border-color: #125e4d;
     color: #fff;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #125e4d;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(18,94,77,.25);
 }

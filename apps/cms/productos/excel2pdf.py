@@ -64,7 +64,7 @@ def excel_to_pdf(filename, title):
             pdf.y = 40
             pdf.cell(10)
             pdf.image(image_url, x=10, y=8, w=75, h=27, type='png')
-            pdf.set_font('arial', 'BU', 8)
+            pdf.set_font('arial', 'BU', 12)
             pdf.set_text_color(236, 126, 30)
             pdf.y = 40
             pdf.cell(0, 10, title, 0, 2, 'C')
