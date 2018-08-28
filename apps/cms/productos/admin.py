@@ -3,7 +3,7 @@ from .models import Producto
 
 
 class ProductoAdmin(admin.ModelAdmin):
-    list_display = ('titulo', 'tiene_archivo')
+    list_display = ('titulo', 'imagen', 'tiene_archivo')
 
     def tiene_archivo(self, obj):
         if obj.archivo:

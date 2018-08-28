@@ -23,17 +23,18 @@ $(document).ready(function(){
   $('.mas-recetas').on("click", function(){
     lista = $(this).data('lista');
     status = $(this).data('status');
+    animation_time = $(this).data('recetas') * 35;
 
     if (status == 1){
       $("#"+lista).animate({
         height: "110px",
-      }, 750);
+      }, animation_time);
       $(this).data('status', 0);
     } else {
-      height = $(this).data('recetas') * 28;
+      height = $(this).data('recetas') * 26 + 10;
       $("#"+lista).animate({
         height: height+"px",
-      }, 750);
+      }, animation_time);
       $(this).data('status', 1);
     }
   })

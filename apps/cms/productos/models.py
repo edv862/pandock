@@ -9,6 +9,7 @@ from .excel2pdf import create_pdf
 
 
 class Producto(TimeStampedModel):
+    __file = ""
     DEFAULT_IMG = '../assets/img/logo.png'
 
     titulo = models.CharField(max_length=100)
@@ -31,12 +32,11 @@ class Producto(TimeStampedModel):
     def __str__(self):
         return self.titulo
 
-    def save(self, *args, **kwargs):
-        if self.id:
-            self.imagen = self.DEFAULT_IMG
-        super().save(*args, **kwargs)
-
     def clean(self):
+
+        if not self.imagen:
+            self.imagen = self.DEFAULT_IMG
+
         try:
             excel = self.archivo.file
             new_pdf = create_pdf(excel, self.titulo)
