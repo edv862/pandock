@@ -4,7 +4,7 @@ from django import forms
 class ContactoForm(forms.Form):
     nombre = forms.CharField()
     correo = forms.EmailField()
-    mensaje = forms.CharField(widget=forms.Textarea)
+    mensaje = forms.CharField(widget=forms.Textarea({'rows': 6}))
 
 
 class ContactoRecursosHumanosForm(forms.Form):

@@ -40,10 +40,14 @@ select{
     color: #495057;
 }
 
+input, select, textarea{
+    border-color: #125e4d !important;
+}
+
 input[type=submit]{
     padding: 5px 10px;
     background-color: #f67a29;
-    border-color: #125e4d;
+    border-color: #ececec !important;
     color: #fff;
 }
 
@@ -53,4 +57,19 @@ input[type=submit]{
     border-color: #125e4d;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(18,94,77,.25);
+}
+
+.custom-file-label::after{
+    content: "";
+    display: none;
+}
+
+#file-loaded{
+    font-size: 12px;
+    font-weight: lighter;
+    color: #51565b ;
+}
+
+.custom-file-label{
+    border-color: #125e4d;
 }
