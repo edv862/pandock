@@ -1,1 +1,363 @@
-[{"model": "donde_estamos.ubicacion", "pk": 1, "fields": {"created": "2018-07-26T16:45:43.738Z", "modified": "2018-08-14T13:09:54.630Z", "estado": "Barquisimeto", "razon_social": "Pandock de Barquisimeto", "rif": "J-00028028-2", "nit": null, "direccion": "Av. Venezuela con Av. Vargas, Edif Pandock- Barquisimeto, Edo. Lara.", "telefono": "0251 251-3682 / 2527270", "fax": "0251 251-3673", "email": "barquisimeto@pandock.com", "mapa_url": "https://maps.google.com/maps?f=q&source=s_q&hl=es&geocode=&q=10.073175+,+-69.309928&aq=&sll=10.089206,-69.276352&sspn=0.003708,0.005649&ie=UTF8&t=m&z=14&output=embed", "x_coord": 320, "y_coord": 187}}, {"model": "donde_estamos.ubicacion", "pk": 2, "fields": {"created": "2018-07-26T16:45:43.738Z", "modified": "2018-07-26T16:49:58.044Z", "estado": "Car\u00fapano", "razon_social": "Pandock Car\u00fapano, C.A", "rif": "J-30145284-4", "nit": null, "direccion": "Av. Universitaria, Sector El Mangle, Galpon Pandock A 100 Mts. De la E/S El Mangle, Car\u00fapano, Edo Sucre.", "telefono": "0294 332-3277", "fax": "0294 331-8578", "email": "carupano@pandock.com", "mapa_url": "", "x_coord": 797, "y_coord": 153}}, {"model": "donde_estamos.ubicacion", "pk": 3, "fields": {"created": "2018-07-26T16:45:43.738Z", "modified": "2018-07-26T16:49:58.044Z", "estado": "Coro", "razon_social": "Pandock de Coro, C.A", "rif": "J-30151118-2", "nit": null, "direccion": "Av. 3 con Calle F, Frente a la Zona Policial N\u00ba 1, Zona Industrial Coro, Coro, Edo. Falc\u00f3n.", "telefono": "0268 251-6281/252-8521/416-8100", "fax": "0286 251-6281", "email": "pancoro@pandock.com", "mapa_url": "", "x_coord": 323, "y_coord": 119}}, {"model": "donde_estamos.ubicacion", "pk": 4, "fields": {"created": "2018-07-26T16:45:43.738Z", "modified": "2018-08-14T13:26:08.882Z", "estado": "Caracas", "razon_social": "Pandock Caracas, C.A", "rif": "J-40068694-6", "nit": null, "direccion": "Av. R\u00f3mulo Gallegos, Edif Pandock N\u00ba 26, sector Monte Cristo, entre Los Dos Caminos Y Boleita, Caracas.", "telefono": "0212 235-45-22/235-109", "fax": null, "email": "caracas@pandock.com", "mapa_url": "http://maps.google.com/maps?q=pandock+caracas&hl=en&ll=10.49507,-66.829662&spn=0.007406,0.011362&sll=10.495041,-66.829642&sspn=0.029623,0.045447&hq=pandock&hnear=Caracas,+Libertador,+Caracas+Metropolitan+District,+Venezuela&t=m&z=15&output=embed", "x_coord": 525, "y_coord": 164}}, {"model": "donde_estamos.ubicacion", "pk": 5, "fields": {"created": "2018-07-26T16:45:43.738Z", "modified": "2018-07-26T16:49:58.044Z", "estado": "Pto. Ordaz", "razon_social": "Pandock  de Guayana, C.A", "rif": "J-09500339-6", "nit": null, "direccion": "C alle Las Bonitas, Edif. Pandock, Puerto Ordaz, Edo. Bolivar.", "telefono": "0286 922-6019", "fax": "0286 922-2330", "email": "guayana@pandock.com", "mapa_url": "", "x_coord": 846, "y_coord": 325}}, {"model": "donde_estamos.ubicacion", "pk": 6, "fields": {"created": "2018-07-26T16:45:43.738Z", "modified": "2018-07-26T16:49:58.044Z", "estado": "Cuman\u00e1", "razon_social": "Pandock de Cuman\u00e1, C.A", "rif": "J-30315194-9", "nit": "0029720347", "direccion": "Av. Rotaria, galp\u00f3n N\u00ba 3, sector conglomerado industrial Zoica, Cuman\u00e1, Edo. Sucre.", "telefono": "0293 - 432 - 3686", "fax": null, "email": "oriente@pandock.com", "mapa_url": "", "x_coord": 733, "y_coord": 171}}, {"model": "donde_estamos.ubicacion", "pk": 7, "fields": {"created": "2018-07-26T16:45:43.738Z", "modified": "2018-07-26T16:49:58.044Z", "estado": "Valera", "razon_social": "Pandock Los Andes, C.A", "rif": "J-09010131-4", "nit": null, "direccion": "Av. Sta. B\u00e1rbara, Sector La Plata, Edif Salvatore, N\u00ba 29, Valera, Edo. Trujillo.", "telefono": "0271 221-2828/2061", "fax": "0271 221-1874", "email": "panandes@pandock.com", "mapa_url": "", "x_coord": 263, "y_coord": 252}}, {"model": "donde_estamos.ubicacion", "pk": 8, "fields": {"created": "2018-07-26T16:45:43.738Z", "modified": "2018-08-14T13:26:45.061Z", "estado": "Maracaibo", "razon_social": "Pandock  de Maracaibo, C.A", "rif": "J-07001457-1", "nit": null, "direccion": "Av. 16, Carretera El Mojan, Edifc. Pandock, local N\u00ba 5 N\u00ba 47/20, Maracaibo, Edo. Zulia.", "telefono": "0261 757-1666/1890/7152", "fax": "0261 757-7366", "email": "maracaibo@pandock.com", "mapa_url": "https://maps.google.com/maps?f=q&source=s_q&hl=es&geocode=&q=10.696308333333334+,+-71.63638611111112&aq=&sll=10.727996,-71.467352&sspn=0.0592,0.09038&ie=UTF8&t=m&z=14&ll=10.696308,-71.636386&output=embed", "x_coord": 114, "y_coord": 215}}, {"model": "donde_estamos.ubicacion", "pk": 9, "fields": {"created": "2018-07-26T16:45:43.738Z", "modified": "2018-07-26T16:49:58.044Z", "estado": "Porlamar", "razon_social": "Pandock de Margarita, C.A", "rif": "J-06504167-6", "nit": null, "direccion": "Calle san Rafael, edificio Multicentro de las Am\u00e9ricas, local DEP-1, sector Genoves, Porlamar, Nueva Esparta.", "telefono": "0295 266-0134", "fax": null, "email": "margarita@pandock.com", "mapa_url": "", "x_coord": 747, "y_coord": 121}}, {"model": "donde_estamos.ubicacion", "pk": 10, "fields": {"created": "2018-07-26T16:45:43.738Z", "modified": "2018-07-26T16:49:58.044Z", "estado": "Maracay", "razon_social": "Pandock  de Maracay, C.A", "rif": "J-30017564-2", "nit": null, "direccion": "Av. Bermudez, Conj. Industrial Bermudez, Galpon N\u00ba 1, Sector Campo Alegre. Maracay, Edo. Aragua/", "telefono": "0243 235-5291/6344", "fax": null, "email": "maracay@pandock.com", "mapa_url": "", "x_coord": 490, "y_coord": 183}}, {"model": "donde_estamos.ubicacion", "pk": 11, "fields": {"created": "2018-07-26T16:45:43.738Z", "modified": "2018-07-26T16:49:58.044Z", "estado": "M\u00e9rida", "razon_social": "Pandock  M\u00e9rida, C.A", "rif": "J-30056964-0", "nit": null, "direccion": "Av Los Pr\u00f3ceres, Sector La Pedregosa, Zona Industrial Don Bosco, Edif Pandock, Galpon N\u00ba 9, M\u00e9rida, Edo M\u00e9rida.", "telefono": "0274 266-3573/0263", "fax": "0274 266-4145", "email": "merida@pandock.com", "mapa_url": "", "x_coord": 201, "y_coord": 315}}, {"model": "donde_estamos.ubicacion", "pk": 12, "fields": {"created": "2018-07-26T16:45:43.738Z", "modified": "2018-07-26T16:49:58.044Z", "estado": "Barcelona", "razon_social": "Pandock  de Oriente, C.A", "rif": "J-00028029-0", "nit": null, "direccion": "Av. Ra\u00fal Leoni, Zona Industrial Los Montones, Edif. Pandock, Parcela N\u00ba 68 Barcelona, Edo. Anzoategui.", "telefono": "0281 276-4213/4214/4215", "fax": "0281 276-4217", "email": "oriente@pandock.com", "mapa_url": "", "x_coord": 675, "y_coord": 202}}, {"model": "donde_estamos.ubicacion", "pk": 13, "fields": {"created": "2018-07-26T16:45:43.738Z", "modified": "2018-07-26T16:49:58.044Z", "estado": "Ciudad Bolivar", "razon_social": "Pandock  del Orinoco, C.A", "rif": "J-09514611-1", "nit": null, "direccion": "Calle Caracas con Calle Venezuela N\u00ba 9, Ciudad Bolivar, Edo. Bolivar.", "telefono": "0285 632-1501/7085", "fax": "0285 632-2191", "email": "orinoco@pandock.com", "mapa_url": "", "x_coord": 769, "y_coord": 343}}, {"model": "donde_estamos.ubicacion", "pk": 14, "fields": {"created": "2018-07-26T16:45:43.738Z", "modified": "2018-07-26T16:49:58.044Z", "estado": "San Cristobal", "razon_social": "Pandock  del T\u00e1chira, C.A", "rif": "J-07003788-1", "nit": null, "direccion": "Calle 5 Bis, N\u00ba 6-37  entre Av. 5 y Carretera 6, la Concordia, San Cristobal, Edo T\u00e1chira.", "telefono": "0276 346-3118/347-0294", "fax": "0276 347-3044", "email": "tachira@pandock.com", "mapa_url": "", "x_coord": 153, "y_coord": 340}}, {"model": "donde_estamos.ubicacion", "pk": 15, "fields": {"created": "2018-07-26T16:45:43.738Z", "modified": "2018-07-26T16:49:58.044Z", "estado": "Valencia", "razon_social": "Pandock  de Valencia, C.A", "rif": "J-00028030-4", "nit": null, "direccion": "Urbanizaci\u00f3n Industrial Carabobo, Calle Norte 1-2, Edif. Pandock, Valencia, Edo Carabobo.", "telefono": "0241 832-0542 /0610/4332/2903/838-8142", "fax": null, "email": "valencia@pandock.com", "mapa_url": "", "x_coord": 444, "y_coord": 180}}, {"model": "donde_estamos.ubicacion", "pk": 16, "fields": {"created": "2018-07-26T16:45:43.738Z", "modified": "2018-07-26T16:49:58.044Z", "estado": "Maturin", "razon_social": "Pandock Delta, C.A", "rif": "J-08007477-7", "nit": null, "direccion": "Av. El Ejercito, entre calles 6 y 7 Sector 2, Alto de los Godos- Maturin, Edo Monagas.", "telefono": "0291 651-8991/652-4278", "fax": "0291 651-3818", "email": "pandelta@pandock.com", "mapa_url": "", "x_coord": 803, "y_coord": 218}}, {"model": "donde_estamos.ubicacion", "pk": 17, "fields": {"created": "2018-07-26T16:45:43.738Z", "modified": "2018-07-26T16:49:58.044Z", "estado": "Cabimas", "razon_social": "Pandock del Lago, C.A", "rif": "J-30104003-1", "nit": null, "direccion": "Av. Carabobo con Calle 1\u00ba de Enero, Sector Guabina, Edif. Pandock, Cabimas, Edo. Zulia.", "telefono": "0264 241-1904/1905", "fax": null, "email": "panlago@pandock.com", "mapa_url": "", "x_coord": 218, "y_coord": 179}}, {"model": "donde_estamos.ubicacion", "pk": 18, "fields": {"created": "2018-07-26T16:45:43.738Z", "modified": "2018-07-26T16:49:58.044Z", "estado": "Catia la Mar", "razon_social": "Pandock Caracas, C.A", "rif": "J-40068694-6", "nit": null, "direccion": "Dep\u00f3sito la Guaira: Final Av. Atl\u00e1ntida, detr\u00e1s del Cuartel de Bomberos, Catia La Mar, Edo. Vargas.", "telefono": "0212-352-3055", "fax": null, "email": "laguaira@pandock.com", "mapa_url": "", "x_coord": 525, "y_coord": 164}}, {"model": "donde_estamos.ubicacion", "pk": 19, "fields": {"created": "2018-07-26T16:45:43.738Z", "modified": "2018-07-26T16:49:58.044Z", "estado": "Barinas", "razon_social": "Pandock  del T\u00e1chira, C.A", "rif": "J-07003788-1", "nit": null, "direccion": "Dep\u00f3sito Barinas: Av. Industrial entre bomba la Esmeralda y Funsalud, Edif. Weatherford Local N\u00ba 2, Barinas, Edo Barinas.", "telefono": "0273-546-3012", "fax": null, "email": "barinas@pandock.com", "mapa_url": "", "x_coord": 1, "y_coord": 1}}]
+[
+{
+    "model": "donde_estamos.ubicacion",
+    "pk": 1,
+    "fields": {
+        "created": "2018-07-26T16:45:43.738Z",
+        "modified": "2018-07-26T16:49:58.044Z",
+        "estado": "Barquisimeto",
+        "razon_social": "Pandock de Barquisimeto",
+        "rif": "J-00028028-2",
+        "nit": null,
+        "direccion": "Av. Venezuela con Av. Vargas, Edif Pandock- Barquisimeto, Edo. Lara.",
+        "telefono": "0251 251-3682 / 2527270",
+        "fax": "0251 251-3673",
+        "email": "barquisimeto@pandock.com",
+        "mapa_url": "https://maps.google.com/maps?f=q&source=s_q&hl=es&geocode=&q=10.073175+,+-69.309928&aq=&sll=10.089206,-69.276352&sspn=0.003708,0.005649&ie=UTF8&t=m&z=14&output=embed",
+        "x_coord": 320,
+        "y_coord": 187
+    }
+},
+{
+    "model": "donde_estamos.ubicacion",
+    "pk": 2,
+    "fields": {
+        "created": "2018-07-26T16:45:43.738Z",
+        "modified": "2018-07-26T16:49:58.044Z",
+        "estado": "Car\u00fapano",
+        "razon_social": "Pandock Car\u00fapano, C.A",
+        "rif": "J-30145284-4",
+        "nit": null,
+        "direccion": "Av. Universitaria, Sector El Mangle, Galpon Pandock A 100 Mts. De la E/S El Mangle, Car\u00fapano, Edo Sucre.",
+        "telefono": "0294 332-3277",
+        "fax": "0294 331-8578",
+        "email": "carupano@pandock.com",
+        "mapa_url": "https://maps.google.com/maps?f=q&source=s_q&hl=es&geocode=&q=10.652725+,+-63.2574&aq=&sll=10.073175,-69.309928&sspn=0.007416,0.011297&ie=UTF8&t=m&z=14&ll=10.652725,-63.2574&output=embed",
+        "x_coord": 797,
+        "y_coord": 153
+    }
+},
+{
+    "model": "donde_estamos.ubicacion",
+    "pk": 3,
+    "fields": {
+        "created": "2018-07-26T16:45:43.738Z",
+        "modified": "2018-07-26T16:49:58.044Z",
+        "estado": "Coro",
+        "razon_social": "Pandock de Coro, C.A",
+        "rif": "J-30151118-2",
+        "nit": null,
+        "direccion": "Av. 3 con Calle F, Frente a la Zona Policial N\u00ba 1, Zona Industrial Coro, Coro, Edo. Falc\u00f3n.",
+        "telefono": "0268 251-6281/252-8521/416-8100",
+        "fax": "0286 251-6281",
+        "email": "pancoro@pandock.com",
+        "mapa_url": "https://maps.google.com/maps?f=q&source=s_q&hl=es&geocode=&q=11.397802777777777+,+-69.69585000000001&aq=&sll=10.652725,-63.2574&sspn=0.007402,0.011297&ie=UTF8&t=m&z=14&ll=11.397803,-69.69585&output=embed",
+        "x_coord": 323,
+        "y_coord": 119
+    }
+},
+{
+    "model": "donde_estamos.ubicacion",
+    "pk": 4,
+    "fields": {
+        "created": "2018-07-26T16:45:43.738Z",
+        "modified": "2018-07-26T16:49:58.044Z",
+        "estado": "Caracas",
+        "razon_social": "Pandock Caracas, C.A",
+        "rif": "J-40068694-6",
+        "nit": null,
+        "direccion": "Av. R\u00f3mulo Gallegos, Edif Pandock N\u00ba 26, sector Monte Cristo, entre Los Dos Caminos Y Boleita, Caracas.",
+        "telefono": "0212 235-45-22/235-109",
+        "fax": null,
+        "email": "caracas@pandock.com",
+        "mapa_url": "http://maps.google.com/maps?q=pandock+caracas&hl=en&ll=10.49507,-66.829662&spn=0.007406,0.011362&sll=10.495041,-66.829642&sspn=0.029623,0.045447&hq=pandock&hnear=Caracas,+Libertador,+Caracas+Metropolitan+District,+Venezuela&t=m&z=15&output=embed",
+        "x_coord": 525,
+        "y_coord": 164
+    }
+},
+{
+    "model": "donde_estamos.ubicacion",
+    "pk": 5,
+    "fields": {
+        "created": "2018-07-26T16:45:43.738Z",
+        "modified": "2018-07-26T16:49:58.044Z",
+        "estado": "Pto. Ordaz",
+        "razon_social": "Pandock  de Guayana, C.A",
+        "rif": "J-09500339-6",
+        "nit": null,
+        "direccion": "C alle Las Bonitas, Edif. Pandock, Puerto Ordaz, Edo. Bolivar.",
+        "telefono": "0286 922-6019",
+        "fax": "0286 922-2330",
+        "email": "guayana@pandock.com",
+        "mapa_url": "https://maps.google.com/maps?f=q&source=s_q&hl=es&geocode=&q=8.314552777777779+,+-62.71188055555556&aq=&sll=11.397803,-69.69585&sspn=0.007383,0.011297&ie=UTF8&t=m&z=14&ll=8.314553,-62.711881&output=embed",
+        "x_coord": 846,
+        "y_coord": 325
+    }
+},
+{
+    "model": "donde_estamos.ubicacion",
+    "pk": 6,
+    "fields": {
+        "created": "2018-07-26T16:45:43.738Z",
+        "modified": "2018-07-26T16:49:58.044Z",
+        "estado": "Cuman\u00e1",
+        "razon_social": "Pandock de Cuman\u00e1, C.A",
+        "rif": "J-30315194-9",
+        "nit": "0029720347",
+        "direccion": "Av. Rotaria, galp\u00f3n N\u00ba 3, sector conglomerado industrial Zoica, Cuman\u00e1, Edo. Sucre.",
+        "telefono": "0293 - 432 - 3686",
+        "fax": null,
+        "email": "oriente@pandock.com",
+        "mapa_url": "https://maps.google.com/maps?f=q&source=s_q&hl=es&geocode=&q=10.464527777777777+,+-64.18301944444445&aq=&sll=8.314553,-62.711881&sspn=0.007452,0.011297&ie=UTF8&t=m&z=14&ll=10.464528,-64.183019&output=embed",
+        "x_coord": 733,
+        "y_coord": 171
+    }
+},
+{
+    "model": "donde_estamos.ubicacion",
+    "pk": 7,
+    "fields": {
+        "created": "2018-07-26T16:45:43.738Z",
+        "modified": "2018-08-28T11:51:07.138Z",
+        "estado": "Valera",
+        "razon_social": "Pandock Los Andes, C.A",
+        "rif": "J-09010131-4",
+        "nit": null,
+        "direccion": "Av. Sta. B\u00e1rbara, Sector La Plata, Edif Salvatore, N\u00ba 29, Valera, Edo. Trujillo.",
+        "telefono": "0271 221-2828/2061",
+        "fax": "0271 221-1874",
+        "email": "panandes@pandock.com",
+        "mapa_url": "https://maps.google.com/maps?f=q&source=s_q&hl=es&geocode=&q=9.327047222222221+,+-70.45900555555556&aq=&sll=9.325597,-70.497036&sspn=0.059457,0.09038&ie=UTF8&ll=9.325597,-70.497036&spn=0.059457,0.09038&t=m&z=14&output=embed",
+        "x_coord": 263,
+        "y_coord": 252
+    }
+},
+{
+    "model": "donde_estamos.ubicacion",
+    "pk": 8,
+    "fields": {
+        "created": "2018-07-26T16:45:43.738Z",
+        "modified": "2018-07-26T16:49:58.044Z",
+        "estado": "Maracaibo",
+        "razon_social": "Pandock  de Maracaibo, C.A",
+        "rif": "J-07001457-1",
+        "nit": null,
+        "direccion": "Av. 16, Carretera El Mojan, Edifc. Pandock, local N\u00ba 5 N\u00ba 47/20, Maracaibo, Edo. Zulia.",
+        "telefono": "0261 757-1666/1890/7152",
+        "fax": "0261 757-7366",
+        "email": "maracaibo@pandock.com",
+        "mapa_url": "https://maps.google.com/maps?f=q&source=s_q&hl=es&geocode=&q=10.696308333333334+,+-71.63638611111112&aq=&sll=10.727996,-71.467352&sspn=0.0592,0.09038&ie=UTF8&t=m&z=14&ll=10.696308,-71.636386&output=embed",
+        "x_coord": 114,
+        "y_coord": 215
+    }
+},
+{
+    "model": "donde_estamos.ubicacion",
+    "pk": 9,
+    "fields": {
+        "created": "2018-07-26T16:45:43.738Z",
+        "modified": "2018-08-28T11:50:47.970Z",
+        "estado": "Porlamar",
+        "razon_social": "Pandock de Margarita, C.A",
+        "rif": "J-06504167-6",
+        "nit": null,
+        "direccion": "Calle san Rafael, edificio Multicentro de las Am\u00e9ricas, local DEP-1, sector Genoves, Porlamar, Nueva Esparta.",
+        "telefono": "0295 266-0134",
+        "fax": null,
+        "email": "margarita@pandock.com",
+        "mapa_url": "https://maps.google.com/maps?f=q&source=s_q&hl=es&geocode=&q=10.950902777777777+,+-63.86893333333333&aq=&sll=10.696308,-71.636386&sspn=0.007401,0.011297&ie=UTF8&t=m&z=14&ll=10.950903,-63.868933&output=embed",
+        "x_coord": 747,
+        "y_coord": 121
+    }
+},
+{
+    "model": "donde_estamos.ubicacion",
+    "pk": 10,
+    "fields": {
+        "created": "2018-07-26T16:45:43.738Z",
+        "modified": "2018-07-26T16:49:58.044Z",
+        "estado": "Maracay",
+        "razon_social": "Pandock  de Maracay, C.A",
+        "rif": "J-30017564-2",
+        "nit": null,
+        "direccion": "Av. Bermudez, Conj. Industrial Bermudez, Galpon N\u00ba 1, Sector Campo Alegre. Maracay, Edo. Aragua/",
+        "telefono": "0243 235-5291/6344",
+        "fax": null,
+        "email": "maracay@pandock.com",
+        "mapa_url": "https://maps.google.com/maps?f=q&source=s_q&hl=es&geocode=&q=10.950902777777777+,+-63.86893333333333&aq=&sll=10.696308,-71.636386&sspn=0.007401,0.011297&ie=UTF8&t=m&z=14&ll=10.950903,-63.868933&output=embed",
+        "x_coord": 490,
+        "y_coord": 183
+    }
+},
+{
+    "model": "donde_estamos.ubicacion",
+    "pk": 11,
+    "fields": {
+        "created": "2018-07-26T16:45:43.738Z",
+        "modified": "2018-07-26T16:49:58.044Z",
+        "estado": "M\u00e9rida",
+        "razon_social": "Pandock  M\u00e9rida, C.A",
+        "rif": "J-30056964-0",
+        "nit": null,
+        "direccion": "Av Los Pr\u00f3ceres, Sector La Pedregosa, Zona Industrial Don Bosco, Edif Pandock, Galpon N\u00ba 9, M\u00e9rida, Edo M\u00e9rida.",
+        "telefono": "0274 266-3573/0263",
+        "fax": "0274 266-4145",
+        "email": "merida@pandock.com",
+        "mapa_url": "https://maps.google.com/maps?f=q&source=s_q&hl=es&geocode=&q=8.576691666666667+,+-71.18757500000001&aq=&sll=10.229017,-67.597814&sspn=0.007412,0.011297&ie=UTF8&t=m&z=14&ll=8.576692,-71.187575&output=embed",
+        "x_coord": 201,
+        "y_coord": 315
+    }
+},
+{
+    "model": "donde_estamos.ubicacion",
+    "pk": 12,
+    "fields": {
+        "created": "2018-07-26T16:45:43.738Z",
+        "modified": "2018-08-28T11:50:31.080Z",
+        "estado": "Barcelona",
+        "razon_social": "Pandock  de Oriente, C.A",
+        "rif": "J-00028029-0",
+        "nit": null,
+        "direccion": "Av. Ra\u00fal Leoni, Zona Industrial Los Montones, Edif. Pandock, Parcela N\u00ba 68 Barcelona, Edo. Anzoategui.",
+        "telefono": "0281 276-4213/4214/4215",
+        "fax": "0281 276-4217",
+        "email": "oriente@pandock.com",
+        "mapa_url": "https://maps.google.com/maps?f=q&source=s_q&hl=es&geocode=&q=10.127777777777778+,+-64.6639388888889&aq=&sll=8.576692,-71.187575&sspn=0.007447,0.011297&g=8.576691666666667+,+-71.18757500000001&ie=UTF8&ll=10.127778,-64.663939&spn=0.014829,0.022595&t=m&z=14&output=embed",
+        "x_coord": 675,
+        "y_coord": 202
+    }
+},
+{
+    "model": "donde_estamos.ubicacion",
+    "pk": 13,
+    "fields": {
+        "created": "2018-07-26T16:45:43.738Z",
+        "modified": "2018-07-26T16:49:58.044Z",
+        "estado": "Ciudad Bolivar",
+        "razon_social": "Pandock  del Orinoco, C.A",
+        "rif": "J-09514611-1",
+        "nit": null,
+        "direccion": "Calle Caracas con Calle Venezuela N\u00ba 9, Ciudad Bolivar, Edo. Bolivar.",
+        "telefono": "0285 632-1501/7085",
+        "fax": "0285 632-2191",
+        "email": "orinoco@pandock.com",
+        "mapa_url": "https://maps.google.com/maps?f=q&source=s_q&hl=es&geocode=&q=10.14503611111111+,+-63.54005&aq=&sll=10.127779,-64.663939&sspn=0.014829,0.022595&ie=UTF8&ll=10.145036,-63.54005&spn=0.237244,0.361519&t=m&z=12&output=embed",
+        "x_coord": 769,
+        "y_coord": 343
+    }
+},
+{
+    "model": "donde_estamos.ubicacion",
+    "pk": 14,
+    "fields": {
+        "created": "2018-07-26T16:45:43.738Z",
+        "modified": "2018-07-26T16:49:58.044Z",
+        "estado": "San Cristobal",
+        "razon_social": "Pandock  del T\u00e1chira, C.A",
+        "rif": "J-07003788-1",
+        "nit": null,
+        "direccion": "Calle 5 Bis, N\u00ba 6-37  entre Av. 5 y Carretera 6, la Concordia, San Cristobal, Edo T\u00e1chira.",
+        "telefono": "0276 346-3118/347-0294",
+        "fax": "0276 347-3044",
+        "email": "tachira@pandock.com",
+        "mapa_url": "https://maps.google.com/maps?f=q&source=s_q&hl=es&geocode=&q=7.757077777777778+,+-72.23478055555556&aq=&sll=10.144973,-63.539772&sspn=0.237244,0.361519&ie=UTF8&t=m&z=14&ll=7.757078,-72.234781&output=embed",
+        "x_coord": 153,
+        "y_coord": 340
+    }
+},
+{
+    "model": "donde_estamos.ubicacion",
+    "pk": 15,
+    "fields": {
+        "created": "2018-07-26T16:45:43.738Z",
+        "modified": "2018-07-26T16:49:58.044Z",
+        "estado": "Valencia",
+        "razon_social": "Pandock  de Valencia, C.A",
+        "rif": "J-00028030-4",
+        "nit": null,
+        "direccion": "Urbanizaci\u00f3n Industrial Carabobo, Calle Norte 1-2, Edif. Pandock, Valencia, Edo Carabobo.",
+        "telefono": "0241 832-0542 /0610/4332/2903/838-8142",
+        "fax": null,
+        "email": "valencia@pandock.com",
+        "mapa_url": "https://maps.google.com/maps?f=q&source=s_q&hl=es&geocode=&q=10.177669444444444+,+-67.98655277777777&aq=&sll=7.757078,-72.234781&sspn=0.007463,0.011297&ie=UTF8&t=m&z=14&ll=10.177669,-67.986553&output=embed",
+        "x_coord": 444,
+        "y_coord": 180
+    }
+},
+{
+    "model": "donde_estamos.ubicacion",
+    "pk": 16,
+    "fields": {
+        "created": "2018-07-26T16:45:43.738Z",
+        "modified": "2018-07-26T16:49:58.044Z",
+        "estado": "Maturin",
+        "razon_social": "Pandock Delta, C.A",
+        "rif": "J-08007477-7",
+        "nit": null,
+        "direccion": "Av. El Ejercito, entre calles 6 y 7 Sector 2, Alto de los Godos- Maturin, Edo Monagas.",
+        "telefono": "0291 651-8991/652-4278",
+        "fax": "0291 651-3818",
+        "email": "pandelta@pandock.com",
+        "mapa_url": "https://maps.google.com/maps?f=q&source=s_q&hl=es&geocode=&q=9.730397222222223+,+-63.20404444444445&aq=&sll=10.177669,-67.986553&sspn=0.007413,0.011297&ie=UTF8&t=m&z=14&ll=9.730397,-63.204044&output=embed",
+        "x_coord": 803,
+        "y_coord": 218
+    }
+},
+{
+    "model": "donde_estamos.ubicacion",
+    "pk": 17,
+    "fields": {
+        "created": "2018-07-26T16:45:43.738Z",
+        "modified": "2018-08-28T11:50:07.048Z",
+        "estado": "Cabimas",
+        "razon_social": "Pandock del Lago, C.A",
+        "rif": "J-30104003-1",
+        "nit": null,
+        "direccion": "Av. Carabobo con Calle 1\u00ba de Enero, Sector Guabina, Edif. Pandock, Cabimas, Edo. Zulia.",
+        "telefono": "0264 241-1904/1905",
+        "fax": null,
+        "email": "panlago@pandock.com",
+        "mapa_url": "https://maps.google.com/maps?f=q&source=s_q&hl=es&geocode=&q=10.730397222222223+,+-71.45900555555556&aq=&sll=9.327036,-70.459013&sspn=0.059457,0.09038&g=9.327047222222221+,+-70.45900555555556&ie=UTF8&ll=10.730397,-71.459006&spn=0.0592,0.09038&t=m&z=14&output=embed",
+        "x_coord": 218,
+        "y_coord": 179
+    }
+},
+{
+    "model": "donde_estamos.ubicacion",
+    "pk": 18,
+    "fields": {
+        "created": "2018-07-26T16:45:43.738Z",
+        "modified": "2018-08-28T11:56:01.811Z",
+        "estado": "Catia la Mar",
+        "razon_social": "Pandock Caracas, C.A",
+        "rif": "J-40068694-6",
+        "nit": null,
+        "direccion": "Dep\u00f3sito la Guaira: Final Av. Atl\u00e1ntida, detr\u00e1s del Cuartel de Bomberos, Catia La Mar, Edo. Vargas.",
+        "telefono": "0212-352-3055",
+        "fax": null,
+        "email": "laguaira@pandock.com",
+        "mapa_url": "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2331.82160444164!2d-67.0346033212635!3d10.607227128622181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sfinal!5e0!3m2!1ses-419!2sve!4v1535457340371",
+        "x_coord": 525,
+        "y_coord": 164
+    }
+},
+{
+    "model": "donde_estamos.ubicacion",
+    "pk": 19,
+    "fields": {
+        "created": "2018-07-26T16:45:43.738Z",
+        "modified": "2018-08-28T11:53:39.259Z",
+        "estado": "Barinas",
+        "razon_social": "Pandock  del T\u00e1chira, C.A",
+        "rif": "J-07003788-1",
+        "nit": null,
+        "direccion": "Dep\u00f3sito Barinas: Av. Industrial entre bomba la Esmeralda y Funsalud, Edif. Weatherford Local N\u00ba 2, Barinas, Edo Barinas.",
+        "telefono": "0273-546-3012",
+        "fax": null,
+        "email": "barinas@pandock.com",
+        "mapa_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5578.294306140448!2d-70.24131244140509!3d8.648705332887785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e7b59c5ecec194b%3A0x1468830786c25e0e!2sPandock!5e0!3m2!1ses-419!2sve!4v1535457194860",
+        "x_coord": 1,
+        "y_coord": 1
+    }
+}
+]
