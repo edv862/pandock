@@ -31,7 +31,7 @@
     Gris claro #f4f3f3
 */
 .recetas-list{
-    height: 110px;
+    height: 98px;
     overflow-y: hidden;
 }
 
@@ -71,7 +71,8 @@
 }
 
 .card-body{
-    padding: 10px 10px 10px 30px;
+    padding: 10px;
+    font-size: 0.96em;
 }
 
 .card-body a, .card-body a:hover{

@@ -17,7 +17,7 @@ $("#rslides").responsiveSlides({
 
 $(document).ready(function(){
   $('.card-header').on('click', function(){
-      $('.recetas-list').css('height', "110px");
+      $('.recetas-list').css('height', "98px");
   })
 
   $('.mas-recetas').on("click", function(){
@@ -27,11 +27,11 @@ $(document).ready(function(){
 
     if (status == 1){
       $("#"+lista).animate({
-        height: "110px",
+        height: "98px",
       }, animation_time);
       $(this).data('status', 0);
     } else {
-      height = $(this).data('recetas') * 26 + 10;
+      height = $(this).data('recetas') * 25;
       $("#"+lista).animate({
         height: height+"px",
       }, animation_time);

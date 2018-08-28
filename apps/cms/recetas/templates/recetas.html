@@ -34,7 +34,7 @@
             <div id="recetas-accordion" class="col-lg-3 col-md-4 col-sm-12 px-0 carousel slide carousel-fade">
                 <div class="card">
                     {% for categoria in categorias %}
-                        <div class="card-header" id="tag{{ categoria.id }}" data-toggle="collapse" data-target="#texto{{ categoria.id }}" aria-expanded="false" aria-controls="texto{{ categoria.id }}">
+                        <div class="card-header" data-catid="{{ categoria.id }}" id="tag{{ categoria.id }}" data-toggle="collapse" data-target="#texto{{ categoria.id }}" aria-expanded="false" aria-controls="texto{{ categoria.id }}">
                             <h5 class="mb-0">
                                 {{ categoria.nombre }}
                                 <i class="float-right fas fa-angle-right angle-open"></i>
