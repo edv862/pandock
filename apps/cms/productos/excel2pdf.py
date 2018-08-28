@@ -18,21 +18,21 @@ def excel_to_pdf(filename, title):
     # Generating The header of the file
     image_url = os.path.join(STATIC_ROOT, 'img/logo.png')
     pdf.image(image_url, x=10, y=8, w=75, h=27, type='png')
-    pdf.set_font('arial', 'BU', 16)
+    pdf.set_font('arial', 'BU', 12)
     pdf.set_text_color(236, 126, 30)
     pdf.y = 40
     pdf.cell(20)
     pdf.cell(0, 10, title, 0, 2, 'C')
 
     # Generating the table header
-    pdf.set_font('arial', 'B', 14)
+    pdf.set_font('arial', 'B', 12)
     pdf.set_text_color(255)
     pdf.cell(150, 10, 'Productos', 1, 0, 'C', True)
     pdf.cell(20, 10, 'Unid', 1, 2, 'C', True)
     pdf.cell(-150)
 
     # Seting values of font for the table's values
-    pdf.set_font('arial', '', 10)
+    pdf.set_font('arial', '', 8)
     pdf.set_text_color(0)
     pdf.set_fill_color(255, 255, 255)
 
@@ -53,23 +53,23 @@ def excel_to_pdf(filename, title):
         # Move to computed offset
         pdf.x = offset
 
-        if (len(col_a) > 73):
+        if (len(col_a) > 120):
             height += height
 
         pdf.multi_cell(20, height, '%s' % (col_b), 1, 'J', True)
         pdf.cell(10)
 
-        if pdf.y == 270:
+        if pdf.y == 250:
             pdf.add_page()
             pdf.y = 40
             pdf.cell(10)
             pdf.image(image_url, x=10, y=8, w=75, h=27, type='png')
-            pdf.set_font('arial', 'BU', 16)
+            pdf.set_font('arial', 'BU', 8)
             pdf.set_text_color(236, 126, 30)
             pdf.y = 40
             pdf.cell(0, 10, title, 0, 2, 'C')
             # Seting values of font for the table's values
-            pdf.set_font('arial', '', 12)
+            pdf.set_font('arial', '', 8)
             pdf.set_text_color(0)
             pdf.set_fill_color(255, 255, 255)
     return pdf
