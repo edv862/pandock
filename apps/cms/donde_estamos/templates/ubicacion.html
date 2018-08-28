@@ -22,8 +22,8 @@
     
     <section class="ubicacion">
         <div class="row mapa-wrapper">
-            <div class="col-12 text-center">
-                <div class="puntos-wrapper d-none d-lg-block">
+            <div class="col-12 text-center d-none d-lg-block">
+                <div class="puntos-wrapper">
                     {% for direccion in direcciones_mapa %}
                         <div class="punto_gris" style="margin-top:{{ direccion.y_coord }}px; margin-left: {{ direccion.x_coord }}px;" onmouseover="show('direccion{{ direccion.id }}'), show('detalle{{ direccion.id }}')" onmouseout="hide('direccion{{ direccion.id }}'), hide('detalle{{ direccion.id }}')">
                             <div id="direccion{{ direccion.id }}" class="punto_gris_detalle" style="visibility: hidden; display: none;">
@@ -43,6 +43,9 @@
                     {% endfor %}
                 </div>
                 <img class="img-fluid mapa" src="{% static 'img/src/donde_estamos/mapa.png' %}">
+            </div>
+            <div class="col-12 text-center d-show d-lg-none">
+                <img class="img-fluid mapa" src="{% static 'img/src/donde_estamos/mapa_celular.png' %}">
             </div>
         </div>
 
