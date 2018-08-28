@@ -34,7 +34,7 @@
 {% else %}
     <ul id="rslides" style="height: 100vh;">
         {% for slider in recetas_sliders %}
-            <li><img class="img-fluid" src='{{ slider.imagen.url }}' alt=""></li>
+            <li><img class="img-fluid" src='{{ slider.imagen.url }}' style="height: 110vh;"></li>
         {% endfor %}
     </ul>
 {% endif %}
