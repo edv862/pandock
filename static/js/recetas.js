@@ -1,7 +1,7 @@
 $("#rslides").responsiveSlides({
   auto: true,             // Boolean: Animate automatically, true or false
-  speed: 1750,            // Integer: Speed of the transition, in milliseconds
-  timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
+  speed: 1900,            // Integer: Speed of the transition, in milliseconds
+  timeout: 5000,          // Integer: Time between slide transitions, in milliseconds
   pager: false,           // Boolean: Show pager, true or false
   nav: false,             // Boolean: Show navigation, true or false
   random: false,          // Boolean: Randomize the order of the slides, true or false
@@ -17,7 +17,7 @@ $("#rslides").responsiveSlides({
 
 $(document).ready(function(){
   $('.card-header').on('click', function(){
-      $('.recetas-list').css('height', "98px");
+      $('.recetas-list').css('height', "93px");
   })
 
   $('.mas-recetas').on("click", function(){
@@ -27,11 +27,11 @@ $(document).ready(function(){
 
     if (status == 1){
       $("#"+lista).animate({
-        height: "98px",
+        height: "93px",
       }, animation_time);
       $(this).data('status', 0);
     } else {
-      height = $(this).data('recetas') * 25 + 30;
+      height = $(this).data('recetas') * 23;
       $("#"+lista).animate({
         height: height+"px",
       }, animation_time);

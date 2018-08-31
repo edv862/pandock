@@ -13,7 +13,7 @@ def excel_to_pdf(filename, title):
     pdf.add_page()
     pdf.set_xy(0, 0)
     background_url = os.path.join(STATIC_ROOT, 'img/pdf-lineas.png')
-    #pdf.image(background_url, 0, 0, pdf.w, pdf.h + 20, type='png')
+    pdf.image(background_url, 0, 0, pdf.w, pdf.h + 20, type='png')
 
     # Generating The header of the file
     image_url = os.path.join(STATIC_ROOT, 'img/logo.png')
@@ -39,6 +39,7 @@ def excel_to_pdf(filename, title):
     for row in data:
         # Getting row's data
         height = 10
+        # col_a nombre producto, col_b unidad.
         col_a = str(row[0])
         col_b = str(row[1])
         # Save top coordinate
@@ -56,11 +57,12 @@ def excel_to_pdf(filename, title):
         if (len(col_a) > 120):
             height += height
 
-        pdf.multi_cell(20, height, '%s' % (col_b), 1, 'J', True)
+        pdf.multi_cell(20, height, '%s' % (col_b), 1, 'C', True)
         pdf.cell(10)
 
         if pdf.y == 250:
             pdf.add_page()
+            pdf.image(background_url, 0, 0, pdf.w, pdf.h + 20, type='png')
             pdf.y = 40
             pdf.cell(10)
             pdf.image(image_url, x=10, y=8, w=75, h=27, type='png')

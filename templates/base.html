@@ -70,10 +70,10 @@
     <footer class="container-fluid">
         <div class="row h-100 align-items-center">
             <div class="col-lg-4 col-md-12 col-sm-12 text-center">
-                <img class="img-fluid" src="{% static 'img/logo.png' %}" alt="Pandock">
+                <img class="img-fluid" style="width: 85%;" src="{% static 'img/logo.png' %}" alt="Pandock">
             </div>
             <div class="col-lg-4 col-md-12 col-sm-12 footer-menu" style='margin-top:-14px'>
-                <h6>Menú</h6>
+                <h6 class="text-center">Menú</h6>
                 <ul class="d-inline-block">
                     <li class="page_item">
                         <a href="{% url 'home:view' %}">Inicio</a>
@@ -98,9 +98,9 @@
                 </ul>
             </div>
             <div class="col-lg-4 col-md-12 col-sm-12 footer-menu mb-3">
-                <h6>Recetas</h6>
+                <h6 class="text-center">Recetas</h6>
                 <div class="text-center">
-                    <div id="recetas-carousel" class="carousel slide" data-ride="carousel" data-interval="99999">
+                    <div id="recetas-carousel" class="carousel slide" data-ride="carousel" data-interval="4000">
                         <div class="carousel-inner">
                             {% for receta in recetas_slider_home %}
                                 {% if forloop.first %}

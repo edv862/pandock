@@ -3,4 +3,8 @@ from django.contrib import admin
 from .models import Departamento
 
 
-admin.site.register(Departamento)
+class DepartamentoAdmin(admin.ModelAdmin):
+    list_display = ('nombre', 'correo')
+
+
+admin.site.register(Departamento, DepartamentoAdmin)
