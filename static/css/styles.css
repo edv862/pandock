@@ -178,6 +178,10 @@ footer .bottom{
     margin: 0 auto;
 }
 
+footer .footer-menu-item img{
+    width: 300px;
+}
+
 @media(max-width:991px){
     header {
         text-align: center;
@@ -211,8 +215,5 @@ footer .bottom{
     footer .footer-menu-item{
         margin-top: 15px !important;
         margin-bottom: 15px !important;
-    }
-    footer .footer-menu-item img{
-        width: 300px;
     }
 }
