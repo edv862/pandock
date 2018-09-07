@@ -170,7 +170,7 @@ footer .bottom{
 }
 
 #recetas-carousel .carousel-inner{
-    width: 30vh;
+    width: 150px;
     margin: 0 auto;
 }
 
@@ -179,8 +179,8 @@ footer .footer-menu-item .logo-footer{
 }
 
 footer .receta-img{
-    height: 15vh;
-    width: 15vh;
+    height: 150px;
+    width: 150px;
 } 
 
 
