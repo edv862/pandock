@@ -77,10 +77,6 @@ footer ul{
     padding: 0;
 }
 
-footer .footer-menu{
-    height: 205px;
-}
-
 footer .footer-menu ul{
     margin-right: 2%
 }
@@ -174,13 +170,18 @@ footer .bottom{
 }
 
 #recetas-carousel .carousel-inner{
-    width: 50%;
+    width: 30vh;
     margin: 0 auto;
 }
 
 footer .footer-menu-item .logo-footer{
     width: 230px;
-}   
+}
+
+footer .receta-img{
+    height: 30vh;
+    width: 30vh;
+} 
 
 
 @media(max-width:991px){
