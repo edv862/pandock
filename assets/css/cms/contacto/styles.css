@@ -1,0 +1,76 @@
+/*    Anaranjado #f79147    */
+.naranja{
+    color: #f79147;
+}
+
+.contact-text{
+    color: #51565b !important;
+    font-size: 14px;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #fff;
+    background-color: #125e4d;
+    border: 1px solid #fff;
+    border-radius: 0;
+    height: 42px;
+}
+
+.nav-tabs .nav-link{
+    color: #fff;
+    text-align: center;
+}
+
+.nav-tabs .nav-link:hover{
+    border-radius: 0;
+    border: 1px solid #fff;
+}
+
+.tab-pane{
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav{
+    box-shadow: 5px 5px 3px #ececec;
+    border: none;
+}
+
+select{
+    color: #495057;
+}
+
+input, select, textarea{
+    border-color: #125e4d !important;
+}
+
+input[type=submit]{
+    padding: 5px 10px;
+    background-color: #f67a29;
+    border-color: #ececec !important;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #125e4d;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(18,94,77,.25);
+}
+
+.custom-file-label::after{
+    content: "";
+    display: none;
+}
+
+#file-loaded{
+    font-size: 12px;
+    font-weight: lighter;
+    color: #51565b ;
+}
+
+.custom-file-label{
+    border-color: #125e4d;
+}
