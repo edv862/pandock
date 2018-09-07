@@ -207,9 +207,12 @@ footer .bottom{
     }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 991px) {
     footer .footer-menu-item{
         margin-top: 15px !important;
         margin-bottom: 15px !important;
+    }
+    footer .footer-menu-item img{
+        width: 300px;
     }
 }
