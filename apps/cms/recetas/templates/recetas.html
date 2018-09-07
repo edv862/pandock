@@ -42,7 +42,7 @@
                             </h5>
                         </div>
 
-                        <div id="texto{{ categoria.id }}" class="collapse pb-2" aria-labelledby="tag{{ categoria.id }}" data-parent="#recetas-accordion">
+                        <div id="texto{{ categoria.id }}" class="collapse pb-2 recetas-list-wrapper" aria-labelledby="tag{{ categoria.id }}" data-parent="#recetas-accordion">
                             <div class="card-body recetas-list" id="{{ categoria.id }}">
                                 {% receta_by_category categoria as recetas %}
                                 {% for receta in recetas %}
@@ -64,7 +64,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-9 col-md-8 col-sm-12 px-3" style="margin-top: 8%; margin-bottom: 8%;">
+            <div class="col-lg-9 col-md-8 col-sm-12 px-3" style="margin-top: 6%; margin-bottom: 6%;">
                 {% include "receta_detail.html" %}
             </div>
         </div>

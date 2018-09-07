@@ -178,6 +178,11 @@ footer .bottom{
     margin: 0 auto;
 }
 
+footer .footer-menu-item .logo-footer{
+    width: 230px;
+}   
+
+
 @media(max-width:991px){
     header {
         text-align: center;
