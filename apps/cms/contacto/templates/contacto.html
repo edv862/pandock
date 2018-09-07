@@ -32,7 +32,7 @@
                 <nav style="background-color: #f67a29;">
                     <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
                         <a style="width: 32%" class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">RECURSOS HUMANOS</a>
-                        <a style="width: 36%" class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">COMPRAS E IMPORTACIONES</a>
+                        <a style="width: 36%; border-left: 1px solid white; border-right: 1px solid white; border-radius: 0px" class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">COMPRAS E IMPORTACIONES</a>
                         <a style="width: 32%" class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">ATENCIÓN AL CLIENTE</a>
                     </div>
                 </nav>
@@ -45,7 +45,7 @@
                         <form action="" enctype="multipart/form-data">
                             {% csrf_token %}
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-md-6 col-sm-6">
                                     {% bootstrap_field form_recursos_humanos.nombre show_label=False %}
                                     {% bootstrap_field form_recursos_humanos.correo show_label=False %}
                                     {% bootstrap_field form_recursos_humanos.departamento show_label=False %}
@@ -57,7 +57,7 @@
                                     </div>
                                 <p id="file-loaded"></p>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-md-6 col-sm-6">
                                     {% bootstrap_field form_recursos_humanos.mensaje show_label=False %}
                                 </div>
                             </div>
@@ -72,11 +72,11 @@
                         <form action="">
                             {% csrf_token %}
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-md-6 col-sm-6">
                                     {% bootstrap_field form_compras.nombre show_label=False %}
                                     {% bootstrap_field form_compras.correo show_label=False %}
                                 </div>
-                                <div class="col-6">
+                                <div class="col-md-6 col-sm-6">
                                     {% bootstrap_field form_compras.mensaje show_label=False %}
                                 </div>
                             </div>
@@ -91,11 +91,11 @@
                         <form action="">
                             {% csrf_token %}
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-md-6 col-sm-6">
                                     {% bootstrap_field form_compras.nombre show_label=False %}
                                     {% bootstrap_field form_compras.correo show_label=False %}
                                 </div>
-                                <div class="col-6">
+                                <div class="col-md-6 col-sm-6">
                                     {% bootstrap_field form_compras.mensaje show_label=False %}
                                 </div>
                             </div>

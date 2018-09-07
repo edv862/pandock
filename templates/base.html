@@ -22,9 +22,12 @@
         <div class="row h-100 align-items-center">
             <div class="col-lg-3 col-sm-12 text-center px-0">
                 <img class="img-fluid mx-auto" src="{% static 'img/logo.png' %}" alt="Pandock">
+                <button class="navbar-toggler d-lg-none d-md-block d-sm-block" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
             <div class="col-lg-9 col-sm-12 px-0">                
-                <div id="menu" class="text-center">
+                <div id="menu" class="text-center collapse show" >
                     <div class="d-none d-lg-block">
                         <a href="{% url 'home:view' %}">INICIO</a>
                         <a href="{% url 'nosotros:view' %}">NOSOTROS</a>
