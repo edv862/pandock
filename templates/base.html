@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="{% static 'img/icon.png' %}">
-    
+
     <!-- Bootstrap 4 CSS CND -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    
+
     <link rel="stylesheet" type="text/css" href="{% static "css/styles.css" %}">
     {% block extra-css %}
-        
+
     {% endblock extra-css %}
     {% block windows_title %}
         <title>Pandock</title>
@@ -21,7 +21,7 @@
     <header class="container">
         <div class="row h-100 align-items-center">
             <div class="col-lg-3 col-sm-12 text-center px-0">
-                <img class="img-fluid mx-auto" src="{% static 'img/logo.png' %}" alt="Pandock">
+                <img class="img-fluid mx-auto" src="{% static 'img/logo.png' %}" style="width: 230px;" alt="Pandock">
                 <button class="navbar-toggler d-lg-none d-md-block d-sm-block" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -72,10 +72,10 @@
 
     <footer class="container-fluid">
         <div class="row h-100 align-items-center">
-            <div class="col-lg-4 col-md-12 col-sm-12 text-center">
-                <img class="img-fluid" style="width: 85%;" src="{% static 'img/logo.png' %}" alt="Pandock">
+            <div class="col-lg-4 col-md-12 col-sm-12 text-center footer-menu-item">
+                <img class="img-fluid" style="width: 65%;" src="{% static 'img/logo.png' %}" alt="Pandock">
             </div>
-            <div class="col-lg-4 col-md-12 col-sm-12 footer-menu" style='margin-top:-14px'>
+            <div class="col-lg-4 col-md-12 col-sm-12 footer-menu-item footer-menu" style='margin-top:-14px'>
                 <h6 class="text-center">Menú</h6>
                 <ul class="d-inline-block">
                     <li class="page_item">
@@ -100,7 +100,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-lg-4 col-md-12 col-sm-12 footer-menu mb-3">
+            <div class="col-lg-4 col-md-12 col-sm-12 footer-menu-item footer-menu mb-3">
                 <h6 class="text-center">Recetas</h6>
                 <div class="text-center">
                     <div id="recetas-carousel" class="carousel slide" data-ride="carousel" data-interval="4000">
@@ -158,7 +158,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <!-- Jquery CND -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
+
     {% block extra-js %}
     {% endblock extra-js %}
 </body>

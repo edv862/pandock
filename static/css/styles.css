@@ -206,3 +206,10 @@ footer .bottom{
         display: block;
     }
 }
+
+@media (max-width: 575px) {
+    footer .footer-menu-item{
+        margin-top: 15px !important;
+        margin-bottom: 15px !important;
+    }
+}

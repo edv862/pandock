@@ -135,10 +135,27 @@
     padding-left: 10px;
 }
 
-@media (max-width: 767px){
+.receta-slider-img{
+    height: 80vh !important;
+}
+
+@media (max-width: 767px) and (min-width: 576px){
     .descripcion-receta .imagen-receta{
         float: none;
         width: 100%;
         margin: 10px auto;
+    }
+    .receta-slider-img{
+        height: 65vh !important;
+    }
+}
+
+@media (max-width: 575px){
+    #rslides{
+        height: 60vh !important;
+    }
+
+    .receta-slider-img{
+        height: 50vh !important;
     }
 }
