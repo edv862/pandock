@@ -29,7 +29,19 @@
                         {{ producto.titulo }}
                     </div>
                     <div class="content">
-                        <div class="clearfix">
+                        <!-- Display de telefono -->
+                        <div class="clearfix d-inline d-lg-none">
+                            <div class="product-content product-image pt-2 float-none">
+                                <img class="img-fluid w-75 mx-auto d-block" src="{{ producto.imagen.url }}">
+                            </div>
+                            <div class="product-content product-text" style="width: 100% !important; max-width: 100% !important">
+                                <span>{{ producto.titulo }}</span><br>
+                                {{ producto.contenido }}
+                            </div>
+                        </div>
+
+                        <!-- Display de pc -->
+                        <div class="clearfix d-none d-lg-inline">
                             <div class="product-content product-text">
                                 <span>{{ producto.titulo }}</span><br>
                                 {{ producto.contenido }}
