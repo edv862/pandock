@@ -136,7 +136,7 @@
 }
 
 .receta-slider-img{
-    height: 80vh !important;
+    height: 100% !important;
 }
 
 @media (max-width: 767px) and (min-width: 576px){
@@ -146,16 +146,12 @@
         margin: 10px auto;
     }
     .receta-slider-img{
-        height: 65vh !important;
+        height: 100% !important;
     }
 }
 
 @media (max-width: 575px){
-    #rslides{
-        height: 60vh !important;
-    }
-
     .receta-slider-img{
-        height: 50vh !important;
+        height: 100% !important;
     }
 }
