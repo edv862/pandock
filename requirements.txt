@@ -23,7 +23,7 @@ mccabe==0.6.1
 openpyxl==2.5.4
 Pillow==5.2.0
 poyo==0.4.1
-pylint==2.0.1
+pylint
 python-dateutil==2.7.3
 pytz==2018.4
 requests==2.19.1
