@@ -1,11 +1,11 @@
 arrow==0.12.1
-astroid==2.0.1
+astroid
 binaryornot==0.4.4
 certifi==2018.4.16
 chardet==3.0.4
 click==6.7
 cookiecutter==1.6.0
-Django==2.0.6
+Django
 django-cleanup==2.1.0
 django-extensions==2.1.0
 django-model-utils==3.1.2
@@ -23,7 +23,7 @@ mccabe==0.6.1
 openpyxl==2.5.4
 Pillow==5.2.0
 poyo==0.4.1
-pylint==2.0.1
+pylint
 python-dateutil==2.7.3
 pytz==2018.4
 requests==2.19.1
