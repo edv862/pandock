@@ -57,7 +57,7 @@ header a:hover{
 
 .navbar-toggler{
   border-color: #327365;
-  width: 40%;
+  width: 60%;
   margin: 10px auto;
 }
 
@@ -75,10 +75,6 @@ footer h6{
 footer ul{
     list-style: none;
     padding: 0;
-}
-
-footer .footer-menu{
-    height: 205px;
 }
 
 footer .footer-menu ul{
@@ -174,9 +170,20 @@ footer .bottom{
 }
 
 #recetas-carousel .carousel-inner{
-    width: 50%;
+    width: 230px;
     margin: 0 auto;
+    font-size: 14px;
 }
+
+footer .footer-menu-item .logo-footer{
+    width: 230px;
+}
+
+footer .receta-img{
+    height: 180px;
+    width: 230px;
+} 
+
 
 @media(max-width:991px){
     header {
@@ -204,5 +211,12 @@ footer .bottom{
 @media(min-width:992px){
     #menu{
         display: block;
+    }
+}
+
+@media (max-width: 991px) {
+    footer .footer-menu-item{
+        margin-top: 15px !important;
+        margin-bottom: 15px !important;
     }
 }
