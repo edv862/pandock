@@ -1,5 +1,6 @@
-from django.shortcuts import render
-from django.views.generic import FormView, TemplateView
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+from django.views.generic import TemplateView
 
 from .forms import ContactoForm, ContactoRecursosHumanosForm
 from .models import Departamento
