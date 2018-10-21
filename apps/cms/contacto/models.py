@@ -9,4 +9,4 @@ class Departamento(models.Model):
         ordering = ['nombre', ]
 
     def __str__(self):
-        return self.nombre
+        return repr(self.nombre.encode('utf-8'))
