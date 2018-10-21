@@ -21,5 +21,4 @@ class ContactoRecursosHumanosForm(forms.Form):
         for choice in kwargs['initial']['departamento']:
             choices += [(choice.correo, choice.nombre)]
 
-        print(choices)
         self.fields["departamento"].choices = choices
