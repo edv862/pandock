@@ -1,4 +1,3 @@
-import sys
 import os
 from pandock.settings.production import STATIC_ROOT
 from openpyxl import load_workbook
@@ -128,25 +127,3 @@ def create_pdf(filename, title):
     if (ext == ".xls" or ext == ".xlsx"):
         return excel_to_pdf(filename, title)
     return None
-
-
-# to test in python
-if __name__ == '__main__':
-    # Take arguments
-    args = []
-    for arg in sys.argv[1:]:
-        args.append(arg)
-
-    # 1st argument is the file
-    filename = args.pop(0)
-
-    # Get file extension
-    ext = get_extension(filename)
-
-    text = ""
-
-    if (ext == ".xls" or ext == ".xlsx"):
-        excel_to_pdf(filename, 'Los Pescaditos')
-    else:
-        # Invalid extension.
-        pass
