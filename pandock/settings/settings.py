@@ -144,3 +144,9 @@ STATICFILES_DIRS = (
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+EMAIL_HOST = 'host.pandock.com'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'pagina_web@pandock.com'
+EMAIL_HOST_PASSWORD = 'PdkWeb19*'
+EMAIL_USE_SSL = True

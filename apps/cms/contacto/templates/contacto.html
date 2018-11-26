@@ -29,6 +29,13 @@
                 <p class="contact-text">
                     <span class="naranja">Pandock</span> siempre en contacto directo con sus clientes, proveedores y público interesado, pone a su disposición los siguientes contactos para que se comuniquen con nosotros.
                 </p>
+                {% if messages %}
+                    <ul class="messages">
+                    {% for message in messages %}
+                        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                    {% endfor %}
+                    </ul>
+                {% endif %}
                 <nav style="background-color: #f67a29;">
                     <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
                         <a style="width: 32%" class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">RECURSOS HUMANOS</a>
@@ -42,7 +49,7 @@
                         <p class="contact-text mt-3 mb-4">
                             Pandock le invita a formar parte de nuestra corporación, le brindamos oportunidades de crecimiento profesional y de capacitación a través de atractivas áreas de empleo que se adecúen a su perfil profesional.
                         </p>
-                        <form action="" enctype="multipart/form-data">
+                        <form method="POST" action="{% url 'contacto:email_rh' %}" enctype="multipart/form-data" autocomplete="off">
                             {% csrf_token %}
                             <div class="row">
                                 <div class="col-md-6 col-sm-6">
@@ -51,8 +58,8 @@
                                     {% bootstrap_field form_recursos_humanos.departamento show_label=False %}
                                     <div class="input-group mb-3">
                                         <div class="custom-file">
-                                            <input type="file" class="custom-file-input" id="id_archivo" aria-describedby="inputGroupFileAddon01" name="archivo">
-                                            <label class="custom-file-label" for="inputGroupFile01">Anexar CV.</label>
+                                            <input accept="application/pdf" type="file" class="custom-file-input" id="id_archivo" aria-describedby="inputGroupFileAddon01" name="archivo">
+                                            <label class="custom-file-label" for="inputGroupFile01">Anexar CV. (solo pdf)</label>
                                         </div>
                                     </div>
                                 <p id="file-loaded"></p>
@@ -69,7 +76,7 @@
                         <p class="contact-text mt-3 mb-4">
                             Pandock siempre liderizando el mercado institucional le invita a trabajar junto a nosotros, preséntenos sus productos y servicios al departamento de Gestión y Negocios. Envíenos su propuesta, cotización y soliciteuna cita que con gusto lo atenderemos.
                         </p>
-                        <form action="">
+                        <form method="POST" action="{% url 'contacto:email_compras' %}" autocomplete="off">
                             {% csrf_token %}
                             <div class="row">
                                 <div class="col-md-6 col-sm-6">
@@ -88,7 +95,7 @@
                         <p class="contact-text mt-3 mb-4">
                             Pandock siempre pendiente de la calidad de sus productos y servicios les invita a comunicarse con el Departamento Atención al Cliente para conocer su opinión con respecto a todos nuestros productos y servicios.
                         </p>
-                        <form action="">
+                        <form method="POST" action="{% url 'contacto:email_atencion' %}" autocomplete="off">
                             {% csrf_token %}
                             <div class="row">
                                 <div class="col-md-6 col-sm-6">
