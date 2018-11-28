@@ -3,7 +3,7 @@ from django.db import models
 
 class Departamento(models.Model):
     nombre = models.CharField(max_length=100)
-    correo = models.EmailField()
+    correo = models.EmailField(blank=True, null=True)
 
     class Meta:
         ordering = ['nombre', ]

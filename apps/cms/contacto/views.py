@@ -45,7 +45,7 @@ def send_email_rh(request):
             subject="Recursos Humanos - Web Email.",
             body=message,
             from_email='pagina_web@pandock.com',
-            to=[dpto]
+            to=["captacion@pandock.com"]
         )
 
         email.attach('curriculum.pdf', archivo.file.getvalue(), 'application/pdf')
