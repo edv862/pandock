@@ -63,6 +63,9 @@
                                     {{ noticia.titulo }}
                                 </h4>
                                 <p>
+                                    {% if noticia.image %}
+                                        <img src="{{ noticia.image.url }}" align='left' style="width: 35%; margin: 10px;">
+                                    {% endif %}
                                     {{ noticia.texto }}
                                 </p>
                             </div>
