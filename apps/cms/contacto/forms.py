@@ -21,6 +21,6 @@ class ContactoRecursosHumanosForm(forms.Form):
         choices = [("", "Departamento")]
 
         for choice in kwargs['initial']['departamento']:
-            choices += [(choice.nombre, choice.nombre)]
+            choices += [(choice.id, choice.nombre)]
 
         self.fields["departamento"].choices = choices

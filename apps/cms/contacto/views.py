@@ -35,9 +35,11 @@ def send_email_rh(request):
     mensaje = request.POST.get('mensaje', '')
     archivo = request.FILES.get('archivo', '')
 
+    dep = get_object_or_404(Departamento, id=dpto)
+
     if nombre and correo and dpto and mensaje and archivo:
         message = nombre + ' ha enviado un correo a traves del sitio web de pandock.\n'
-        message += "Departamento " + dpto + ".\n"
+        message += "Departamento " + dep.nombre + ".\n"
         message += mensaje + ".\n"
         message += "Contacto de " + nombre + " - " + correo + "\n"
 
