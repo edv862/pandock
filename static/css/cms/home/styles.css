@@ -69,7 +69,8 @@
 .noticias{
     background-color: #f4f3f3;
     margin: 40px 0 30px 0;
-    padding: 15px 40px 15px 10px;
+    padding-top: 5px;
+    padding-right: 10px;
     height: 285px;
     border-left: #c86016 solid 20px;
 
@@ -88,7 +89,6 @@
     padding-top: 5px;
     padding-left: 15px;
     color: #51565b;
-    border-top: 3px dashed #125e4d;
 }
 
 .noticia-texto p{
