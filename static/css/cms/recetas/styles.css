@@ -139,6 +139,10 @@
     height: 100% !important;
 }
 
+.wrapp-text{
+    display: inline;
+}
+
 @media (max-width: 767px) and (min-width: 576px){
     .descripcion-receta .imagen-receta{
         float: none;
