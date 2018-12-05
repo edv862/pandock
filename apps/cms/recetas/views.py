@@ -26,7 +26,6 @@ class RecetaDetailView(DetailView):
 
     def get(self, request, *args, **kwargs):
         receta = get_object_or_404(Receta, slug=self.kwargs['slug'])
-        print(self.request.user.is_superuser)
 
         if not(self.request.user.is_superuser or receta.publicado):
             return HttpResponse('Unauthorized', status=401)
