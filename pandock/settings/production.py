@@ -16,12 +16,9 @@ from .settings import *
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'http://jhonns862.pythonanywhere.com/',
-    'jhonns862.pythonanywhere.com/',
-    'jhonns862.pythonanywhere.com',
+    'www.pandock.com',
+    'pandock.com',
 ]
-
-HOST = 'jhonns862.pythonanywhere.com/'
 
 LANGUAGE_CODE = 'es-ve'
 
