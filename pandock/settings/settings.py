@@ -29,7 +29,6 @@ ALLOWED_HOSTS = [
     'www.pandock.com',
     'pandock.com',
 ]
-HOST = '127.0.0.0:8000/'
 
 
 # Application definition
