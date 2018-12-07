@@ -47,6 +47,8 @@ THIRD_PARTY_APPS = [
     'django_extensions',
     'django_cleanup',
     'bootstrap3',
+    'antispam',
+    'antispam.captcha',
 ]
 
 APPS = [
@@ -147,6 +149,12 @@ STATICFILES_DIRS = (
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+RECAPTCHA_SITEKEY = '6LeIcH8UAAAAAAJGfTVLsrEkxWVOhF5iuLzziJVV'
+RECAPTCHA_SECRETKEY = '6LeIcH8UAAAAADZj25ZmnC9Nr1UI17SH4bkmlbdf'
+RECAPTCHA_WIDGET = 'antispam.captcha.widgets.ReCAPTCHA'
+RECAPTCHA_TIMEOUT = 5
+RECAPTCHA_PASS_ON_ERROR = False
 
 EMAIL_HOST = 'host.pandock.com'
 EMAIL_PORT = 465
