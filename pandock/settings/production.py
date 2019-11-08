@@ -15,23 +15,25 @@ from .settings import *
 
 DEBUG = False
 
-ALLOWED_HOSTS = [
-    'http://jhonns862.pythonanywhere.com/',
-    'jhonns862.pythonanywhere.com/',
-    'jhonns862.pythonanywhere.com',
+ALLOWED_HOSTS =  [
+    '145.239.119.232',
+    'pandock.com',
+    'http://145.239.119.232',
+    'http://pandock.com/',
+    'www.pandock.com',
+    'http://www.pandock.com/',
+    'web.pandock.com',
+    'http://web.pandock.com/',
 ]
 
-HOST = 'jhonns862.pythonanywhere.com/'
+HOST = 'www.pandock.com/'
 
 LANGUAGE_CODE = 'es-ve'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 STATIC_URL = '/assets/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
+STATIC_ROOT = os.path.join(BASE_DIR, 'assets/')
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = "/media/"

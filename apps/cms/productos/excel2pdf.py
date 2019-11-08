@@ -1,5 +1,5 @@
 import os
-from pandock.settings.production import STATIC_ROOT
+from pandock.settings.production import HOST, STATIC_ROOT
 from openpyxl import load_workbook
 from fpdf import FPDF
 
