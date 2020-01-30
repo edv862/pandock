@@ -37,3 +37,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'assets/')
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = "/media/"
+
+GOOGLE_ANALYTICS = {
+    'google_analytics_id': 'UA-157130886-1',
+}

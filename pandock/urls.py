@@ -27,6 +27,7 @@ urlpatterns = [
     url(r'^sedes/', include('apps.cms.donde_estamos.urls', namespace='donde_estamos')),
     url(r'^contacto/', include('apps.cms.contacto.urls', namespace='contacto')),
     url(r'^admin/', admin.site.urls),
+    url(r'^djga/', include('google_analytics.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

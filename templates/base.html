@@ -1,4 +1,6 @@
 {% load static %}
+{% load google_analytics_tags %}
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,6 +20,9 @@
     {% endblock windows_title %}
 </head>
 <body class="container-fluid">
+    <div style="display:none">
+        <img src="{% google_analytics %}" width="0" height="0" />
+    </div>
     <header class="container">
         <div class="row h-100 align-items-center">
             <div class="col-lg-3 col-sm-12 text-center px-0">

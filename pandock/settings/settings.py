@@ -45,6 +45,7 @@ THIRD_PARTY_APPS = [
     'bootstrap3',
     'antispam',
     'antispam.captcha',
+    'google_analytics',
 ]
 
 APPS = [
