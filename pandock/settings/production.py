@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 import os
 from .settings import *
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS =  [
 	'*',
