@@ -24,7 +24,7 @@
     <section class="container productos mb-5">
         <div id="product-accordion">
             {% for producto in productos %}
-                {% if producto.publicado %}
+                {% if producto.publicado or user.is_superuser %}
                     <div class="set">
                         <div class="title">
                             {{ producto.titulo }}

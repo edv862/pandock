@@ -19,7 +19,7 @@
                 <div id="slider-carousel" class="carousel slide" data-ride="carousel" data-interval="4000">
                         <ol class="carousel-indicators">
                             {% for s in slider %}
-                                {% if s.publicado %}
+                                {% if s.publicado or user.is_superuser %}
                                     {% if forloop.first %}
                                         <li data-target="#slider-carousel" data-slide-to="0" class="active"></li>
                                     {% else %}
@@ -30,7 +30,7 @@
                         </ol>
                         <div class="carousel-inner">
                             {% for s in slider %}
-                                {% if s.publicado %}
+                                {% if s.publicado or user.is_superuser %}
                                     {% if forloop.first %}
                                         <div class="carousel-item active">
                                             <img class="d-block w-100" src="{{ s.image.url }}">
@@ -62,7 +62,7 @@
                 <div id="noticias-carousel" class="noticias carousel slide" data-ride="carousel" data-interval="3500" data-pause="hover">
                     <div class="carousel-inner">
                         {% for noticia in noticias %}
-                            {% if noticia.publicado %}
+                            {% if noticia.publicado or user.is_superuser %}
                                 <div class="noticia-texto carousel-item {% if forloop.first %}active{% endif %}">
                                     <h4 class="noticia-title">
                                         {{ noticia.titulo }}
