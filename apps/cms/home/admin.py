@@ -4,7 +4,7 @@ from .models import Slider, Noticia
 
 
 class SliderAdmin(admin.ModelAdmin):
-	list_display = ('image', 'posicion', 'publicado',)
+	list_display = ('posicion', 'publicado',)
 
 
 class NoticiaAdmin(admin.ModelAdmin):
