@@ -10,3 +10,13 @@ class Departamento(models.Model):
 
     def __str__(self):
         return repr(self.nombre.encode('utf-8'))
+
+
+class Ubicacion(models.Model):
+	nombre = models.CharField(max_length=100)
+
+	class Meta:
+		ordering = ['nombre',]
+
+	def __str__(self):
+		return str(self.nombre)

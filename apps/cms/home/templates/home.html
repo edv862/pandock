@@ -19,23 +19,27 @@
                 <div id="slider-carousel" class="carousel slide" data-ride="carousel" data-interval="4000">
                         <ol class="carousel-indicators">
                             {% for s in slider %}
-                                {% if forloop.first %}
-                                    <li data-target="#slider-carousel" data-slide-to="0" class="active"></li>
-                                {% else %}
-                                    <li data-target="#slider-carousel" data-slide-to="{{ forloop.counter1 }}"></li>
+                                {% if s.publicado %}
+                                    {% if forloop.first %}
+                                        <li data-target="#slider-carousel" data-slide-to="0" class="active"></li>
+                                    {% else %}
+                                        <li data-target="#slider-carousel" data-slide-to="{{ forloop.counter1 }}"></li>
+                                    {% endif %}
                                 {% endif %}
                             {% endfor %}
                         </ol>
                         <div class="carousel-inner">
                             {% for s in slider %}
-                                {% if forloop.first %}
-                                    <div class="carousel-item active">
-                                        <img class="d-block w-100" src="{{ s.image.url }}">
-                                    </div>
-                                {% else %}
-                                    <div class="carousel-item">
-                                        <img class="d-block w-100" src="{{ s.image.url }}">
-                                    </div>
+                                {% if s.publicado %}
+                                    {% if forloop.first %}
+                                        <div class="carousel-item active">
+                                            <img class="d-block w-100" src="{{ s.image.url }}">
+                                        </div>
+                                    {% else %}
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="{{ s.image.url }}">
+                                        </div>
+                                    {% endif %}
                                 {% endif %}
                             {% endfor %}
                         </div>
@@ -58,17 +62,19 @@
                 <div id="noticias-carousel" class="noticias carousel slide" data-ride="carousel" data-interval="3500" data-pause="hover">
                     <div class="carousel-inner">
                         {% for noticia in noticias %}
-                            <div class="noticia-texto carousel-item {% if forloop.first %}active{% endif %}">
-                                <h4 class="noticia-title">
-                                    {{ noticia.titulo }}
-                                </h4>
-                                <p>
-                                    {% if noticia.image %}
-                                        <img src="{{ noticia.image.url }}" align='left' style="width: 35%; margin: 10px;">
-                                    {% endif %}
-                                    {{ noticia.texto }}
-                                </p>
-                            </div>
+                            {% if noticia.publicado %}
+                                <div class="noticia-texto carousel-item {% if forloop.first %}active{% endif %}">
+                                    <h4 class="noticia-title">
+                                        {{ noticia.titulo }}
+                                    </h4>
+                                    <p>
+                                        {% if noticia.image %}
+                                            <img src="{{ noticia.image.url }}" align='left' style="width: 35%; margin: 10px;">
+                                        {% endif %}
+                                        {{ noticia.texto }}
+                                    </p>
+                                </div>
+                            {% endif %}
                         {% endfor %}
                     </div>
                     <a class="noticias-carousel-prev carousel-control-prev" href="#noticias-carousel" role="button" data-slide="prev">

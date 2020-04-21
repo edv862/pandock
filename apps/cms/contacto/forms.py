@@ -4,10 +4,13 @@ from django import forms
 from antispam.honeypot.forms import HoneypotField
 from antispam.captcha.forms import ReCAPTCHA
 
+from .models import Ubicacion
+
 
 class ContactoForm(forms.Form):
     nombre = forms.CharField()
     correo = forms.EmailField()
+    ubicacion = forms.ModelChoiceField(queryset=Ubicacion.objects.all(), empty_label='Ubicación')
     mensaje = forms.CharField(widget=forms.Textarea({'rows': 6}))
     spam_honeypot_field = HoneypotField()
     captcha = ReCAPTCHA()
@@ -16,6 +19,7 @@ class ContactoForm(forms.Form):
 class ContactoRecursosHumanosForm(forms.Form):
     nombre = forms.CharField()
     correo = forms.EmailField()
+    ubicacion = forms.ModelChoiceField(queryset=Ubicacion.objects.all(), empty_label='Ubicación')
     mensaje = forms.CharField(widget=forms.Textarea)
     departamento = forms.ChoiceField()
     archivo = forms.FileField()

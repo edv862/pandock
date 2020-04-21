@@ -24,40 +24,42 @@
     <section class="container productos mb-5">
         <div id="product-accordion">
             {% for producto in productos %}
-                <div class="set">
-                    <div class="title">
-                        {{ producto.titulo }}
-                    </div>
-                    <div class="content">
-                        <!-- Display de telefono -->
-                        <div class="clearfix d-inline d-lg-none">
-                            <div class="product-content product-image pt-2 float-none">
-                                <img class="img-fluid w-75 mx-auto d-block" src="{{ producto.imagen.url }}">
-                            </div>
-                            <div class="product-content product-text" style="width: 100% !important; max-width: 100% !important">
-                                <span>{{ producto.titulo }}</span><br>
-                                {{ producto.contenido }}
-                            </div>
+                {% if producto.publicado %}
+                    <div class="set">
+                        <div class="title">
+                            {{ producto.titulo }}
                         </div>
+                        <div class="content">
+                            <!-- Display de telefono -->
+                            <div class="clearfix d-inline d-lg-none">
+                                <div class="product-content product-image pt-2 float-none">
+                                    <img class="img-fluid w-75 mx-auto d-block" src="{{ producto.imagen.url }}">
+                                </div>
+                                <div class="product-content product-text" style="width: 100% !important; max-width: 100% !important">
+                                    <span>{{ producto.titulo }}</span><br>
+                                    {{ producto.contenido }}
+                                </div>
+                            </div>
 
-                        <!-- Display de pc -->
-                        <div class="clearfix d-none d-lg-inline">
-                            <div class="product-content product-text">
-                                <span>{{ producto.titulo }}</span><br>
-                                {{ producto.contenido }}
+                            <!-- Display de pc -->
+                            <div class="clearfix d-none d-lg-inline">
+                                <div class="product-content product-text">
+                                    <span>{{ producto.titulo }}</span><br>
+                                    {{ producto.contenido }}
+                                </div>
+                                <div class="product-content product-image pt-2">
+                                    <img class="img-fluid" src="{{ producto.imagen.url }}">
+                                </div>
                             </div>
-                            <div class="product-content product-image pt-2">
-                                <img class="img-fluid" src="{{ producto.imagen.url }}">
-                            </div>
+                            {% if producto.archivo and producto.archivo_publicado %}
+                                <span class="ver-mas">
+                                    <img src="{% static 'img/vermas.png' %}">
+                                    <a href="{{ producto.archivo.url }}" target="_new">Ver m&aacute;s...</a>
+                                </span>
+                            {% endif %}
                         </div>
-                        {% if producto.archivo %}
-                            <span class="ver-mas">
-                                <img src="{% static 'img/vermas.png' %}">
-                                <a href="{{ producto.archivo.url }}" target="_new">Ver m&aacute;s...</a>
-                            </span>
-                        {% endif %}
                     </div>
-                </div>
+                {% endif %}
             {% endfor %}
         </div>
     </section>

@@ -80,6 +80,7 @@
 }
 
 .descripcion-receta{
+    margin-top: -6%;
     padding: 20px 20px 20px 30px;
     min-height: 80vh;
     background: url('../../../img/bg_recetas.png');
@@ -124,6 +125,7 @@
 .descripcion-receta h3{
     font-size: 18px;
     text-decoration: underline;
+    margin-left: -10px;
 }
 
 .descripcion-receta h4{
@@ -132,11 +134,15 @@
 .descripcion-receta pre{
     line-height: 20px;
     font-family: 'futura_hv_btheavy' !important;
-    padding-left: 10px;
+    padding-left: 0px;
 }
 
 .receta-slider-img{
     height: 100% !important;
+}
+
+.wrapp-text{
+    display: inline;
 }
 
 @media (max-width: 767px) and (min-width: 576px){

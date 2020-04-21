@@ -23,12 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 SECRET_KEY = 'f)l2!&*e6xtuialst)c+g=4g!h$n^op*4567%!1cbvl95zy8pc'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = [
-    'www.pandock.com',
-    'pandock.com',
-]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -48,6 +45,7 @@ THIRD_PARTY_APPS = [
     'bootstrap3',
     'antispam',
     'antispam.captcha',
+    'google_analytics',
 ]
 
 APPS = [
@@ -158,5 +156,5 @@ RECAPTCHA_PASS_ON_ERROR = False
 EMAIL_HOST = 'host.pandock.com'
 EMAIL_PORT = 465
 EMAIL_HOST_USER = 'pagina_web@pandock.com'
-EMAIL_HOST_PASSWORD = 'PdkWeb19*'
+EMAIL_HOST_PASSWORD = '*Pag6vf1s3*'
 EMAIL_USE_SSL = True

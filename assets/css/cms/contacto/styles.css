@@ -76,6 +76,11 @@ input[type=submit]{
     border-color: #125e4d;
 }
 
+.messages{
+    list-style-type: none;
+    color: #327365;
+}
+
 @media (min-width: 576px) and (max-width: 767px) {
     .nav-link{
         font-size: 12px;

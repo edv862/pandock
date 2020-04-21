@@ -12,6 +12,9 @@ class Slider(TimeStampedModel):
     posicion = models.PositiveIntegerField(
         validators=[MinValueValidator(1)],
     )
+    publicado = models.BooleanField(
+        default=True,
+    )
 
     def __str__(self):
         return "Imagen Slider " + str(self.posicion)
@@ -26,6 +29,9 @@ class Noticia(TimeStampedModel):
     )
     texto = models.TextField()
 
+    publicado = models.BooleanField(
+        default=True,
+    )
     posicion = models.PositiveIntegerField(
         validators=[MinValueValidator(1)],
     )
