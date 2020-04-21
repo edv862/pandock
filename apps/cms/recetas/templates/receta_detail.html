@@ -12,17 +12,17 @@
         <pre class="wrapp-text">{{ receta.descripcion|default_if_none:"" }}</pre>
         {% endautoescape %}
         
-        <h4 class="naranja">INFORMACIÓN TÉCNICA</h4>
+        <h4 class="naranja mt-4">INFORMACIÓN TÉCNICA</h4>
         {% autoescape off %}
         <pre class="wrapp-text">{{ receta.informacion_tecnica }}</pre>
         {% endautoescape %}
 
-        <h4 class="naranja">INGREDIENTES</h4>
+        <h4 class="naranja mt-4">INGREDIENTES</h4>
         {% autoescape off %}
         <pre class="wrapp-text">{{ receta.ingredientes }}</pre>
         {% endautoescape %}
         
-        <h4 class="naranja">PREPARACIÓN</h4>
+        <h4 class="naranja mt-4">PREPARACIÓN</h4>
         {% autoescape off %}
         <pre class="wrapp-text">{{ receta.preparacion }}</pre>
         {% endautoescape %}

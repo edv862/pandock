@@ -27,6 +27,12 @@ class Producto(TimeStampedModel):
         blank=True,
         null=True,
     )
+    publicado = models.BooleanField(
+        default=True,
+    )
+    archivo_publicado = models.BooleanField(
+        default=True
+    )
 
     class Meta:
         ordering = ['titulo', ]
