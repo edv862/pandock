@@ -39,7 +39,7 @@ def send_email_rh(request):
     dep = get_object_or_404(Departamento, id=dpto)
 
     if nombre and correo and ubicacion and dpto and mensaje and archivo:
-        estado = Ubicacion.objects.get(ubicacion)
+        estado = Ubicacion.objects.get(id=ubicacion)
 
         message = nombre + ' ha enviado un correo a traves del sitio web de pandock.\n'
         message += "Departamento " + dep.nombre + ".\n"
@@ -73,7 +73,7 @@ def send_email_compras_importaciones(request):
     mensaje = request.POST.get('mensaje', '')
 
     if nombre and ubicacion and correo and mensaje:
-        estado = Ubicacion.objects.get(ubicacion)
+        estado = Ubicacion.objects.get(id=ubicacion)
 
         message = nombre + ' ha enviado un correo a traves del sitio web de pandock.\n'
         message += mensaje + ".\n"
@@ -104,7 +104,7 @@ def send_email_atencion(request):
     mensaje = request.POST.get('mensaje', '')
 
     if nombre and ubicacion and correo and mensaje:
-        estado = Ubicacion.objects.get(ubicacion)
+        estado = Ubicacion.objects.get(id=ubicacion)
 
         message = nombre + ' ha enviado un correo a traves del sitio web de pandock.\n'
         message += mensaje + ".\n"
