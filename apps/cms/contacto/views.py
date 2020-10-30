@@ -45,7 +45,7 @@ def send_email_rh(request):
         message += "Departamento " + dep.nombre + ".\n"
         message += mensaje + ".\n"
         message += "Contacto de " + nombre + " - " + correo + "\n"
-        message += "Ubicación: " + ubicacion + "\n"
+        message += "Ubicación: " + estado.nombre + "\n"
 
         email = EmailMessage(
             subject="Recursos Humanos - Web Email.",
@@ -78,7 +78,7 @@ def send_email_compras_importaciones(request):
         message = nombre + ' ha enviado un correo a traves del sitio web de pandock.\n'
         message += mensaje + ".\n"
         message += "Contacto de " + nombre + " - " + correo + "\n"
-        message += "Ubicación: " + ubicacion + "\n"
+        message += "Ubicación: " + estado.nombre + "\n"
 
         email = EmailMessage(
             subject="Compras e Importaciones - Web Email.",
@@ -109,7 +109,7 @@ def send_email_atencion(request):
         message = nombre + ' ha enviado un correo a traves del sitio web de pandock.\n'
         message += mensaje + ".\n"
         message += "Contacto de " + nombre + " - " + correo + "\n"
-        message += "Ubicación: " + ubicacion + "\n"
+        message += "Ubicación: " + estado.nombre + "\n"
 
         email = EmailMessage(
             subject="Atencion al Cliente - Web Email.",
