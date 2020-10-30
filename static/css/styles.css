@@ -144,6 +144,14 @@ footer .bottom{
     background: #222426 url('../img/bottom-shadow.png') repeat-x;
 }
 
+footer .bottom img{
+    width: 75px;
+}
+
+footer .bottom img:hover{
+    cursor: pointer;
+}
+
 
 /* Section common styles */
 .header-divider{
